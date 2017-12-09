@@ -1,0 +1,38 @@
+<!-- stateName enables the between page emotions -->
+<div class="{{ stateName }}"> 
+	<div class="ng-scope" ng-controller="MyCtrl">
+		<div id="p5container">
+			<header class= "site-header grid2" > 
+				<!-- Left hand Side of Nav Bar-->
+				<div class="logo">
+					<a href="##intro" du-smooth-scroll="" du-scrollspy="" offset="0" class="">
+						<h1 class="logo-heading" >Elgin-Skye <span class=" "> McLaren</span></h1>
+						<h2 class="logo-subheading ">developer // ux researcher</h2>
+					</a>
+				</div>
+				<!-- Right hand Side of Nav Bar-->
+				<nav class="menu">
+					<ul class="nav-grid">
+						<li><a href="#work" du-smooth-scroll="" du-scrollspy="" offset="60" class="">Work</a></li>
+						<li><a href="#about" du-smooth-scroll="" du-scrollspy="" offset="60" class="">About</a></li>
+						<li><a href="#contact" du-smooth-scroll="" du-scrollspy="" offset="60">Contact</a></li>
+					</ul>
+				</nav> 
+			</header>
+
+			<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+<!-- 
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/projects">Projects</a>
+</nav> -->
+
+<!-- <app-messages></app-messages> -->
