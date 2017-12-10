@@ -24,26 +24,25 @@
 </div>
 
 
- 
+		<div id ="myId" #myId class="grid my-grid my-shuffle"> 
+			<figure  *ngFor="let project of projects" class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
+				<a ui-sref="work1">	
+					<div class="aspect aspect--9x80">
+						<div class="aspect__inner">
+							<div class="work-text">
+								<h3>{{project.name}}</h3>
+							</div>
+							<img src="https://pbs.twimg.com/profile_images/462337463709483008/x7ov71tq.jpeg" obj.alt="obj.alt"/>
+						</div>
+					</div>
+				</a>
+			</figure>
 
-<!--  
-<ul class="my-list">
-<li #listitem>1</li>
-<li #listitem>2</li>
-<li #listitem>3</li>
-</ul>
- -->
-<!--
-<div id="work">
 
-	<h2 >Recent Work</h2>
-	<div class="container-width">
+			<!-- </div> -->
+			<!-- 	
 
-		<div class="container-width2">-->
-
-			<div id ="myId" #myId class="grid my-grid my-shuffle">
-
-				<figure class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
+			<figure class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
 					
 					<a ui-sref="work1 js-shuffle-sizer">	
 						
@@ -87,12 +86,12 @@
 
 					</a>
 				</figure>
-
-			</div>
-
-
+<app-projects></app-projects> 
 			
-<app-projects></app-projects>
+ -->
+
+	<!-- 		
+
 
 			<!--
 		</div>

@@ -82,12 +82,13 @@ export class DashboardComponent implements OnInit {
       console.log("hi")
     
 
+  }
+
+   ngAfterViewInit() {
 const shuffleInstance = new Shuffle(this.myId.nativeElement) {
   // itemSelector: '.js-item',
   // sizer: '.js-shuffle-sizer'
 });
-
-   
   }
  
   getProjects(): void {
