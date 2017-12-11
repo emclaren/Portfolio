@@ -4,7 +4,7 @@
     "allowJs": true,
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
-    "module": "es2015",
+    "module": "commonjs",
     "types": []
   },
   "exclude": [
@@ -12,3 +12,4 @@
     "**/*.spec.ts"
   ]
 }
+
