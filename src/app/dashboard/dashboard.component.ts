@@ -7,31 +7,48 @@ import {  ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import * as p5 from '../../assets/p5.min.js';
 
 // import '../../assets/p5.min.js';
+// import * as xJS from './x.js';
+declare var System: any; 
+
+// import {Ng2PageScrollModule} from 'ng2-page-scroll';
+
 
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.scss' ]
+  styleUrls: [ './dashboard.component.scss' ],
+  // animations: [fadeAnimation]
 })
 
 export class DashboardComponent implements OnInit {
   projects: Project[] = [];
   @ViewChild('myId') myId: ElementRef;
+ 
 
 
   constructor(private projectService: ProjectService) { }
 
-  ngOnInit() {
+  ngOnInit() { 
+    console.log("Hi! Thanks for checking out my website. ");
     this.getProjects();
-    console.log(this.myId.nativeElement);
-    console.log(p5);
-    console.log("Hi! Thanks for checking out my website. ")
+    // console.log(this.myId.nativeElement);
+    // console.log(p5);
+   
+
+        
   }
 
   ngAfterViewInit() {
     const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
-   
+// console.log(p5.setup());
+// System.import('../../assets/p5.min.js').then(fileInstance => {
+      
+
+//       // console.log("did this work?" + fileInstance);
+
+// });
+ 
   }
 
   getProjects(): void {

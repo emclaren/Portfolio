@@ -1,0 +1,135 @@
+
+.work-project{
+
+	h2{
+		font-size:3rem;
+	}
+	// margin: 0 .75rem;
+	p{
+		margin: .5rem 0 1rem 0;
+		text-align:justify;
+
+	}
+	h3{
+		margin:4rem auto 1rem auto;
+
+	}
+	h4{
+		font-size:2rem;
+		font-family:Open sans;
+		font-style: italic;
+		color: navy;
+		// text-align: center;
+	}
+	.fa-chevron-down{
+		color:white;
+		background-color: #242424
+	}
+	.project-block{
+		margin:0 auto;
+		max-width: 60%;
+		padding:2rem 0;
+
+	}
+	.aspect__inner{
+		top:auto;
+		bottom:auto;
+	}
+	.project-text{
+width: 100%;
+		margin:3rem auto;
+		text-align:justify;
+	}
+	img{
+		height:80vh;
+	}
+	.project-text2{
+width: 100%;
+		margin:0auto;
+		text-align:justify;
+	}
+	.project-image{
+		max-width:80%; 
+		margin:3rem auto; 
+		max-height: 40vh
+	}
+	.challenge-text{
+		background-color: #F4F6F7;
+	}
+
+	.intro-project{
+		max-width:600px;
+		color:white;
+		margin:0 auto;
+		text-align:center;
+		font-size:1.3rem;
+	}
+		// @media screen and (min-width: $break-small) {
+		// 	.project-text{
+		// 		width:60%;
+		// 	}
+		// 	.project-test2{
+		// 		width:80%;
+		// 	}
+		// }
+		// @media screen and (min-width: $break-large) {
+		// 	.project-text{
+		// 		// width:50%;
+		// 	}
+		// 	.project-test2{
+		// 		width:60%;
+		// 	}
+		// }
+
+}
+
+
+
+.project-header{
+	height:100vh;
+	flex-direction:column;
+	display:flex;
+	// position:fixed;
+	align-items:center;
+	justify-content:center;
+ background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://s3-us-west-2.amazonaws.com/elgin-portfolio/audio-matic-header.jpg');
+background-size:cover;
+
+h2{
+	color:white;
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	font-size:5rem;
+	margin:.75rem .75rem;
+}
+h3{
+	color:white;
+}
+}
+
+.grid{
+	display:flex;
+}
+.blocktalks{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://s3-us-west-2.amazonaws.com/elgin-portfolio/asking-for-a-friend-header.jpg');
+	background-size:100%;
+}
+
+.askingfor{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://s3-us-west-2.amazonaws.com/elgin-portfolio/asking-for-a-friend-header.jpg');
+	background-size:100%;
+}
+.earthgazing{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://s3-us-west-2.amazonaws.com/elgin-portfolio/asking-for-a-friend-header.jpg');
+	background-size:cover;
+}
+.tangible{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://s3-us-west-2.amazonaws.com/elgin-portfolio/asking-for-a-friend-header.jpg');
+	background-size:cover;
+}
+
+
+
+

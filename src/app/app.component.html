@@ -5,7 +5,7 @@
 			<header class= "site-header grid2" > 
 				<!-- Left hand Side of Nav Bar-->
 				<div class="logo">
-					<a href="##intro" du-smooth-scroll="" du-scrollspy="" offset="0" class="">
+					<a pageScroll [routerLink]="['']" href="#intro">
 						<h1 class="logo-heading" >Elgin-Skye <span class=" "> McLaren</span></h1>
 						<h2 class="logo-subheading ">developer // ux researcher</h2>
 					</a>
@@ -13,9 +13,12 @@
 				<!-- Right hand Side of Nav Bar-->
 				<nav class="menu">
 					<ul class="nav-grid">
-						<li><a href="#work" du-smooth-scroll="" du-scrollspy="" offset="60" class="">Work</a></li>
-						<li><a href="#about" du-smooth-scroll="" du-scrollspy="" offset="60" class="">About</a></li>
-						<li><a href="#contact" du-smooth-scroll="" du-scrollspy="" offset="60">Contact</a></li>
+						<li>   <a pageScroll [routerLink]="['']" href="#work">
+						<!-- <a pageScroll [routerLink]="['']" href="#about"> -->
+						Work</a>
+						</li>
+						<li> <a pageScroll [routerLink]="['']" href="#about">About</a></li>
+						<li> <a pageScroll [routerLink]="['']" href="#contact">Contact</a></li>
 					</ul>
 				</nav> 
 			</header>
@@ -25,11 +28,7 @@
 
 
 
-
-
-
-
-<!-- 
+<!-- <p>bshabdkjsadjka</p>
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/projects">Projects</a>

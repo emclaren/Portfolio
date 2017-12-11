@@ -1,34 +1,16 @@
 
 <div *ngIf="project" >
-
-	<h2>{{ project.name | uppercase }} Details</h2>
-	<div><span>id: </span>{{project.id}}</div>
-	<div>
-		<label>name:
-			<input [(ngModel)]="project.name" placeholder="name">
-		</label>
-	</div>
-</div>
-
-
-<button (click)="goBack()">go back</button>
-
-
-
-
-
-<div id="work-project1" class="work-project">
-	<div class="project-header mindfull">
-		<h2 >Mind-Full</h2>
-		<p class="intro-project">In 2016 I joined a team working to improve educational outcomes for kids with anxiety and attentional challenges. 
+	<div id="work-project1" class="work-project">
+		<div class="project-header " class="{{project.name}}">
+			<h2>{{project.name}}</h2>
+			<p class="intro-project">{{project.summary}}</p>			
 			<div>
 				<a href="#mind-full" du-smooth-scroll="" duration="1000" du-scrollspy="" offset="100" class="">
 					<i class="fa fa-chevron-down" aria-hidden="true" ></i>
 				</a>
 			</div>
 
-		</div>
-		
+		</div>		
 
 		<div class="project-text ">
 			<div class="project-intro">
@@ -41,16 +23,16 @@
 		<div id="mind-full" class="project-text ">
 
 			<h3>Overview</h3>
-			<p>Mind-Full is an EEG-neurofeedback system to help kids ages 6-10 learn to self-regulate.</p>
+			<p>{{project.overview}}</p>
 
 			<h3>Team Members</h3>
-			<p>Alissa N. Antle, Perry Tan, Srilekha Kirsh Sridharan, Fan Lin, Emily Cramer</p>
+			<p>{{project.team}}</p>
 
 			<h3>Key Words</h3>
-			<p>NeuroSky EEG Headset, Unity Game Engine, Android Application Development, Sound</p>
+			<p>{{project.tags}}</p>
 
 			<h3>My Role</h3>
-			<p>Developer, Tester, Project Manager, Researcher (further details below)</p>
+			<p>{{project.role}}</p>
 
 		</div>
 
@@ -72,12 +54,12 @@
 		<h3>The Process</h3>
 		<h4>New context, new games</h4>
 		<p>I helped with developing new games</p>
-		<img src="img/mind-fullimg.png"><img src="img/squirrel.png"> <img src="img/bear.png">
-
+	<!-- 	<img src="img/mind-fullimg.png"><img src="img/squirrel.png"> <img src="img/bear.png">
+ -->
 		<h4>Running Studies</h4>
 		<p>I have run a controlled waitlist study using the system with 25 adults. I assisted with running a study with 28 children in the Burnaby School District. I am in the process of running a co-design study with children ages 8-9 at a school in Vancouver. </p>
-		<img src="img/mind-full.jpg">
-		<img src="img/IMG_5145.jpg">
+<!-- 		<img src="img/mind-full.jpg">
+		<img src="img/IMG_5145.jpg"> -->
 
 	</div>
 </div>
@@ -88,11 +70,18 @@
 		<img src="img/stanford.jpg">
 		<p>My research will contribute knowledge about the impact of audio feedback on children's (relaxed vs. anxious)brain states, the efficacy of audio in NF apps, and produce an enhanced NF system for use in future studies.Our research using Mind-Full is ongoing.  I hope to complete my co-design data collection by Feburary 2017. </p>
 		<p>I now feel comfortable working with neural data and have created more complex neurofeedback games using Open BCI hardware during the Brain Hack DC 2017</p>
-		<img src="img/brainhack.jpg">
-
-		<button class="cv-button"><a href="/##work">Back to Portfolio </a></button>
+		<!-- <img src="img/brainhack.jpg"> -->
+<button (click)="goBack()">go back</button>
 	</div>
 </div>
+
+
+
+
+
+
+
+
 
 
 

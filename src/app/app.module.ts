@@ -10,6 +10,7 @@ import { ProjectsComponent }      from './projects/projects.component';
 import { ProjectService }          from './project.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 
 import { AppRoutingModule }     from './app-routing.module';
@@ -19,7 +20,8 @@ import { AppRoutingModule }     from './app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+     Ng2PageScrollModule
   ],
   declarations: [
     AppComponent,

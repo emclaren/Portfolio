@@ -24,100 +24,25 @@
 </div>
 
 
+<section id="work">
+	<h2>Recent Work</h2>
 		<div id ="myId" #myId class="grid my-grid my-shuffle"> 
 			<figure  *ngFor="let project of projects" class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
-				<a ui-sref="work1">	
+			<a  routerLink="/detail/{{project.id}}">
+				
 					<div class="aspect aspect--9x80">
 						<div class="aspect__inner">
 							<div class="work-text">
 								<h3>{{project.name}}</h3>
 							</div>
-							<img src="https://pbs.twimg.com/profile_images/462337463709483008/x7ov71tq.jpeg" obj.alt="obj.alt"/>
+							<img src="{{project.thumbnail}}" obj.alt="obj.alt"/>
 						</div>
 					</div>
 				</a>
 			</figure>
+			</div>
 
-
-			<!-- </div> -->
-			<!-- 	
-
-			<figure class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
-					
-					<a ui-sref="work1 js-shuffle-sizer">	
-						
-						<div class="aspect aspect--9x80">
-							
-							<div class="aspect__inner">
-
-								<div class="work-text">
-
-									<h3>Project</h3>
-
-								</div>
-
-								<img src="https://pbs.twimg.com/profile_images/462337463709483008/x7ov71tq.jpeg" obj.alt="obj.alt"/>
-
-							</div>
-
-						</div>
-
-					</a>
-				</figure>
-				<figure class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
-					
-					<a ui-sref="work1 js-shuffle-sizer">	
-						
-						<div class="aspect aspect--9x80">
-							
-							<div class="aspect__inner">
-
-								<div class="work-text">
-
-									<h3>Project</h3>
-
-								</div>
-
-								<img src="https://pbs.twimg.com/profile_images/462337463709483008/x7ov71tq.jpeg" obj.alt="obj.alt"/>
-
-							</div>
-
-						</div>
-
-					</a>
-				</figure>
-<app-projects></app-projects> 
-			
- -->
-
-	<!-- 		
-
-
-			<!--
-		</div>
-	</div>
-</div>
-
--->
-
-
-
-
-
-
-
-<!-- <div class="js-item">
-</div> -->
-
-<!-- const shuffleInstance = new Shuffle(document.getElementById('grid'), {
-  itemSelector: '.js-item',
-  sizer: '.js-shuffle-sizer' -->
-
-  <!-- 
--->
-
-
-
+</section>
 
 
 <section id="about" class="about-content">
