@@ -28,7 +28,7 @@
 	<h2>Recent Work</h2>
 		<div id ="myId" #myId class="grid my-grid my-shuffle"> 
 			<figure  *ngFor="let project of projects" class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
-			<a  routerLink="/detail/{{project.id}}">
+			<a   routerLinkActive="active" routerLink="/detail/{{project.id}}">
 				
 					<div class="aspect aspect--9x80">
 						<div class="aspect__inner">

@@ -18,7 +18,6 @@ declare var System: any;
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: [ './dashboard.component.scss' ],
-  // animations: [fadeAnimation]
 })
 
 export class DashboardComponent implements OnInit {
@@ -33,13 +32,13 @@ export class DashboardComponent implements OnInit {
     console.log("Hi! Thanks for checking out my website. ");
     this.getProjects();
     // console.log(this.myId.nativeElement);
-    // console.log(p5);
+    // console.log(this.p5.draw);
    
 
         
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit() : void  {
     const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
 // console.log(p5.setup());
 // System.import('../../assets/p5.min.js').then(fileInstance => {
