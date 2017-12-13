@@ -1,19 +1,15 @@
 
-
-
-<h1> DASHBOARD STARTS</h1>
-
+<div class="wrapper">
 <div class="mainpage main" >
 	<section id="intro" >
 		<div class="flex" >
-			<!-- might need to add style100%-->
-			<div class="text-center" >
+			<div class="text-center header"  >
 				<p id="intro-text " class="text-center">MSc student in Interactive Arts + Technology.</p>
 				<p>Research interests: interaction design for kids, virtual reality, and sound</p>
 			</div>
 
 			<div class="text-center down-arrow">
-				<a href="#work" du-smooth-scroll="" duration="1000" du-scrollspy="" offset="60" class="">
+				<a href="#work" pageScroll [routerLink]="['']" >
 					<i class="fa fa-chevron-down" aria-hidden="true" ></i>
 				</a>
 
@@ -23,17 +19,17 @@
 	</section>
 </div>
 
-
-<section id="work">
-	<h2>Recent Work</h2>
-		<div id ="myId" #myId class="grid my-grid my-shuffle"> 
-			<figure  *ngFor="let project of projects" class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
+<section id="work" overflow-scroll="true">
+	<h2 overflow-scroll="true">Recent Work</h2>
+		<div id ="myId" #myId class="grid my-grid my-shuffle" overflow-scroll="true"> 
+			<figure   *ngFor="let project of projects"   class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
 			<a  routerLink="/detail/{{project.id}}">
 				
 					<div class="aspect aspect--9x80">
 						<div class="aspect__inner">
 							<div class="work-text">
-								<h3>{{project.name}}</h3>
+								
+								<h3>{{project.thumbname}}</h3>
 							</div>
 							<img src="{{project.thumbnail}}" obj.alt="obj.alt"/>
 						</div>
@@ -47,6 +43,7 @@
 
 <section id="about" class="about-content">
 	<div class="content" id="about-link">
+
 		<h2>CV</h2>
 		<div class="resume-container">
 			<h3>Education</h3>
@@ -58,10 +55,10 @@
 
 			<h3>Work Experience</h3>
 			<ul>
-				<li>Teaching Assistant</li>
+				<li>Teaching Assistant </li>
 				<li>Research Assistant</li>
-				<li>Web Developer</li>
-				<li>Cultural Program Administrator</li>
+				<li>Web Developer </li>
+
 				<li>Information Technology Assistant</li>
 			</ul>
 			<h3>Awards</h3>
@@ -70,8 +67,8 @@
 
 				<li>Womanium Neuroscience Scholar</li>
 				<li>GSS Professional Development Grant</li>
-				<li>SFU Travel Award x2 </li>
-				<li>SFU Grad Fellowship x2 </li>
+				<li>SFU Travel Award</li>
+				<li>SFU Grad Fellowship</li>
 				<li>Digital Humanities Scholarship</li>
 				<li>Banff Centre Interactive Tech Residency(waitlist)</li>
 				<li>Gino Martel Bursary</li>
@@ -164,7 +161,7 @@
 
 
 
-
+</div>
 
 
 

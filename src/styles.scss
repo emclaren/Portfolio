@@ -2,7 +2,7 @@
 @import"SCSS/reset";
 @import"SCSS/mixin";
 @import"SCSS/animations";
-@import"SCSS/project-pages";
+
 
 /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
@@ -12,6 +12,7 @@
 	box-sizing:border-box;
 }
 
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 
 
@@ -21,8 +22,8 @@ canvas {
 	top:0; 
 	left:0; 
 	z-index:3;
-
 }
+
 #p5container{ 
 	position:relative; 
 	z-index:6; 
@@ -48,7 +49,7 @@ h1, h2, h3{
 h2{
 	
 	font-size: 2rem;
-    margin: 2rem .75rem;
+    margin: 2rem 0;
 		@media screen and (min-width: $break-small) {
 			font-size:3rem;
 		}
@@ -77,6 +78,7 @@ header{
 	position:fixed;
 	z-index:100;
 	width:100%; 
+	top:0;
 	max-width:100%;
 	display:inline-block; 
 	text-transform:uppercase;
@@ -144,13 +146,6 @@ transition: color .5s ease;
 
 }
 
-#work{
-	// margin:.75rem 0;
-	@media screen and (min-width: $break-medium) {
-		width:80%;
-		margin:0 auto;
-	}
-}
 
 
 
@@ -213,100 +208,6 @@ transition: color .5s ease;
 
 
 
-#work{
-
-.aspect__inner {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-
-	// background-color:rgba;
-	transition: background-color .5s ease;
-	transition: width .5s ease;
-	transition: height .5s ease;
-	img{
-		transition: transform .5s ease;
-
-	
-}
-}
-.aspect__inner:hover {
-	cursor:pointer;
-
-	img{
-		transition: transform .5s ease;
-		-moz-transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-		border: 1px #242424 solid
-
-
-	}
-	.work-text{
-		// background-color:rgb(251, 91, 78);
-		color: rgb(251, 91, 78);
-		transition: color .5s ease;
-		transition: background-color .5s ease;
-
-	}
-}
-
-}
-
-.work-text{
-	position: absolute;
-	transition: color 1s ease;
-	transition: background-color .5s ease;
-	bottom: 0;
-	height: 20%;
-	padding:.5rem;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	z-index:20;
-	background-color:white;
-	width:100%;
-	text-align:center;
-	 // border: 1px solid #BDBDBD;
-	 border-top:none;
-
-
-	h3{
-		font-size:1rem;
-		padding-bottom: 2.25rem;
-	}
-
-
-}
-
-.aspect--16x9 {
-	padding-bottom: 56.25%;
-}
-
-.aspect--9x80 {
-	padding-bottom: calc(112.5% + 8px);
-}
-
-.aspect--32x9 {
-	padding-bottom: calc(28.125% - 3px);
-}
-
-img {
-	display: block;
-	width: 100%;
-
-	max-width: none;
-	height: 80%;
-	object-fit: cover;
-}
-
-
-
-
-
 .logo-heading{
 	font-size: 1rem;
 	@media screen and (min-width: $break-small) {
@@ -362,47 +263,6 @@ transition: color .5s ease;
 }
 
 
-
-//*** Introduction Styling ***/
-#intro{
-
-	// width:80%;
-	// max-width:700px;
-	margin:0 auto;
-	text-align:center;
-	height: 100vh;
-
-
-	p{
-		align-self: center; 
-		background-color:white;
-		margin:1rem 2rem;
-		// text-align: justify;
-		font-size: 1.25rem;
-		@media screen and (min-width: $break-medium) {
-
-			font-size: 1.1rem;
-
-		}
-
-	}
-	@media screen and (min-width: $break-medium) {
-		max-width: 60%;
-
-	}
-	.down-arrow{
-		position:absolute;
-		top:70vh;
-		// width:100%;
-		left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; 
-		width: 100px;
-
-	}
-
-}
 
 
 .block{
@@ -508,12 +368,14 @@ transition: color .5s ease;
 
 
 
+
+
+
+
+
+
 //*** Work Styling ***/
 #work {
-	// padding:4rem 0;
-	
-	
-
 	a{
 		color:#242424;
 	}
@@ -566,21 +428,6 @@ transition: color .5s ease;
 	}
 	@media screen and (min-width: $break-xsmall) {
 		padding-top:6rem;
-	}
-}
-#interests-text{
-	padding:0;
-
-	text-align: center;
-	// padding-top:30rem;
-	text-align:justify;
-	width:100%;
-	@media screen and (min-width: $break-xsmall) {
-		// padding-top:4rem;
-		margin-top:2rem;
-	}
-	@media screen and (min-width: $break-xsmall) {
-		// padding-top:6rem;
 	}
 }
 

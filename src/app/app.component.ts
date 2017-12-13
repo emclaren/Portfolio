@@ -9,13 +9,12 @@ import {PageScrollConfig} from 'ng2-page-scroll';
 
 export class AppComponent {
   title = 'Elgin-Skye McLaren';
-  // PageScrollConfig.defaultScrollOffset = 5000px;
-    // this.ngxScrollToEasing = 'easeOutElastic';
-
      constructor() {
+        PageScrollConfig.defaultInterruptible= false;
+       PageScrollConfig.defaultDuration= 1000;
         PageScrollConfig.defaultScrollOffset = 100;
         PageScrollConfig.defaultEasingLogic = {
-            ease: (t: number, b: number, c: number, d: number): number => {
+            ease:(t: number, b: number, c: number, d: number): number => {
                 // easeInOutExpo easing
                 if (t === 0) return b;
                 if (t === d) return b + c;
@@ -24,6 +23,22 @@ export class AppComponent {
             }
         };
     }
+
+  //   constructor(router: Router) {
+  //   router.events.subscribe(s => {
+  //     if (s instanceof NavigationEnd) {
+  //       const tree = router.parseUrl(router.url);
+  //       if (tree.fragment) {
+  //         // you can use DomAdapter
+  //         const element = document.querySelector("#" + tree.fragment);
+  //         if (element) { element.scrollIntoView(element); }
+  //       }
+  //     }
+  //   });
+  
+  // }  
 }
+
+
 
 
