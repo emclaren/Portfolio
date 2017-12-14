@@ -212,10 +212,11 @@ i{
     width: 95%;
     height:95%;
     margin: 0 auto;
-    border:white solid 3px;
+    border:white solid 2px;
     display:flex;
     align-items:center;
     justify-content:center;
+    text-transform:none;
 
 
   }
@@ -223,19 +224,12 @@ i{
 
 }
 
-
-.aspect--16x9 {
-  padding-bottom: 56.25%;
-}
-
 .aspect--9x80 {
-  // padding-bottom: calc(112.5% + 8px);
-  padding-bottom: calc(80% + 8px)
+
+  padding-bottom:  calc(80% + 8px)
 }
 
-.aspect--32x9 {
-  padding-bottom: calc(28.125% - 3px);
-}
+
 
 img {
   display: block;

@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
   	tags: 'NeuroSky EEG Headset, Unity Game Engine, Android Application Development, Sound',
   	role: 'Developer, Tester, Project Manager, Researcher (further details below)',
       
-  thumbnail:'/assets/img/tangibles-thumbnail.jpg'
+  thumbnail:'/assets/img/earthgazing-thumbnail.jpg'
 },
 { id: 5, 
   name: 'Virtual Earthgazing',

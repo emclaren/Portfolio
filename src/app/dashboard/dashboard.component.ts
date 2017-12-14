@@ -17,7 +17,6 @@ declare var System: any;
 // import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -36,13 +35,13 @@ export class DashboardComponent implements OnInit {
   ngOnInit() { 
     console.log("Oh hai there! ");
     this.getProjects();
-    
+       
 
 
   }
 
   ngAfterViewInit() {
-    const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
+ const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
 
  
   }
