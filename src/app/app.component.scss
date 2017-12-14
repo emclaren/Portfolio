@@ -1,0 +1,82 @@
+@import"../SCSS/mixin";
+
+header{
+	position:fixed;
+	z-index:100;
+	width:100%; 
+	top:0;
+	max-width:100%;
+	display:inline-block; 
+	text-transform:uppercase;
+	background-color:white;
+	font-family: Open Sans, sans-serif;
+	font-weight:bold;
+	max-width:100%;
+	justify-content:space-between;
+	align-items:center;
+
+}
+
+
+
+
+//NAVIGATION
+#header-link{
+	color:$font-color;
+
+}
+
+.grid2{
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+
+
+.menu{
+	margin:.5rem auto;
+	a{
+		margin:0 0 .5 0;
+transition: color .5s ease;
+		color:#242424;
+		text-decoration:none;
+		@media screen and (min-width: $break-medium) {
+			margin-left:1rem;
+		}
+		&:visited{
+			color:#242424;
+		}
+		&:hover{
+			color:rgb(251, 91, 78);
+			transition: color 0.5s ease;
+		}
+
+		li{
+			color: #ffffFf;
+			transition: color 0.3s ease;
+		}
+	}
+	@media screen and (min-width: $break-small) {
+		margin:1rem;
+	}
+}
+.menu:last-child{
+	a{
+		margin-right:0;
+	}
+}
+.nav-grid{
+	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+	@media screen and (min-width: $break-small) {
+		flex-wap:wrap;
+		width: auto;
+	}
+
+}
+
+
+
+

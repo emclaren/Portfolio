@@ -4,6 +4,7 @@ import { ProjectService } from '../project.service';
 import * as Shuffle from 'shufflejs';
 import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer } from '@angular/core';
 import {  ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 // import {Component} from '@angular/core';
 
 // import * as p5 from '../../assets/p5.min.js';
@@ -33,24 +34,16 @@ export class DashboardComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() { 
-    console.log("Hi! Thanks for checking out my website. ");
+    console.log("Oh hai there! ");
     this.getProjects();
-    // console.log(this.myId.nativeElement);
-    // console.log(p5);
-   
+    
 
-        
+
   }
 
   ngAfterViewInit() {
     const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
-// console.log(p5.setup());
-// System.import('../../assets/p5.min.js').then(fileInstance => {
-      
 
-//       // console.log("did this work?" + fileInstance);
-
-// });
  
   }
 
@@ -62,53 +55,6 @@ export class DashboardComponent implements OnInit {
 
 
 
-//  setup():void  {
-//   console.log ("I logged this in setup");
-// // var flock;
-// // var r;
-// //  cnv = createCanvas(windowWidth, windowHeight);
-// //  centerCanvas();
-// //  flock = new Flock();
-
-// //   // Add an initial set of boids into the system
-// //   for (var i = 0; i < 9; i++) {
-// //     var b = new Boid(5,1000);
-// //     flock.addBoid(b);
-
-// //   }
-// }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-//  setup() {
-//   console.log ("I logged this in setup");
-// // var flock;
-// // var r;
-// //  cnv = createCanvas(windowWidth, windowHeight);
-// //  centerCanvas();
-// //  flock = new Flock();
-
-// //   // Add an initial set of boids into the system
-// //   for (var i = 0; i < 9; i++) {
-// //     var b = new Boid(5,1000);
-// //     flock.addBoid(b);
-
-// //   }
-// }
 
 
 

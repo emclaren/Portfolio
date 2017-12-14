@@ -1,6 +1,16 @@
 import { Component } from '@angular/core';
 import {PageScrollConfig} from 'ng2-page-scroll';
 
+import {  OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
+import { Project }         from '../project';
+import { ProjectService }  from '../project.service';
+import { Router, NavigationEnd } from '@angular/router';
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +19,10 @@ import {PageScrollConfig} from 'ng2-page-scroll';
 
 export class AppComponent {
   title = 'Elgin-Skye McLaren';
-     constructor() {
+     constructor( private route: ActivatedRoute,
+
+    private location: Location,
+    private router: Router) {
         PageScrollConfig.defaultInterruptible= false;
        PageScrollConfig.defaultDuration= 1000;
         PageScrollConfig.defaultScrollOffset = 100;
@@ -24,19 +37,21 @@ export class AppComponent {
         };
     }
 
-  //   constructor(router: Router) {
-  //   router.events.subscribe(s => {
-  //     if (s instanceof NavigationEnd) {
-  //       const tree = router.parseUrl(router.url);
-  //       if (tree.fragment) {
-  //         // you can use DomAdapter
-  //         const element = document.querySelector("#" + tree.fragment);
-  //         if (element) { element.scrollIntoView(element); }
-  //       }
-  //     }
-  //   });
-  
-  // }  
+
+
+  ngOnInit(): void {
+
+    this.router.events.subscribe((evt) => {
+        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+
+        // document.body.scrollTop = 0;
+    });
+
+
+
+  }
+
+
 }
 
 

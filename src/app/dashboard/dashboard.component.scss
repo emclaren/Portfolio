@@ -3,10 +3,23 @@
   width:100%;
 }
 
+
+@font-face {
+  font-family: "Custom Font";
+  src: url("/assets/fonts/ionicons.woff") format("woff")
+}
+
+
 .wrapper{
   max-width:1250px;
   margin: 0 auto;
 }
+
+i{
+  font-family:  "Ionicons";
+  src: url("/assets/fonts/ionicons.woff") format("woff");
+}
+
 
 
 //////////////////////*** Introduction Styling ***///////////////////////////
@@ -16,34 +29,27 @@
   height: 100vh;
   max-height:1250px;
 
-
+  a{
+    text-decoration:none;
+  }
   p{
     align-self: center; 
     background-color:white;
-    margin:1rem 2rem;
-    // text-align: justify;
+    margin:1rem 0;
     font-size: 1.25rem;
+    padding:0;
     @media screen and (min-width: $break-medium) {
-
       font-size: 1.1rem;
-
     }
-
   }
   @media screen and (min-width: $break-medium) {
     max-width: 60%;
-
   }
   .down-arrow{
     position:absolute;
-    top:70vh;
-    // width:100%;
+    top:80vh;
     left: 0; 
     right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 100px;
-
   }
 
 }
@@ -110,7 +116,7 @@
 }
 .container-width2{
   width:90%;
-    margin:0 auto;
+  margin:0 auto;
 }
 
 .portfolio-card{
@@ -202,12 +208,11 @@
   h3{
     font-size:1.5rem;
     font-family: Roboto, Open Sans, sans-serif;
-    // padding-bottom: 2.25rem;
+    padding: .25rem 0;
     width: 95%;
     height:95%;
     margin: 0 auto;
     border:white solid 3px;
-    // border-bottom:white solid 3px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -350,4 +355,89 @@ img {
       font-weight: 700;
       width: 100%;
       text-align: center; 
+    }
+
+
+
+
+
+    //Contact Section
+
+    #contact{
+      // background-color:rgb(255,255,255);
+      // height:900px;
+      color: #242424;
+      z-index:800;
+
+      h2{
+        color:#242424;
+        // font-size:2rem;
+        margin:3rem 1rem,;
+      }
+    }
+
+
+
+
+    //***Contact Styling ***/
+
+    .contact-card{
+
+
+      z-index:500;
+
+      margin:0 auto;
+      padding:2rem 0;
+      height: 90vh;
+      @media screen and (min-width: $break-medium) {
+        height:85vh;
+        width:80%;
+      }
+
+    }
+    .contact-container{
+      height:60%
+    }
+
+
+
+    .contact-list{
+      width:100%;
+
+      display: flex;
+      flex-direction:column;
+      list-style: none; 
+      padding:1rem 0 4rem 0;
+      @media screen and (min-width: $break-medium) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+
+      li{
+        // font-size: 1.8rem;
+        padding:.8rem;
+        text-align:center;
+        display:inline-block;
+      }
+      a{
+        color: #242424;
+        border-bottom:1px solid white;
+        text-decoration:none;
+        font-size:1.3rem;
+        transition: color .5s ease;
+        &:hover{
+          transition: color 0.5s ease;
+          color: rgb(251, 91, 78);
+        }
+      }
+
+    }
+
+
+
+
+
+    article a{
+      text-decoration:none;
     }

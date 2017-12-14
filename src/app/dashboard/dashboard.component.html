@@ -1,30 +1,33 @@
 
 <div class="wrapper">
-<div class="mainpage main" >
-	<section id="intro" >
-		<div class="flex" >
-			<div class="text-center header"  >
-				<p id="intro-text " class="text-center">MSc student in Interactive Arts + Technology.</p>
-				<p>Research interests: interaction design for kids, virtual reality, and sound</p>
+	<div class="mainpage main" >
+		<section id="intro" >
+			<div class="flex" >
+				<div class="header"  >
+					<p id="intro-text">
+					MSc student in Interactive Arts + Technology.
+					</p>
+					<p>
+					Research interests: interaction design for kids, virtual reality, and sound
+					</p>
+				</div>
+
+				<div class="down-arrow">
+					<a href="#work" pageScroll [routerLink]="['']" >
+						<i class="icon ion-chevron-down"></i>
+					</a>
+				</div>
 			</div>
 
-			<div class="text-center down-arrow">
-				<a href="#work" pageScroll [routerLink]="['']" >
-					<i class="fa fa-chevron-down" aria-hidden="true" ></i>
-				</a>
+		</section>
+	</div>
 
-			</div>
-		</div>
-
-	</section>
-</div>
-
-<section id="work" overflow-scroll="true">
-	<h2 overflow-scroll="true">Recent Work</h2>
-		<div id ="myId" #myId class="grid my-grid my-shuffle" overflow-scroll="true"> 
+	<section id="work" >
+	<h2 >Work</h2>
+		<div id ="myId" #myId class="grid my-grid my-shuffle" > 
 			<figure   *ngFor="let project of projects"   class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
-			<a  routerLink="/detail/{{project.id}}">
-				
+				<a  routerLink="/detail/{{project.id}}">
+
 					<div class="aspect aspect--9x80">
 						<div class="aspect__inner">
 							<div class="work-text">
@@ -36,106 +39,101 @@
 					</div>
 				</a>
 			</figure>
+		</div>
+
+	</section>
+
+
+	<section id="about" class="about-content">
+		<div class="content" id="about-link">
+
+			<h2>CV</h2>
+			<div class="resume-container">
+				<h3>Education</h3>
+				<ul>
+					<li>MSc - Interactive Arts & Technology</li>
+					<li>Certificate - Web Development </li>
+					<li>BComm - Economics</li>
+				</ul>
+
+				<h3>Work Experience</h3>
+				<ul>
+					<li>Teaching Assistant - Simon Fraser University</li>
+					<li>Research Assistant - Simon Fraser University </li>
+					<li>Web Developer - Telus </li>
+
+					<li>Information Technology Assistant - Concordia University</li>
+				</ul>
+
+				<h3>Volunteer Activities</h3>
+				<ul>
+					<li>Node School - Robotics Mentor</li>
+					<li>Women Who Code Vancouver - Founder</li>
+					<li>Canada Learning Code - Mentor</li>
+					<li>Rock Camp for Girls - Band Coach</li>
+				</ul>
+
+				<h3>Talks/Panel Presentations</h3> 
+				<ul>
+					<li>"Open Source Neurofeedback" DataViz DC presentation</li>
+					<li>"Badass Coders Owning The Field" Red Academy panel discussion</li>
+					<li>"SIAT Graduate Research" TechTeam SFU presentation</li>
+					<li>"The effectiveness of neurofeedback for queing vigilence" SIAT Research Colliquium</li>
+					<li>"Mad MaxMSP: an intro to audio programming" Code and Coffee meetup Presentation</li>
+				</ul>
+				<h3>Workshop Participant</h3>
+				<ul>
+					<li>"Analyzing Children’s Contributions in Co-design" 
+						Interaction Design and Children Conference
+						Stanford University. 
+					</li>
+					<li>
+						"Palpability and Wearable Computing," 
+						Digital Humanities Summer Institute University of Victoria. 
+					</li>
+					<li>
+						"Neurofeedback in Virtual Reality," 
+						Emerging Media Lab University of British Columbia 
+					</li>
+				</ul>
+				<h3>Awards</h3>
+				<ul>
+
+					<li>Womanium Neuroscience Scholar</li>
+					<li>GSS Professional Development Grant</li>
+					<li>SFU Travel Award</li>
+					<li>SFU Grad Fellowship</li>
+					<li>Digital Humanities Scholarship</li>
+					<li>Banff Centre Interactive Tech Residency(waitlist)</li>
+					<li>Gino Martel Bursary</li>
+					<li>Jack Birmingham Memorial Bursary </li>
+					<li>Provincial Scholarship </li>
+					<li>Colleen Deakin Memorial Award</li>
+				</ul>
+				<h3>Publications</h3>
+				<ul>
+					<li>Opening up the design space of neurofeedback brain-computer interfaces for children: Five strong concepts. ACM Transactions on Computer-Human Interaction. With: Antle, A.N., Chesick, L. (in press) 
+					</li>
+					<li> Exploring and evaluating sound for helping children self-regulate with a brain-computer application. In Proceedings of the International Conference on Interaction Design and Children (IDC’17) 
+						With  Antle, A.N. (2017) 
+					</li>
+					<li>Time to relax: No effects to the stress response after short-term use of a brain-computer interface. In Proceedings of the Graz Brain-Computer Interface Conference (GBCIC’17)
+						With Cole, A.W.*, Riecke, B., Antle, A.N.
+					</li>
+					<li> The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. 
+						With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
+					</li>
+					<li> BLOCK TALKS PAPER The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. Accepted June 21 10, 2017.
+						With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
+					</li>
+					<li>OTHER ANTLE PAPER The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. Accepted June 21 10, 2017.
+						With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
+					</li>
+				</ul>
+				<button class="cv-button"><a href="https://drive.google.com/file/d/0ByMTFQFczLjfcXNXajh3NzNQVm8/view?usp=sharing" target="_blank">Download CV</a></button> 
 			</div>
-
-</section>
-
-
-<section id="about" class="about-content">
-	<div class="content" id="about-link">
-
-		<h2>CV</h2>
-		<div class="resume-container">
-			<h3>Education</h3>
-			<ul>
-				<li>MSc Interactive Arts & Technology</li>
-				<li>Web Development Certificate</li>
-				<li>BComm Economics</li>
-			</ul>
-
-			<h3>Work Experience</h3>
-			<ul>
-				<li>Teaching Assistant </li>
-				<li>Research Assistant</li>
-				<li>Web Developer </li>
-
-				<li>Information Technology Assistant</li>
-			</ul>
-			<h3>Awards</h3>
-
-			<ul>
-
-				<li>Womanium Neuroscience Scholar</li>
-				<li>GSS Professional Development Grant</li>
-				<li>SFU Travel Award</li>
-				<li>SFU Grad Fellowship</li>
-				<li>Digital Humanities Scholarship</li>
-				<li>Banff Centre Interactive Tech Residency(waitlist)</li>
-				<li>Gino Martel Bursary</li>
-				<li>Jack Birmingham Memorial Bursary </li>
-				<li>Provincial Scholarship </li>
-				<li>Colleen Deakin Memorial Award</li>
-			</ul>
-
-			<h3>Workshops Attended</h3>
-			<ul>
-				<li>"Analyzing Children’s Contributions in Co-design" 
-					Interaction Design and Children Conference
-					Stanford University. 
-				</li>
-				<li>
-					"Palpability and Wearable Computing," 
-					Digital Humanities Summer Institute University of Victoria. 
-				</li>
-				<li>
-					"Neurofeedback in Virtual Reality," 
-					Digital Humanities Summer Institute University of Victoria. 
-				</li>
-				<li>
-					"Information Architecture," 
-					Digital Humanities Summer Institute University of Victoria. 
-				</li>
-			</ul>
-			<h3>Volunteer Activities</h3>
-			<ul>
-				<li>Node School Vancouver - Robotics Mentor</li>
-				<li>Women Who Code Vancouver - Founder</li>
-				<li>Canada Learning Code - Mentor</li>
-				<li>Rock Camp for Girls - Band Coach</li>
-			</ul>
-
-			<h3>Talks/Panel Presentations</h3> 
-			<ul>
-				<li>"Open Source Hardware for EEG Visualization" DataViz DC</li>
-				<li>"Badass Coders Owning The Field" Panel Discussion</li>
-				<li>"What is Graduate Studies" Presentation for SIAT TechTeam Undergrads</li>
-				<li>"The effectiveness of neurofeedback for queing vigilence" Presentation for Research Colliquium </li>
-				<li>"Mad MaxMSP, an intro to audio programming" Code and Coffee Tech meetup</li>
-			</ul>
-			<h3>Publications</h3>
-			<ul>
-				<li>Opening up the design space of neurofeedback brain-computer interfaces for children: Five strong concepts. ACM Transactions on Computer-Human Interaction. With: Antle, A.N., Chesick, L. (in press) 
-				</li>
-				<li> Exploring and evaluating sound for helping children self-regulate with a brain-computer application. In Proceedings of the International Conference on Interaction Design and Children (IDC’17) 
-					With  Antle, A.N. (2017) 
-				</li>
-				<li>Time to relax: No effects to the stress response after short-term use of a brain-computer interface. In Proceedings of the Graz Brain-Computer Interface Conference (GBCIC’17)
-					With Cole, A.W.*, Riecke, B., Antle, A.N.
-				</li>
-				<li> The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. 
-					With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
-				</li>
-				<li> BLOCK TALKS PAPER The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. Accepted June 21 10, 2017.
-					With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
-				</li>
-				<li>OTHER ANTLE PAPER The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. In Proceedings of the Society for Neuroscience Annual Meeting. Accepted June 21 10, 2017.
-					With Antle, A.N., Chesick, L., and McLaren, E.-S.* (in press)
-				</li>
-			</ul>
-			<button class="cv-button"><a href="https://drive.google.com/file/d/0ByMTFQFczLjfcXNXajh3NzNQVm8/view?usp=sharing" target="_blank">Download CV</a></button> 
 		</div>
-	</div>
-</section>
+	</section>
 
 
 
@@ -144,20 +142,20 @@
 
 
 
-<section id="contact" class="about-content">
+	<section id="contact" class="about-content">
 
-	<div class="contact-card" id="contact-link" >
-		<h2>Say hello...</h2>
-		<div class="contact-container">
-			<ul class="contact-list" >
-				<li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
-				<li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
-				<li><a href="https://github.com/emclaren" target="_blank">github</a></li>
-				<li><a href="mailto:emclaren@sfu.ca">email</a></li>
-			</ul>
+		<div class="contact-card" id="contact-link" >
+			<h2>Say hello...</h2>
+			<div class="contact-container">
+				<ul class="contact-list" >
+					<li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
+					<li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
+					<li><a href="https://github.com/emclaren" target="_blank">github</a></li>
+					<li><a href="mailto:emclaren@sfu.ca">email</a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 
 

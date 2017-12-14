@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
 },
 { id: 2, 
 	name: 'Block Talks', 
-  thumbname: 'A.R. Literacy',
+  thumbname: 'A.R. for Literacy',
   class: 'block-talks',
 	summary:'In 2016 I joined a team working to improve educational outcomes for kids with anxiety and attentional challenges.',
 	overview: 'Block Talks is an EEG-neurofeedback system to help kids ages 6-10 learn to self-regulate.',

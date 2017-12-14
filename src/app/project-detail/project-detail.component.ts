@@ -1,4 +1,6 @@
 
+
+
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -32,7 +34,8 @@ export class ProjectDetailComponent implements OnInit {
         if (!(evt instanceof NavigationEnd)) {
             return;
         }
-        document.body.scrollTop = 0;
+        // document.body.scrollTop = 0;
+        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
     });
 
 
@@ -48,6 +51,8 @@ export class ProjectDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+
 
 }
 
