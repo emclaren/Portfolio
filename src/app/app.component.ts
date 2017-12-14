@@ -23,7 +23,23 @@ export class AppComponent {
 
     private location: Location,
     private router: Router) {
-        PageScrollConfig.defaultInterruptible= false;
+
+    }
+
+
+
+  ngOnInit(): void {
+
+
+    this.router.events.subscribe((evt) => {
+        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        
+
+        // document.body.scrollTop = 0;
+    });
+
+
+            PageScrollConfig.defaultInterruptible= false;
        PageScrollConfig.defaultDuration= 1000;
         PageScrollConfig.defaultScrollOffset = 100;
         PageScrollConfig.defaultEasingLogic = {
@@ -35,19 +51,6 @@ export class AppComponent {
                 return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
             }
         };
-    }
-
-
-
-  ngOnInit(): void {
-
-    this.router.events.subscribe((evt) => {
-        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-
-        // document.body.scrollTop = 0;
-    });
-
-
 
   }
 
