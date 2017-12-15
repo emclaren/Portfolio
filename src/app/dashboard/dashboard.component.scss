@@ -58,6 +58,25 @@ i{
 
 
 
+    #intro a{
+      font-size: 1.25rem;
+      color: #242424;
+      transition: color .5s ease;
+      &:hover{
+        transition: color 0.5s ease;
+        color: rgb(251, 91, 78);
+      }
+    }
+
+
+
+    .fa-chevron-down{
+    background-color: white; 
+    }   
+    .text-center{
+      text-align:center;
+    }
+
 
 
 
@@ -206,20 +225,26 @@ i{
 
 
   h3{
-    font-size:1.5rem;
+    font-size:1.25rem;
+    font-weight:normal;
     font-family: Roboto, Open Sans, sans-serif;
     padding: .25rem 0;
-    width: 95%;
-    height:95%;
-    margin: 0 auto;
-    border:white solid 2px;
+   // With just underline
+   // text-decoration:underline;
+
+   // Delete the width hight border for just underline
+    // width: 95%;
+    // height:95%;
+ 
+    // border:white solid 2px;
+       margin: 0 auto;
     display:flex;
     align-items:center;
     justify-content:center;
     text-transform:none;
 
-
   }
+
 
 
 }
@@ -238,15 +263,6 @@ img {
   object-fit: cover;
   height:100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,6 +368,177 @@ img {
     }
 
 
+
+
+
+
+
+
+
+
+// About section styling
+
+
+
+    button{
+      border: solid 2px #242424;
+      background-color:transparent;
+      border-radius:0;
+      height:50px;
+      font-size: 1.5rem;
+      font-weight:bold;
+      width:100%;
+      a{
+        color: #242424;
+        text-decoration:none;
+        &:visited{
+          color: #242424;
+        }
+      }
+    }
+
+    
+
+
+
+    .about-content{
+      .content{
+        
+        background-color:rgba(255,255,255, .5);
+        @media screen and (min-width: $break-medium) {
+          width: 80%;
+          // padding:4rem 0;
+          margin: 4rem auto 4rem auto;
+        }
+      }
+      .resume-container{
+        margin: 0 1rem;
+        @media screen and (min-width: $break-medium) {
+          width: 70%;
+          margin:0 auto;
+        }
+      }
+      p{
+        padding:1rem
+      }
+    }
+
+
+
+
+
+
+.wrap {
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  -moz-transition: -moz-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  width: 100px;
+}
+
+.crop {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -moz-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -ms-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  -o-transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+  transform: skew(20deg, 20deg) translate3d(0, 0, 0);
+}
+
+.crop img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: -75%;
+  margin-top: 36px;
+  margin-left: 36px;
+  top: -70%;
+  -webkit-transform: skew(-20deg, -20deg) rotate(-45deg);
+  -moz-transform: skew(-20deg, -20deg) rotate(-45deg);
+  -ms-transform: skew(-20deg, -20deg) rotate(-45deg);
+  -o-transform: skew(-20deg, -20deg) rotate(-45deg);
+  transform: skew(-20deg, -20deg) rotate(-45deg);
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+
+
+.wrap:nth-child(even) {
+  width: 40px;
+  -webkit-transform: rotate(225deg) translate3d(30px, 120px, 0);
+  -moz-transform: rotate(225deg) translate3d(30px, 120px, 0);
+  -ms-transform: rotate(225deg) translate3d(30px, 120px, 0);
+  -o-transform: rotate(225deg) translate3d(30px, 120px, 0);
+  transform: rotate(225deg) translate3d(30px, 120px, 0);
+}
+
+.wrap:nth-child(even) .crop img {
+  -webkit-transform: skew(-20deg, -20deg) rotate(-225deg);
+  -moz-transform: skew(-20deg, -20deg) rotate(-225deg);
+  -ms-transform: skew(-20deg, -20deg) rotate(-225deg);
+  -o-transform: skew(-20deg, -20deg) rotate(-225deg);
+  transform: skew(-20deg, -20deg) rotate(-225deg);
+}
+
+.triangle-container{
+  width:500px; 
+  margin:100px auto 0;
+}
+.main-triangle-image{
+  opacity:1 !important;
+}
+    #about{
+    
+  
+      li{
+        margin: .5rem 0;
+      }
+      ul{
+        margin: .5rem 2rem 2rem 2rem;
+      }
+
+
+    }
+    .cv-button{
+      margin: 2rem 0;
+      color: #242424;
+      transition: background-color .5s ease; 
+      background-color:#ffffFf;
+      
+      a{
+        color:#242424;
+        transition: color .5s ease;
+      
+      }
+      &:hover{
+        cursor:pointer;
+        background-color: rgb(251, 91, 78);
+        transition: background-color .5s ease; 
+        a{
+          color:#FFFFFF;
+          transition: color .5s ease;
+        }
+      }
+    }
+    .profile-pic{
+      width:15%;
+    }
+    .profile-summary{
+      width:85%
+    }
 
 
 

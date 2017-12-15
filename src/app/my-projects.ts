@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
 	team: 'Alissa N. Antle, Perry Tan, Srilekha Kirsh Sridharan, Fan Lin, Emily Cramer',
 	tags: 'NeuroSky EEG Headset, Unity Game Engine, Android Application Development, Sound',
 	role: 'Developer, Tester, Project Manager, Researcher (further details below)',
-  thumbnail:'/assets/img/mind-full-thumbnail.jpg'
+  thumbnail:'/assets/img/mind-full-thumbnail-min.jpg'
 },
 { id: 2, 
 	name: 'Block Talks', 
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
   team: 'Block talksrry Tan, Srilekha Kirsh Sridharan, Fan Lin, Emily Cramer',
   tags: 'block talks, Unity Game Engine, Android Application Development, Sound',
   role: 'Dblocktalkser, Tester, Project Manager, Researcher (further details below)',  
-  thumbnail:'/assets/img/block-talks-thumbnail.jpg'
+  thumbnail:'/assets/img/block-talks-thumbnail-min.jpg'
 },
 { id: 3, 
   
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   challenge: 'Challenge',
   process: 'next steps',
   
-  thumbnail:'/assets/img/audio-matic-thumbnail.jpg'
+  thumbnail:'/assets/img/audio-matic-thumbnail-min.jpg'
 },
 { id: 4, 
   name: 'Tangible Audio', 
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
   	tags: 'NeuroSky EEG Headset, Unity Game Engine, Android Application Development, Sound',
   	role: 'Developer, Tester, Project Manager, Researcher (further details below)',
       
-  thumbnail:'/assets/img/earthgazing-thumbnail.jpg'
+  thumbnail:'/assets/img/tangibles-thumbnail-min.jpg'
 },
 { id: 5, 
   name: 'Virtual Earthgazing',
@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
   	tags: 'NeuroSky EEG Headset, Unity Game Engine, Android Application Development, Sound',
   	role: 'Developer, Tester, Project Manager, Researcher (further details below)',
     
-  thumbnail:'assets/img/asking-for-a-friend-thumbnail.jpg'
+  thumbnail:'assets/img/asking-for-a-friend-thumbnail-min.jpg'
 
 }
 
