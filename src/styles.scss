@@ -48,8 +48,8 @@ h1, h2, h3{
 }
 h2{
 	
-	font-size: 2rem;
-    margin: 2rem 0;
+	font-size: 1.75rem;
+    margin: 2rem 0 1rem 0;
 		@media screen and (min-width: $break-small) {
 			font-size:3rem;
 		}
@@ -62,7 +62,12 @@ h2{
 
 	h3{
 		font-size:1.5rem;
-		padding-bottom:.25rem
+			padding: .5rem 0;
+		 	@media screen and (min-width: $break-medium) {
+			padding-bottom:0 0 .25rem 0
+		}
+
+		
 	}
 
 
@@ -233,83 +238,6 @@ transition: color .5s ease;
 
 
 
-
-
-		button{
-			border: solid 2px #242424;
-			background-color:transparent;
-			border-radius:0;
-			height:50px;
-			font-size: 1.5rem;
-			font-weight:bold;
-			width:100%;
-			a{
-				color: #242424;
-				text-decoration:none;
-				&:visited{
-					color: #242424;
-				}
-			}
-		}
-
-		
-
-
-
-		.about-content{
-			.content{
-				
-				background-color:rgba(255,255,255, .5);
-				@media screen and (min-width: $break-medium) {
-					width: 80%;
-					// padding:4rem 0;
-					margin: 4rem auto 4rem auto;
-				}
-			}
-			.resume-container{
-				margin: 0 1rem;
-				@media screen and (min-width: $break-medium) {
-					width: 65%;
-					margin:0 auto;
-				}
-			}
-		}
-
-
-
-		#about{
-		
-	
-			li{
-				margin: .5rem 0;
-			}
-			ul{
-				margin: .5rem 2rem 2rem 2rem;
-			}
-
-
-		}
-		.cv-button{
-			margin: 2rem 0;
-			color: #242424;
-			transition: background-color .5s ease; 
-			background-color:#ffffFf;
-			
-			a{
-				color:#242424;
-				transition: color .5s ease;
-			
-			}
-			&:hover{
-				cursor:pointer;
-				background-color: rgb(251, 91, 78);
-				transition: background-color .5s ease; 
-				a{
-					color:#FFFFFF;
-					transition: color .5s ease;
-				}
-			}
-		}
 
 
 
