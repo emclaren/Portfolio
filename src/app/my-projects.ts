@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
   name: 'Virtual Earthgazing',
    thumbname: 'V.R. Earthgazing',
    class: 'earthgazing',
-     thumbnail:'assets/img/earthgazing-thumbnail.jpg',
+     thumbnail:'assets/img/earthgazing-thumbnail-min.jpg',
   	summary:'In fall 2017 I collaborated with researcher from the iSpace lab to study the power of VR to make people feel more connected to the earth.',
   	overview: 'Virtual Earthgazing is a project investigating the potential of VR to enable individuals to experience the overview effect, the awe-inspiring experience of seeing Earth from space resulting in a heightened awareness of the planet.',
   	team: 'Worked with with SIAT\'s iSpace lab ( Bernard Riecke, Katerina Stepanova, Denise Quesnel, Alex Kitson, Mirjana Prpa, Ivan Aguilar',
