@@ -33,7 +33,7 @@ export class DashboardComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() { 
-    console.log("Oh hai there! ");
+    console.log("Hi, thanks for checking out my code. 😜😜😜");
     this.getProjects();
        
 
@@ -52,14 +52,7 @@ export class DashboardComponent implements OnInit {
   }
 
 
-
-
-
-
-
-
-
-
+}
 
 
 

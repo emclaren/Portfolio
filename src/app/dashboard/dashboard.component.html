@@ -22,11 +22,13 @@
 		</section>
 	</div>
 
+
 	<section id="work" >
 		<h2 >Work</h2>
 
+			
 		<div id ="myId" #myId class="grid my-grid my-shuffle" > 
-			<figure   *ngFor="let project of projects"   class="col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span">
+			<figure   *ngFor="let project of projects"   class=" col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span no-gutters ">
 				<a  routerLink="/detail/{{project.id}}">
 
 					<div class="aspect aspect--9x80">
@@ -49,35 +51,40 @@
 	<section id="about" class="about-content">
 		<div class="content" id="about-link">
 
+	
 			<h2>About</h2>
 			
 
 
 
 			<div class="resume-container">
-			<p>Hi! I'm a Vancouver-based tech-nerd. At work, you will find me coding in Node/C#/r, designing studies, and drinking too much coffee.</p>
+			<div class="about-me">
+			<p>Hi! I'm a Vancouver-based tech-nerd. At work, you will find me programming in Node, C#, or R, designing studies, and drinking *too much* coffee ☕.</p>
 
-			<p>I spend my weekends upping my dev game, doing all-night hackathons, prototyping ideas and teaching strangers the joy of if/else statements. I also rollerskate</p>
+			<p>I spend my weekends upping my dev game, doing all-night hackathons, prototyping ideas and teaching others the joys of if/else statements. Sometimes, I do yoga.</p>
 
-	
+	</div>
 
 			<div class="triangle-container">
 	
-		
+
 			<div class='wrap triangle-outer'>
 				<div class='crop'>
-					<img src='/assets/img/img10.JPG'>
+				<img src='/assets/img/stock.jpg'>
+					
 				</div>
 			</div>
 			<div class='wrap  triangle-inner'>
 				<div class='crop'>
-						<img  src='/assets/img/img10.JPG'>
+				<img src='/assets/img/stock.jpg'>
+						
 				</div>
 			</div>
 		
 		<div class='wrap '>
 				<div class='crop'>
-						<img class="main-triangle-image" src='/assets/img/img11.JPG'>
+						<img src='/assets/img/stock.jpg'>
+						<!-- <img class="main-triangle-image" src='/assets/img/img11-small.jpg'> -->
 				</div>
 			</div> 
 	
@@ -86,17 +93,53 @@
 
 			<div class='wrap triangle-inner'>
 				<div class='crop'>
-						<img src='/assets/img/img10.JPG'>
+						<img  src='/assets/img/stock.jpg'>
 				</div>
 			</div>
 			
 			<div class='wrap triangle-outer'>
 				<div class='crop'>
-						<img src='/assets/img/img10.JPG'>
+						<img src='/assets/img/stock.jpg'>
 				</div>
 			</div>
 
- 		</div>
+</div>
+		<!-- 
+			<div class='wrap triangle-outer'>
+				<div class='crop'>
+				<img src='/assets/img/img2.JPG'>
+					
+				</div>
+			</div>
+			<div class='wrap  triangle-inner'>
+				<div class='crop'>
+				<img src='/assets/img/img10.JPG'>
+						
+				</div>
+			</div>
+		
+		<div class='wrap '>
+				<div class='crop'>
+						<img class="main-triangle-image" src='/assets/img/img11-small.jpg'>
+				</div>
+			</div> 
+	
+
+		
+
+			<div class='wrap triangle-inner'>
+				<div class='crop'>
+						<img  src='/assets/img/img9.JPG'>
+				</div>
+			</div>
+			
+			<div class='wrap triangle-outer'>
+				<div class='crop'>
+						<img src='/assets/img/insta-pic2.jpg'>
+				</div>
+			</div> -->
+
+ 		
 		
 			
 
@@ -107,15 +150,15 @@
 					<li>BComm - Economics</li>
 				</ul>
 
-				<h3>Work Experience</h3>
+				<h3>Experience</h3>
 				<ul>
 					<li>Teaching Assistant - Simon Fraser University</li>
 					<li>Research Assistant - Simon Fraser University </li>
-					<li>Web Developer - Telus Digital Labs</li>
+					<li>Web Developer - Telus Digital</li>
 					<li>IT Assistant - Concordia University</li>
 				</ul>
 
-				<h3>Volunteer Activities</h3>
+				<h3>Volunteer</h3>
 				<ul>
 					<li>Node School - Robotics Mentor</li>
 					<li>Women Who Code Vancouver - Founder</li>
@@ -177,7 +220,8 @@
 					</li>
 
 				</ul>
-				<button class="cv-button"><a href="https://drive.google.com/file/d/13fLSBdgivJ3LuUnVRm3aryKmBxnu1-Bx/view?usp=sharing" target="_blank">Download Full CV</a></button> 
+				<a href="https://drive.google.com/file/d/13fLSBdgivJ3LuUnVRm3aryKmBxnu1-Bx/view?usp=sharing" target="_blank">
+				<button class="cv-button">Download Full CV</button> </a>
 </div>
 </div>
 	</section>

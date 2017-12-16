@@ -41,14 +41,14 @@ header{
 transition: color .5s ease;
 		color:#242424;
 		text-decoration:none;
-		@media screen and (min-width: $break-medium) {
+		@media screen and (min-width: $break-small) {
 			margin-left:1rem;
 		}
 		&:visited{
 			color:#242424;
 		}
 		&:hover{
-			color:rgb(251, 91, 78);
+			color:$font-accent;
 			transition: color 0.5s ease;
 		}
 
@@ -56,9 +56,10 @@ transition: color .5s ease;
 			color: #ffffFf;
 			transition: color 0.3s ease;
 		}
+	
 	}
 	@media screen and (min-width: $break-small) {
-		margin:1rem;
+		margin:.75rem;
 	}
 }
 .menu:last-child{

@@ -5,8 +5,8 @@ import {  OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Project }         from '../project';
-import { ProjectService }  from '../project.service';
+// import { Project }         from '../project';
+// import { ProjectService }  from '../project.service';
 import { Router, NavigationEnd } from '@angular/router';
 
 
@@ -20,7 +20,6 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent {
   title = 'Elgin-Skye McLaren';
      constructor( private route: ActivatedRoute,
-
     private location: Location,
     private router: Router) {
 
@@ -33,7 +32,7 @@ export class AppComponent {
 
     this.router.events.subscribe((evt) => {
         window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        
+
 
         // document.body.scrollTop = 0;
     });

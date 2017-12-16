@@ -1,3 +1,5 @@
+@import"../../SCSS/mixin";
+
 i{
   font-family:  "Ionicons";
   src: url("/assets/fonts/ionicons.woff") format("woff");
@@ -16,7 +18,7 @@ i{
 
 	}
 	h3{
-		margin:4rem auto 1rem auto;
+		margin:1.5em auto 0 auto;
 		font-size:1.1rem;
 
 	}
@@ -24,11 +26,18 @@ i{
 		font-size:2rem;
 		font-family:Open sans;
 		font-style: italic;
-		color: navy;
+		color: $font-accent;
 	
 	}
 	a, a:visited{
 		color:white;
+		transition:color .5s ease;
+	}
+	a:hover{
+		color:$font-accent;
+		transition:color .5s ease;
+		cursor:pointer;
+
 	}
 .down-arrow{
     position:absolute;
@@ -75,7 +84,8 @@ width: 60%;
 		color:white;
 		margin:0 auto;
 		text-align:center;
-		font-size:1.3rem;
+		font-size:1.1rem;
+		font-weight:normal;
 	}
 		// @media screen and (min-width: $break-small) {
 		// 	.project-text{
