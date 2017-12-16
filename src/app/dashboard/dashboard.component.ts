@@ -26,7 +26,7 @@ declare var System: any;
 
 export class DashboardComponent implements OnInit {
   projects: Project[] = [];
-  @ViewChild('myId') myId: ElementRef;
+  @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
  
 
 
@@ -41,7 +41,7 @@ export class DashboardComponent implements OnInit {
   }
 
   ngAfterViewInit() {
- const shuffleInstance = new Shuffle(this.myId.nativeElement, {  });
+ const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
 
  
   }

@@ -1,12 +1,15 @@
 @import"../SCSS/mixin";
 
+
+//NAVIGATION
+
+
 header{
 	position:fixed;
 	z-index:100;
 	width:100%; 
 	top:0;
-	max-width:100%;
-	display:inline-block; 
+	max-width:100%; 
 	text-transform:uppercase;
 	background-color:white;
 	font-family: Open Sans, sans-serif;
@@ -14,38 +17,50 @@ header{
 	max-width:100%;
 	justify-content:space-between;
 	align-items:center;
-
-}
-
-
-
-
-//NAVIGATION
-#header-link{
-	color:$font-color;
-
-}
-
-.grid2{
 	display:flex;
 	flex-wrap:wrap;
-
 }
 
+
+
+
+.logo{
+	margin: .75rem;
+	display:inline-block;
+	font-family: Open Sans;
+	font-weight:800;
+	a{
+		color: $font-color;
+		transition: color .5s ease;
+		text-decoration:none;
+		&:hover{
+			color:$font-accent;
+			transition: color .5s ease;
+		}
+	}
+	.logo-subheading{
+		font-size:.6rem;
+		margin:0;
+	}
+
+	.logo-heading{
+		font-size: 1rem;
+	}
+
+
+}
 
 
 .menu{
 	margin:.5rem auto;
 	a{
 		margin:0 0 .5 0;
-transition: color .5s ease;
-		color:#242424;
+		transition: color .5s ease;
+		color:$font-color;
 		text-decoration:none;
-		@media screen and (min-width: $break-small) {
-			margin-left:1rem;
-		}
+		
 		&:visited{
-			color:#242424;
+			color:$font-color;
 		}
 		&:hover{
 			color:$font-accent;
@@ -56,28 +71,82 @@ transition: color .5s ease;
 			color: #ffffFf;
 			transition: color 0.3s ease;
 		}
-	
+
 	}
-	@media screen and (min-width: $break-small) {
+	.nav-grid{
+		display: flex;
+		justify-content: space-around;
+		width: 100vw;
+	}
+	&:last-child{
+		a{
+			margin-right:0;
+		}
+	}
+
+
+}
+
+
+
+
+
+@media screen and (min-width: $break-xsmall) {
+	.logo{
+		margin:.5rem 1 .5rem 1rem;
+
+		.logo-subheading{
+			font-size: .7rem;
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: $break-small) {
+	.logo{
+		.logo-subheading{
+			font-size: .7rem;
+		}
+		.logo-heading{
+			font-size: 1.1rem;
+		}
+	}
+	.menu{
 		margin:.75rem;
+		a{
+			margin-left:1rem;
+		}
+		.nav-grid{
+			width: auto;
+		}
 	}
-}
-.menu:last-child{
-	a{
-		margin-right:0;
-	}
-}
-.nav-grid{
-	display: flex;
-	justify-content: space-around;
-	width: 100vw;
-	@media screen and (min-width: $break-small) {
-		flex-wap:wrap;
-		width: auto;
-	}
-
 }
 
 
+
+@media screen and (min-width: $break-medium) {
+	.logo{
+		.logo-subheading{
+			font-size: .8rem;
+		}
+		.logo-heading{
+			font-size: 1.2rem;
+		}
+	}
+}
+
+
+@media screen and (min-width: $break-large) {
+	.logo{
+		.logo-subheading{
+			font-size: .9rem;
+		}
+		.logo-heading{
+			font-size: 1.3rem;
+		}
+	}
+}
 
 

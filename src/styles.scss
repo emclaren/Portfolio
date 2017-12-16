@@ -1,11 +1,12 @@
 
 @charset "UTF-8";
 @import"SCSS/reset";
+@import"SCSS/ionicons";
 @import"SCSS/mixin";
 @import"SCSS/animations";
+@import"SCSS/grid";
 
-
-/* Main styles */
+/* Global Styles  */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
@@ -13,22 +14,6 @@
 	box-sizing:border-box;
 }
 
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-
-
-//*** General Styling ***/
-canvas { 
-	position:fixed; 
-	top:0; 
-	left:0; 
-	z-index:3;
-}
-
-#p5container{ 
-	position:relative; 
-	z-index:6; 
-}
 
 body, html {
 	background-color: white;
@@ -47,35 +32,25 @@ h1, h2, h3{
 	font-weight: bold;
 	text-transform:uppercase;
 }
+
 h2{
 	
 	font-size: 1.75rem;
-    margin: 2rem 0 1rem 0;
-		@media screen and (min-width: $break-small) {
-			font-size:3rem;
-		}
-		@media screen and (min-width: $break-medium) {
-			font-size:3.5rem;
-		}
-
-	}
+	margin: 2rem 0 1rem 0;
+}
 
 
-	h3{
-		font-size:1.5rem;
-			padding: .5rem 0;
-		 	@media screen and (min-width: $break-medium) {
-			padding-bottom:0 0 .25rem 0
-		}
-
-		
-	}
+h3{
+	font-size:1.5rem;
+	padding: .5rem 0;
+}
 
 
 p{
 	font: 1rem Roboto, Open Sans, sans-serif;
 	font-weight:400;
 }
+
 span{
 	padding:0;
 }
@@ -83,191 +58,89 @@ span{
 
 
 
-    button{
-      border: solid 2px #242424;
-      background-color:transparent;
-      border-radius:0;
-      height:50px;
-      font-size: 1.5rem;
-      font-weight:bold;
-      width:100%;
-      a{
-        color: #242424;
-        text-decoration:none;
-        &:visited{
-          color: #242424;
-        }
-      }
-      &:focus{
-      	color: $font-accent;
-      }
-    }
+button{
+	border: solid 2px $font-color;
+	background-color:transparent;
+	border-radius:0;
+	height:50px;
+	font-size: 1.5rem;
+	font-weight:bold;
+	width:100%;
+	margin: 2rem 0;
+	color: $font-color;
+	transition: background-color .5s ease; 
+	background-color:#FFFFFF;
 
-///***Grid Formatting***//
-
-
-
-/* Bootstrap-style columns */
-.column {
-	position: relative;
-	float: left;
-	min-height: 1px;
-	width: 50%;
-	padding-left: 4px;
-	padding-right: 4px;
-
-	/* Space between tiles */
-	margin-top: 8px;
-}
-
-.col-span {
-	width: 50%;
-}
-
-.my-sizer-element {
-	width: 8.33333%;
-}
-
-/* default styles so shuffle doesn't have to set them (it will if they're missing) */
-.my-shuffle {
-	position: relative;
-	overflow: hidden;
-}
-
-/* Ensure images take up the same space when they load */
-
-.aspect {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-bottom: 100%;
-	overflow: hidden;
-}
-
-
-.aspect__inner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-
-
-
-
-
-.logo-heading{
-	font-size: 1rem;
-	@media screen and (min-width: $break-small) {
-		font-size: 1.1rem;
+	&:focus{
+		color: $font-accent;
 	}
-	@media screen and (min-width: $break-medium) {
-		font-size: 1.2rem;
-	}
-	@media screen and (min-width: $break-large) {
-		font-size: 1.3rem;
-	}
-}
+	&:hover{
+		cursor:pointer;
 
+		background-color: $font-accent;
+		transition: background-color .5s ease; 
 
-.logo-subheading{
-	font-size:.6rem;
-	margin:0;
-	@media screen and (min-width: $break-xsmall) {
-		font-size: .7rem;
-	}
-	@media screen and (min-width: $break-small) {
-		font-size: .7rem;
-	}
-	@media screen and (min-width: $break-medium) {
-		font-size: .8rem;
-	}
-	@media screen and (min-width: $break-large) {
-		font-size: .9rem;
-	}
-}
-
-.logo{
-	margin: .75rem;
-	display:inline-block;
-	font-family: Open Sans;
-	font-weight:800;
-	a{
-		color:#242424;
-transition: color .5s ease;
-		text-decoration:none;
-		&:hover{
-			color:$font-accent;
-
-
-
-			transition: color .5s ease;
-		}
 	}
 
-	@media screen and (min-width: $break-xsmall) {
-		margin:.5rem 1 .5rem 1rem;
-	}
 }
 
 
 
-
-.block{
-	display:block;
-	margin:0 auto;
+em{
+	font-style:italic;
 }
+
+
+
+.text-center{
+	text-align:center;
+}
+
+
+
 .flex{
-
 	height: 100%;
 	display: flex;
 	align-items: center;
+}
 
+
+
+///***Container for the Background Triangles***//
+
+
+canvas { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:3;
+}
+
+#p5container{ 
+	position:relative; 
+	z-index:6; 
 }
 
 
 
 
-.grid-1-of-2{
 
-	flex-basis:100%;
 
-	@media screen and (min-width: $break-medium){
-		flex-basis:50%;
-		max-height:394px;
+@media screen and (min-width: $break-small) {
+	h2{
+		font-size:3rem;
 	}
-
+}
+@media screen and (min-width: $break-medium) {
+	h2{
+		font-size:3.5rem;
+	}
+	h3{
+		padding-bottom:0 0 .25rem 0
+	}
+	
 }
 
-
-.grid1-of-2{
-	flex-basis:50%;
-}
-
-.justify{
-	text-align: justify;
-}
-
-.right{
-	text-align: right;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-		@import"SCSS/grid";
 
 
 

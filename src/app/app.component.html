@@ -1,8 +1,8 @@
 <!-- stateName enables the between page emotions -->
-<div > 
-	<div class="ng-scope" ng-controller="MyCtrl">
+
+	
 		<div id="p5container">
-			<header class= "site-header grid2" > 
+			<header class= "site-header flex-wrap" > 
 				<!-- Left hand Side of Nav Bar-->
 				<div class="logo">
 					<a pageScroll [routerLink]="['']" href="#intro">
@@ -14,9 +14,7 @@
 				<!-- Right hand Side of Nav Bar-->
 				<nav class="menu">
 					<ul class="nav-grid">
-						<li>   <a pageScroll [routerLink]="['']" href="#work">
-						<!-- <a pageScroll [routerLink]="['']" href="#about"> -->
-						Work</a>
+						<li>   <a pageScroll [routerLink]="['']" href="#work">Work</a>
 						</li>
 						<li> <a pageScroll [routerLink]="['']" href="#about">About</a></li>
 						<li> <a pageScroll [routerLink]="['']" href="#contact">Contact</a></li>
@@ -25,14 +23,3 @@
 			</header>
 
 			<router-outlet></router-outlet>
-
-<!-- 
- <progress-spinner-configurable-example>loading</progress-spinner-configurable-example>
- -->
-<!-- <p>bshabdkjsadjka</p>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/projects">Projects</a>
-</nav> -->
-
-<!-- <app-messages></app-messages> -->

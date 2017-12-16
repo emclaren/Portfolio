@@ -1,42 +1,33 @@
+<!-- Contain everything on page in wrapper -->
+<div class="page-wrapper">
 
-<div class="wrapper">
-	<div class="mainpage main" >
-		<section id="intro" >
-			<div class="flex" >
-				<div class="header"  >
-					<p id="intro-text">
-						MSc student, Interactive Arts + Technology 
-					</p>
-					<p>
-						Research interests: interaction design for children, virtual reality, and sound
-					</p>
-				</div>
-
-				<div class="down-arrow">
-					<a href="#work" pageScroll [routerLink]="['']" >
-						<i class="icon ion-chevron-down"></i>
-					</a>
-				</div>
+	<!-- Intro Section -->
+	<section id="intro" >
+		<div class="flex" >
+			<div class="text-wrapper"  >
+				<p class="intro-first-line">MSc student, Interactive Arts + Technology </p>
+				<p>Research interests: interaction design for children, virtual reality, and sound</p>
 			</div>
+			<div class="down-arrow">
+				<a href="#work" pageScroll [routerLink]="['']" >
+					<i class="icon ion-chevron-down"></i>
+				</a>
+			</div>
+		</div>
+	</section>
 
-		</section>
-	</div>
 
+	<!-- Work Grid -->
 
-	<section id="work" >
+	<section id="work">
 		<h2 >Work</h2>
-
-			
-		<div id ="myId" #myId class="grid my-grid my-shuffle" > 
-			<figure   *ngFor="let project of projects"   class=" col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span no-gutters ">
+		<div id ="shuffleGrid" #shuffleGrid class="my-shuffle" > 
+			<figure  *ngFor="let project of projects"   class=" col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span no-gutters ">
 				<a  routerLink="/detail/{{project.id}}">
-
-					<div class="aspect aspect--9x80">
+					<div class="aspect aspect--size">
 						<div class="aspect__inner">
-							<div class="work-text">
-
+							<div class="project-title">
 								<h3>{{project.thumbname}} </h3>
-
 							</div>
 							<img src="{{project.thumbnail}}" obj.alt="obj.alt"/>
 						</div>
@@ -44,186 +35,116 @@
 				</a>
 			</figure>
 		</div>
-
 	</section>
 
 
-	<section id="about" class="about-content">
-		<div class="content" id="about-link">
 
-	
-			<h2>About</h2>
-			
-
-
-
-			<div class="resume-container">
-			<div class="about-me">
-			<p>Hi! I'm a Vancouver-based tech-nerd. At work, you will find me programming in Node, C#, or R, designing studies, and drinking *too much* coffee ☕.</p>
-
-			<p>I spend my weekends upping my dev game, doing all-night hackathons, prototyping ideas and teaching others the joys of if/else statements. Sometimes, I do yoga.</p>
-
-	</div>
+	<!-- About Section-->
+	<section id="about" >
+		<h2>About</h2>
+		<div class="resume-container">
+			<div class="about-intro">
+				<p>Hi! I'm a Vancouver-based tech-nerd. At work, you will find me programming in Node, C#, or R, designing studies, and drinking *too much* coffee ☕.</p>
+				<p>I spend my weekends upping my dev game, doing all-night hackathons, prototyping ideas and teaching others the joys of if/else statements. Sometimes, I do yoga.</p>
+			</div>
 
 			<div class="triangle-container">
-	
-
-			<div class='wrap triangle-outer'>
-				<div class='crop'>
-				<img src='/assets/img/stock.jpg'>
-					
+				<div class='wrap triangle-outer'>
+					<div class='crop'>
+						<img src='/assets/img/red-1-min.jpg'>
+					</div>
 				</div>
-			</div>
-			<div class='wrap  triangle-inner'>
-				<div class='crop'>
-				<img src='/assets/img/stock.jpg'>
-						
+				<div class='wrap  triangle-inner'>
+					<div class='crop'>
+						<img src='/assets/img/red-1-min.jpg'>
+					</div>
 				</div>
-			</div>
-		
-		<div class='wrap '>
-				<div class='crop'>
-						<img src='/assets/img/stock.jpg'>
-						<!-- <img class="main-triangle-image" src='/assets/img/img11-small.jpg'> -->
+				<div class='wrap '>
+					<div class='crop'>
+						<img src='/assets/img/red-2-min.jpg'>
+					</div>
+				</div> 
+				<div class='wrap triangle-inner'>
+					<div class='crop'>
+						<img  src='/assets/img/red-2-min.jpg'>
+					</div>
 				</div>
-			</div> 
-	
-
-		
-
-			<div class='wrap triangle-inner'>
-				<div class='crop'>
-						<img  src='/assets/img/stock.jpg'>
-				</div>
-			</div>
-			
-			<div class='wrap triangle-outer'>
-				<div class='crop'>
-						<img src='/assets/img/stock.jpg'>
+				<div class='wrap triangle-outer'>
+					<div class='crop'>
+						<img src='/assets/img/red-3-min.jpg'>
+					</div>
 				</div>
 			</div>
 
-</div>
-		<!-- 
-			<div class='wrap triangle-outer'>
-				<div class='crop'>
-				<img src='/assets/img/img2.JPG'>
-					
-				</div>
+			<h3>Education</h3>
+			<ul>
+				<li>MSc - Interactive Arts & Technology</li>
+				<li>Certificate - Web Development </li>
+				<li>BComm - Economics</li>
+			</ul>
+
+			<h3>Experience</h3>
+			<ul>
+				<li>Teaching Assistant - Simon Fraser University</li>
+				<li>Research Assistant - Simon Fraser University </li>
+				<li>Web Developer - Telus Digital</li>
+				<li>IT Assistant - Concordia University</li>
+			</ul>
+
+			<h3>Volunteer</h3>
+			<ul>
+				<li>Node School - Robotics Mentor</li>
+				<li>Women Who Code Vancouver - Founder</li>
+				<li>Canada Learning Code - Mentor</li>
+				<li>Rock Camp for Girls - Band Coach</li>
+			</ul>
+
+			<h3>Presentations</h3> 
+			<ul>
+				<li>"Open Source Neurofeedback" - DataViz DC presentation</li>
+				<li>"Badass Coders Owning The Field" - Red Academy panel </li>
+				<li>"SIAT Graduate Research" - TechTeam SFU presentation</li>
+				<li>"Neurofeedback for queing vigilence" - SIAT Research Colliquium</li>
+				<li>"Intro to audio programming" - Code + Coffee Presentation</li>
+			</ul>
+			<h3>Workshop Participant</h3>
+			<ul>
+				<li>"Analyzing Children’s Contributions in Co-design" <br>
+					Interaction Design and Children Conference -
+					Stanford University
+				</li>
+				<li>
+					"Palpability and Wearable Computing" <br> 
+					Digital Humanities Summer Institute - University of Victoria
+				</li>
+				<li>
+					"Neurofeedback in Virtual Reality" <br> 
+					Emerging Media Lab - University of British Columbia 
+				</li>
+			</ul>
+			<h3>Awards</h3>
+			<ul>
+				<li>SFU Travel Award 2018</li>
+				<li>SFU Grad Fellowship 2018</li>
+				<li>Womanium Neuroscience Scholar 2017</li>
+				<li>GSS Professional Development Grant 2017</li>
+				<li>SFU Travel Award 2017</li>
+				<li>SFU Grad Fellowship 2017</li>
+				<li>Digital Humanities Scholarship 2016</li>
+				<li>Banff Interactive Tech Residency 2014 (waitlist)</li>
+
+			</ul>
+			<h3>Publications</h3>
+			<ul>
+				<li><em>Opening up the design space of neurofeedback brain-computer interfaces for children: Five strong concepts. </em><br>ACM Transactions on Computer-Human Interaction. With Antle, A.N., Chesick, L. (in press) </li>
+				<li> <em>Exploring and evaluating sound for helping children self-regulate with a brain-computer application.</em> <br>In Proceedings of the International Conference on Interaction Design and Children (IDC’17). With  Antle, A.N. (2017) </li>
+				<li><em>Time to relax: No effects to the stress response after short-term use of a brain-computer interface. </em><br>In Proceedings of the Graz Brain-Computer Interface Conference (GBCIC’17). With Cole, A.W., Riecke, B., Antle, A.N.</li>
+				<li> <em>The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. </em> <br>In Proceedings of the Society for Neuroscience Annual Meeting. With Antle, A.N., Chesick, L., (in press)</li>
+				<li>  <em> Block Talks: A tangible and augmented reality toolkit for children to learn sentence constructions.</em> With Fan, M., Baishya, U. Sarkar, S.(in preparation)</li>
+			</ul>
+			<a href="https://drive.google.com/file/d/13fLSBdgivJ3LuUnVRm3aryKmBxnu1-Bx/view?usp=sharing" target="_blank">
+				<button>Download Full CV</button> </a>
 			</div>
-			<div class='wrap  triangle-inner'>
-				<div class='crop'>
-				<img src='/assets/img/img10.JPG'>
-						
-				</div>
-			</div>
-		
-		<div class='wrap '>
-				<div class='crop'>
-						<img class="main-triangle-image" src='/assets/img/img11-small.jpg'>
-				</div>
-			</div> 
-	
-
-		
-
-			<div class='wrap triangle-inner'>
-				<div class='crop'>
-						<img  src='/assets/img/img9.JPG'>
-				</div>
-			</div>
-			
-			<div class='wrap triangle-outer'>
-				<div class='crop'>
-						<img src='/assets/img/insta-pic2.jpg'>
-				</div>
-			</div> -->
-
- 		
-		
-			
-
-				<h3>Education</h3>
-				<ul>
-					<li>MSc - Interactive Arts & Technology</li>
-					<li>Certificate - Web Development </li>
-					<li>BComm - Economics</li>
-				</ul>
-
-				<h3>Experience</h3>
-				<ul>
-					<li>Teaching Assistant - Simon Fraser University</li>
-					<li>Research Assistant - Simon Fraser University </li>
-					<li>Web Developer - Telus Digital</li>
-					<li>IT Assistant - Concordia University</li>
-				</ul>
-
-				<h3>Volunteer</h3>
-				<ul>
-					<li>Node School - Robotics Mentor</li>
-					<li>Women Who Code Vancouver - Founder</li>
-					<li>Canada Learning Code - Mentor</li>
-					<li>Rock Camp for Girls - Band Coach</li>
-				</ul>
-
-				<h3>Presentations</h3> 
-				<ul>
-					<li>"Open Source Neurofeedback" - DataViz DC presentation</li>
-					<li>"Badass Coders Owning The Field" - Red Academy panel </li>
-					<li>"SIAT Graduate Research" - TechTeam SFU presentation</li>
-					<li>"Neurofeedback for queing vigilence" - SIAT Research Colliquium</li>
-					<li>"Intro to audio programming" - Code + Coffee Presentation</li>
-				</ul>
-				<h3>Workshop Participant</h3>
-				<ul>
-					<li>"Analyzing Children’s Contributions in Co-design" <br>
-						Interaction Design and Children Conference -
-						Stanford University
-					</li>
-					<li>
-						"Palpability and Wearable Computing" <br> 
-						Digital Humanities Summer Institute - University of Victoria
-					</li>
-					<li>
-						"Neurofeedback in Virtual Reality" <br> 
-						Emerging Media Lab - University of British Columbia 
-					</li>
-				</ul>
-				<h3>Awards</h3>
-				<ul>
-					<li>SFU Travel Award 2018</li>
-					<li>SFU Grad Fellowship 2018</li>
-					<li>Womanium Neuroscience Scholar 2017</li>
-					<li>GSS Professional Development Grant 2017</li>
-					<li>SFU Travel Award 2017</li>
-					<li>SFU Grad Fellowship 2017</li>
-					<li>Digital Humanities Scholarship 2016</li>
-					<li>Banff Interactive Tech Residency 2014 (waitlist)</li>
-
-				</ul>
-				<h3>Publications</h3>
-				<ul>
-					<li><em>Opening up the design space of neurofeedback brain-computer interfaces for children: Five strong concepts. </em><br>ACM Transactions on Computer-Human Interaction. With Antle, A.N., Chesick, L. (in press) 
-					</li>
-					<li> <em>Exploring and evaluating sound for helping children self-regulate with a brain-computer application.</em> <br>In Proceedings of the International Conference on Interaction Design and Children (IDC’17). 
-						With  Antle, A.N. (2017) 
-					</li>
-					<li><em>Time to relax: No effects to the stress response after short-term use of a brain-computer interface. </em><br>In Proceedings of the Graz Brain-Computer Interface Conference (GBCIC’17).
-						With Cole, A.W., Riecke, B., Antle, A.N.
-					</li>
-					<li> <em>The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. </em> <br>In Proceedings of the Society for Neuroscience Annual Meeting. 
-						With Antle, A.N., Chesick, L., (in press)
-					</li>
-					<li>  <em> Block Talks: A tangible and augmented reality toolkit for children to learn sentence constructions.</em>
-						
-						With Fan, M., Baishya, U. Sarkar, S.(in preparation)
-					</li>
-
-				</ul>
-				<a href="https://drive.google.com/file/d/13fLSBdgivJ3LuUnVRm3aryKmBxnu1-Bx/view?usp=sharing" target="_blank">
-				<button class="cv-button">Download Full CV</button> </a>
-</div>
-</div>
 	</section>
 
 
@@ -231,25 +152,20 @@
 
 
 
+	<!--Contact Section-->
+
+	<section id="contact"  >
+		<h2>Say hello...</h2>
+		<ul class="contact-list" >
+			<li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
+			<li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
+			<li><a href="https://github.com/emclaren" target="_blank">github</a></li>
+			<li><a href="mailto:emclaren@sfu.ca">email</a></li>
+		</ul>
+		</section>
 
 
-	<section id="contact" class="about-content">
-
-		<div class="contact-card" id="contact-link" >
-			<h2>Say hello...</h2>
-			<div class="contact-container">
-				<ul class="contact-list" >
-					<li><a href="http://linkedin.com/in/elginskye" target="_blank">linkedin</a></li>
-					<li><a href="http://twitter.com/elginskye" target="_blank">twitter</a></li>
-					<li><a href="https://github.com/emclaren" target="_blank">github</a></li>
-					<li><a href="mailto:emclaren@sfu.ca">email</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-
-
+	<!--Close Page Wrapper -->
 </div>
 
 
