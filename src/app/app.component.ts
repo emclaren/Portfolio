@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 import {PageScrollConfig} from 'ng2-page-scroll';
+import { Component, HostBinding, ViewChild } from '@angular/core';
+import { fadeAnimation } from './animations/fade.animation';
+
 
 import {  OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -14,7 +17,8 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+   animations: [fadeAnimation]
 })
 
 export class AppComponent {
@@ -50,10 +54,17 @@ export class AppComponent {
                 return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
             }
         };
+<<<<<<< HEAD
 
   }
 
 
+=======
+    }
+    public getRouterOutletState(outlet) {
+  return outlet.isActivated ? outlet.activatedRoute : '';
+}
+>>>>>>> master
 }
 
 
