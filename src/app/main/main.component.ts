@@ -5,26 +5,17 @@ import * as Shuffle from 'shufflejs';
 import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer } from '@angular/core';
 import {  ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-// import {Component} from '@angular/core';
-
-// import * as p5 from '../../assets/p5.min.js';
-// declare var p5: any;
-// import '../../assets/p5.min.js';
-// import * as xJS from './x.js';
 declare var System: any; 
 
 
-// import {Ng2PageScrollModule} from 'ng2-page-scroll';
-
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.scss' ],
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: [ './main.component.scss' ],
   // animations: [fadeAnimation]
 })
 
-export class DashboardComponent implements OnInit {
+export class MainComponent implements OnInit {
   projects: Project[] = [];
   @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
  
@@ -34,6 +25,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() { 
     console.log("Hi, thanks for checking out my code. 😜😜😜");
+    console.log("Let me know what you think - emclaren@sfu.ca");
     this.getProjects();
        
 

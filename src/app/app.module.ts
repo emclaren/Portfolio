@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard/dashboard.component';
+import { MainComponent }   from './main/main.component';
 import { ProjectDetailComponent }  from './project-detail/project-detail.component';
 import { ProjectsComponent }      from './projects/projects.component';
 import { ProjectService }          from './project.service';
@@ -24,7 +24,7 @@ import { AppRoutingModule }     from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
+    MainComponent,
     ProjectsComponent,
     ProjectDetailComponent,
     MessagesComponent
