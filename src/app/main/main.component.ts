@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
 import * as Shuffle from 'shufflejs';
-import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer } from '@angular/core';
-import {  ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 declare var System: any; 
 
