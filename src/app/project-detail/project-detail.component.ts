@@ -1,22 +1,25 @@
 
-
-
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-
+import * as Shuffle from 'shufflejs';
 import { Project }         from '../project';
 import { ProjectService }  from '../project.service';
 import { Router, NavigationEnd } from '@angular/router';
+import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
   styleUrls: [ './project-detail.component.scss' ]
 })
+
 export class ProjectDetailComponent implements OnInit {
   @Input() project: Project;
- 
+  @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
+
+
 
   constructor(
     private route: ActivatedRoute,
@@ -40,6 +43,11 @@ export class ProjectDetailComponent implements OnInit {
 
 
 
+  }
+    ngAfterViewInit() {
+ const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
+
+ console.log(this.shuffleGrid);
   }
 
   getProject(): void {
