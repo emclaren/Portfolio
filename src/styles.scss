@@ -55,8 +55,7 @@ span{
 	padding:0;
 }
 
-
-
+	
 
 button{
 	border: solid 2px $font-color;
@@ -72,13 +71,23 @@ button{
 	background-color:#FFFFFF;
 
 	&:focus{
-		color: $font-accent;
+		color: $font-color;
+		background-color: $font-accent;
+			outline:none;
+		box-shadow:none; 
+
 	}
 	&:hover{
 		cursor:pointer;
-
+		color: $font-color;
 		background-color: $font-accent;
 		transition: background-color .5s ease; 
+
+	}
+	&:active{
+		color: $font-color;
+		background-color: $font-accent;
+		transition: background-color .5s ease;
 
 	}
 
