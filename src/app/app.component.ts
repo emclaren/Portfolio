@@ -37,8 +37,6 @@ export class AppComponent {
     this.router.events.subscribe((evt) => {
         window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-
-        // document.body.scrollTop = 0;
     });
 
 
@@ -54,18 +52,12 @@ export class AppComponent {
                 return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
             }
         };
-<<<<<<< HEAD
+
 
   }
 
 
-=======
-    }
-    public getRouterOutletState(outlet) {
-  return outlet.isActivated ? outlet.activatedRoute : '';
-}
->>>>>>> master
-}
+
 
 
 

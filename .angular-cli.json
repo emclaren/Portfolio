@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
@@ -62,5 +62,4 @@
     "component": {}
   }
 }
-=======
->>>>>>> master
+

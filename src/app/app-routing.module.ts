@@ -1,12 +1,11 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< HEAD
+
 
 import { MainComponent }   from './main/main.component';
-=======
+
 import { ModuleWithProviders } from '@angular/core';
-import { DashboardComponent }   from './dashboard/dashboard.component';
->>>>>>> master
+
 import { ProjectsComponent }      from './projects/projects.component';
 import { ProjectDetailComponent }  from './project-detail/project-detail.component';
 
