@@ -11,7 +11,7 @@ declare var System: any;
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: [ './main.component.scss' ],
-  // animations: [fadeAnimation]
+ 
 })
 
 export class MainComponent implements OnInit {
@@ -23,10 +23,12 @@ export class MainComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() { 
+    
     console.log("Hi, thanks for checking out my code. 😜😜😜");
     console.log("Let me know what you think - emclaren@sfu.ca");
     this.getProjects();
        
+
 
 
   }

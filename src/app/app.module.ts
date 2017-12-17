@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent }         from './app.component';
 import { MainComponent }   from './main/main.component';
 import { ProjectDetailComponent }  from './project-detail/project-detail.component';
@@ -21,8 +20,7 @@ import { AppRoutingModule }     from './app-routing.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-     Ng2PageScrollModule,
-      BrowserAnimationsModule
+     Ng2PageScrollModule
   ],
   declarations: [
     AppComponent,
@@ -31,11 +29,7 @@ import { AppRoutingModule }     from './app-routing.module';
     ProjectDetailComponent,
     MessagesComponent
   ],
-  exports: [BrowserModule],
-  providers: [ ProjectService, MessageService],
+  providers: [ ProjectService, MessageService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
-
-

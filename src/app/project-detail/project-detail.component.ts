@@ -30,26 +30,22 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProject();
- 
+
+ // this.router.events.subscribe((evt) => {
+ //         if (!(evt instanceof NavigationEnd)) {
+ //             return;
+ //         }
+ //         console.log("test");
+ //     document.body.scrollTop = 0;
+ //          window.scrollTo(0, 0);
+ //        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+ //     });
 
 
- this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-            console.log("bug test 1");
-        }
-        console.log("bug test 2");
-        document.body.scrollTop = 0;
-        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-    });
-
-
-
-  }
+ }
     ngAfterViewInit() {
  const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
 
- console.log(this.shuffleGrid);
   }
 
   getProject(): void {
@@ -67,6 +63,28 @@ export class ProjectDetailComponent implements OnInit {
 }
 
 
+
+
+
+  // this.router.events.subscribe((evt) => {
+  //           if (!(evt instanceof NavigationEnd)) {
+  //               return;
+  //           }
+  //         
+  //           window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  //       });
+
+
+
+ // this.router.events.subscribe((evt) => {
+ //        if (!(evt instanceof NavigationEnd)) {
+ //            return;
+       
+ //        }
+      
+ //        document.body.scrollTop = 0;
+ //        window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+ //    });
 
 
 
