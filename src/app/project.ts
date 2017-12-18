@@ -9,10 +9,6 @@ export class Project {
 	team: string;
 	tags: string;
 	role: string;
-  challenge: string;
-  process: string;
-  result: string;
-  image1: string;
-  image2: string;
-  image3: string;
+  cvideo:'string',
+  cvideoClass:'string',
 }

@@ -56,6 +56,10 @@
   }
 
 	}
+	.my-shuffle{
+		// max-width:80%;
+		// margin:0 auto;
+	}
 	.aspect__inner{
 		top:auto;
 		bottom:auto;
@@ -156,28 +160,28 @@ h3{
 	display:flex;
 }
 .block-talks{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/block-talks-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
 	background-size:cover;
 }
 
 .asking-for-a-friend{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/asking-for-a-friend-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
 	background-size:cover;
 }
 .earthgazing{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/earthgazing-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
 	background-size:cover;
 }
 .tangibles{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/tangibles-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/tangibles/tangibles-header-min.jpg');
 	background-size:cover;
 }
 .audio-matic{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/audio-matic-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
 background-size:cover;
 }
 .mind-full{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/mind-full-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('/assets/img/mindfull/mind-full-header-min.jpg');
 background-size:cover;
 }
 
@@ -198,6 +202,10 @@ background-size:cover;
 	left: 0;
 	width: 100%;
 	height: 100%;
+			  @media screen and (min-width: $break-medium) {
+	width: 50%;
+	height: 50%;
+  }
 }
 
 
