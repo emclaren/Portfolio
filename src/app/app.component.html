@@ -1,6 +1,4 @@
-<!-- stateName enables the between page emotions -->
 
-	
 		<div id="p5container">
 			<header class= "site-header flex-wrap" > 
 				<!-- Left hand Side of Nav Bar-->
@@ -23,5 +21,11 @@
 			</header>
 
 
-			<router-outlet></router-outlet>
+<div class="page" [@routerAnimations]="prepareRouteTransition(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+  <!-- <router-outlet></router-outlet>  -->
+
+</div>
+	<!-- 		<router-outlet></router-outlet> -->
+
 

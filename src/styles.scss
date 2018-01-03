@@ -235,7 +235,7 @@ canvas {
 .triangle-container{
   transform: scale(0.7);
   width: 250px;
-  margin:  3rem auto -4rem;
+  margin:  4rem auto -3rem;
   @media screen and (min-width: $break-medium) {
    width:500px;
    transform: scale(1);
@@ -340,3 +340,33 @@ canvas {
 
 
 
+.ng-trigger-fadeInAnimation{
+opacity:.5;
+}
+
+
+
+// :host{
+
+//   display: flex;
+//   overflow: hidden;
+//   height: 100vh;
+
+//   app-nav-bar {
+//     position: absolute;
+//     width: 100%;
+//     z-index: 1;
+//   }
+
+//   main {
+//     flex: 1;
+//     position: relative;
+//   }
+
+//   /deep/ router-outlet ~ * {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//   }
+
+// }

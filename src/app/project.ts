@@ -9,6 +9,37 @@ export class Project {
 	team: string;
 	tags: string;
 	role: string;
-  cvideo:'string',
-  cvideoClass:'string',
+  cvideo:string;
+  cvideoClass:string;
+   challengeHeading:string;
+  cImage1: string;
+  cImage2: string;
+  cImage3: string;
+  cImage1Class: string;
+  cImage2Class: string;
+  cImage3Class: string;
+  pImage1:string;
+  pImage2:string;
+  pImage3: string;
+  pImage1Class:string;
+  pImage2Class:string;
+  pImage3Class:string;
+  pImage4:string;
+  pImage5:string;
+  pImage6:string;
+  pImage4Class:string;
+  pImage5Class:string;
+  pImage6Class:string;
+   rImage1:string;
+  rImage2:string;
+  rImage3:string;
+  rImage1Class:string;
+  rImage2Class:string;
+  rImage3Class:string;
+  rImage4:string;
+  rImage5:string;
+  rImage6:string;
+  rImage4Class:string;
+  rImage5Class:string;
+  rImage6Class:string;
 }

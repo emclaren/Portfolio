@@ -88,7 +88,7 @@ i{
     }
   }
   h3{
-    font-size:1.25rem;
+    font-size:1.5rem;
     font-weight:normal;
     font-family: Roboto, Open Sans, sans-serif;
     padding: .25rem 0;
@@ -113,8 +113,9 @@ i{
     justify-content: center;
     z-index:20;
     color:white;
-    background-color:rgba(0,0,0, .7);
+    background-color:rgba(0,0,0, .6);
     width:100%;
+
     text-align:center;
     border-top:none;
   }
@@ -142,12 +143,17 @@ i{
       max-width: none;
       object-fit: cover;
       height:100%;
+       -webkit-animation: filter 3s infinite;
+      filter: grayscale(50%);
     }
 
 
     &:hover,  a:focus {
       cursor:pointer;
+      background-color: $font-accent;
+
       img{
+   
         transition: transform .5s ease;
         -moz-transform: scale(1.05);
         -webkit-transform: scale(1.05);
@@ -156,9 +162,9 @@ i{
       }
       .project-title{
         background:rgba(255, 52, 89, .9);
-        transition: color .5s ease;
         transition: background-color .5s ease;
       }
+
     }
   }
   /* default styles so shuffle doesn't have to set them (it will if they're missing) */
@@ -228,7 +234,7 @@ i{
 
 
 #about{
-  line-height:1.2rem;
+  // line-height:1.2rem;
   
   padding: 1rem 0;
   background-color:rgba(255,255,255, .5);
@@ -260,7 +266,7 @@ i{
 }
 @media screen and (min-width: $break-medium) {
   width: 80%;
-  margin: 4rem auto 4rem auto;
+  margin: 8rem auto ;
   padding:0;
 
   ul{
@@ -293,7 +299,7 @@ i{
 #contact{
  z-index:500;
  margin:0 auto;
- padding:1rem 0;
+ // padding:1rem 0;
  height: 90vh;
  color: $font-color;
 
@@ -333,7 +339,7 @@ i{
  .contact-list{
   flex-direction: row;
   justify-content: center;
-  padding:1rem 0 4rem 0;
+
 }
 }
 

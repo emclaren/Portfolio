@@ -5,14 +5,23 @@ import * as Shuffle from 'shufflejs';
 import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 declare var System: any; 
-
+// import { fadeInAnimation } from './../_animations/index';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: [ './main.component.scss' ],
+    // animations: [fadeAnimation]   // make fade in animation available to this component
+    // animations: [fadeInAnimation],
+ 
+    // attach the fade in animation to the host (root) element of this component
+    // host: { '[@fadeInAnimation]': '' }
  
 })
+
+
+
+
 
 export class MainComponent implements OnInit {
   projects: Project[] = [];
@@ -24,8 +33,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit() { 
     
-    console.log("Hi, thanks for checking out my code. 😜😜😜");
-    console.log("Let me know what you think - emclaren@sfu.ca");
+ 
     this.getProjects();
        
 
