@@ -1,7 +1,7 @@
 export class Project {
   id: number;
   name: string;
-    thumbname: string;
+  thumbname: string;
   class: string;
    thumbnail:string;
 	summary:string;
@@ -9,27 +9,24 @@ export class Project {
 	team: string;
 	tags: string;
 	role: string;
-  cvideo:string;
-  cvideoClass:string;
    challengeHeading:string;
-  cImage1: string;
-  cImage2: string;
-  cImage3: string;
-  cImage1Class: string;
-  cImage2Class: string;
-  cImage3Class: string;
-  pImage1:string;
-  pImage2:string;
-  pImage3: string;
-  pImage1Class:string;
-  pImage2Class:string;
-  pImage3Class:string;
-  pImage4:string;
-  pImage5:string;
-  pImage6:string;
-  pImage4Class:string;
-  pImage5Class:string;
-  pImage6Class:string;
+    c1:string;
+  c2:string;
+  c3:string;
+  c4:string;
+  problemHeading1:string;
+  problemHeading2:string;
+
+  p1:string;
+  p2:string;
+  p3:string;
+  p4:string;
+  resultHeading1:string;
+  resultHeading2: string;
+  
+  r1:string;
+  r2:string;
+r3: string;
    rImage1:string;
   rImage2:string;
   rImage3:string;
@@ -42,22 +39,5 @@ export class Project {
   rImage4Class:string;
   rImage5Class:string;
   rImage6Class:string;
-  c1:string;
-  c2:string;
-  c3:string;
-  c4:string;
-  problemHeading1:string;
-  problemHeading2:string;
-  problemHeading3:string;
-  p1:string;
-  p2:string;
-  p3:string;
-  p4:string;
-  p5:string;
-  resultHeading1:string;
-  resultHeading2: string;
-  resultHeading3:string;
-  r1:string;
-  r2:string;
-r3: string;
+ 
 }

@@ -24,9 +24,9 @@ import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewC
 
 export class ProjectDetailComponent implements OnInit {
   @Input() project: Project;
-  @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
-  @ViewChild('shuffleGrid2') shuffleGrid: ElementRef;
-  @ViewChild('shuffleGrid3') shuffleGrid: ElementRef;
+  // @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
+  // @ViewChild('shuffleGrid2') shuffleGrid: ElementRef;
+  // @ViewChild('shuffleGrid3') shuffleGrid: ElementRef;
 
   constructor(
     private route: ActivatedRoute,
