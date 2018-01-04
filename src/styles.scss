@@ -237,7 +237,7 @@ canvas {
   width: 250px;
   margin:  4rem auto -3rem;
   @media screen and (min-width: $break-medium) {
-   width:500px;
+   width:400px;
    transform: scale(1);
  }
 
@@ -340,9 +340,9 @@ canvas {
 
 
 
-.ng-trigger-fadeInAnimation{
-opacity:.5;
-}
+// .ng-trigger-fadeInAnimation{
+// opacity:.5;
+// }
 
 
 

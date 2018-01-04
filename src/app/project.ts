@@ -42,4 +42,22 @@ export class Project {
   rImage4Class:string;
   rImage5Class:string;
   rImage6Class:string;
+  c1:string;
+  c2:string;
+  c3:string;
+  c4:string;
+  problemHeading1:string;
+  problemHeading2:string;
+  problemHeading3:string;
+  p1:string;
+  p2:string;
+  p3:string;
+  p4:string;
+  p5:string;
+  resultHeading1:string;
+  resultHeading2: string;
+  resultHeading3:string;
+  r1:string;
+  r2:string;
+r3: string;
 }

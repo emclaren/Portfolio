@@ -1,36 +1,39 @@
 
 <div *ngIf="project" >
-	<div id="work-project1" class="work-project">
-		<div  class=" project-header {{project.class}}">
-			<h2>{{project.name}}</h2>
-			<p class="intro-project">{{project.summary}}</p>			
-			<div>
-				<a href="#{{project.class}}" pageScroll >
-					<i class="icon ion-chevron-down down-arrow"></i>
-				</a>
-			</div>
+	<div class="page-wrapper">
+		<div id="work-project1" class="work-project">
+			<div  class=" project-header {{project.class}} project-detail-header">
+				<h2>{{project.name}}</h2>
+				<p class="intro-project">{{project.summary}}</p>			
+				<div>
+					<a href="#{{project.class}}" pageScroll >
+						<i class="icon ion-chevron-down down-arrow"></i>
+					</a>
+				</div>
 
-		</div>		
+			</div>		
 
-		
 
-		<div id="{{project.class}}" class="project-intro ">
+<div class="project-block project-intro">
+			<div id="{{project.class}}" >
 
-			<h3>Overview</h3>
-			<p>{{project.overview}}</p>
+<div>
+				<h3>Overview</h3>
+				<p>{{project.overview}}</p>
 
-			<h3>Team Members</h3>
-			<p>{{project.team}}</p>
+				<h3>Team Members</h3>
+				<p>{{project.team}}</p>
 
-			<h3>Key Words</h3>
-			<p>{{project.tags}}</p>
+				<h3>My Role</h3>
+				<p>{{project.role}}</p>
 
-			<h3>My Role</h3>
-			<p>{{project.role}}</p>
+				<h3>Key Words</h3>
+				<p>{{project.tags}}</p>
 
-		</div>
-<!-- 
-<div class="triangle-container">
+			<br>
+			<br>
+
+			<div class="triangle-container">
 				<div class='wrap triangle-outer'>
 					<div class='crop'>
 						<img src='assets/img/red-1-min.jpg' alt="Decorative triangle image">
@@ -57,281 +60,170 @@
 					</div>
 				</div>
 			</div>
-		-->
-		<div class="test">
-
-		</div>
-
-
-		<div class="challenge-text ">
-	<div class="project-block">	
-
-				<h3>Challenge</h3>
-				<h4>{{project.challengeHeading}}</h4>
-<div class="flex top-image-container">
-				<img src="{{project.cImage3}}" obj.alt="obj.alt"  class="top-image" alt="Picture of the {{project.name}} project"/>
-		<!-- 		<img src="{{project.cImage2}}"  class="top-image" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/> -->
+				</div>
 			</div>
+</div >
 		
-				<figure class="">
-					<div id ="shuffleGrid" #shuffleGrid class="my-shuffle" > 
-						<figure    class=" {{project.cImage1Class}} picture-item js-item column row-span no-gutters ">
 
-							<div class="aspect aspect--16x9 ">
-								<div class="aspect__inner">
-
-									<img src="{{project.cImage1}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-								</div>
-							</div>
-						</figure>
-
-						<figure    class=" {{project.cImage2Class}} picture-item js-item column row-span no-gutters ">
-
-							<div class="aspect aspect--16x9 ">
-								<div class="aspect__inner">
-
-									<img src="{{project.cImage2}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-								</div>
-							</div>
-
-						</figure>
-
-						<figure    class=" {{project.cImage3Class}} picture-item js-item column row-span no-gutters ">
-
-							<div class="aspect aspect--16x9 ">
-								<div class="aspect__inner">
-
-									<img src="{{project.cImage3}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-								</div>
-							</div>
-						</figure>
-						<!-- <figcaption class"{{project.figCaption1Class}}">Figure Caption</figcaption> -->
-					</div>
-				</figure>
-				<p>{{project.c1}}</p>
-				<p>{{project.c2}}</p>
-				<p>{{project.c3}}</p>
-				<p>{{project.c4}}</p>
-				
-
-				<!-- Challenge Video  -->
-
-			<!-- 	<figure class="{{project.cvideoClass}}">
-					<div style="text-align:center" class="videoWrapper">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/2TbLI6mga38" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-						<figcaption>{{project.cVideofigCaption}}</figcaption>
-					</div>
-				</figure>
-				
-
-			-->
-		</div>
-	</div>
-
-	<div class="">
-
+			<div class=" project-image {{project.class}}-image-1"></div>
 			
-
-		<div class="project-block">
-
-			<h3>Process</h3>
-			<h4>{{project.problemHeading1}}</h4>
-			<figure class="">
-				<div id ="shuffleGrid3" #shuffleGrid class="my-shuffle" > 
-					<figure    class=" {{project.pImage1Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage1}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-
-					<figure    class=" {{project.pImage2Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage2}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-
-					</figure>
-
-					<figure    class=" {{project.pImage3Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage3}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-					<!-- <figcaption class"{{project.figCaption2Class}}">Figure Caption</figcaption> -->
-				</div>
-			</figure>
-			<p>{{project.p1}}</p>
-			<p>{{project.p2}}</p>
-
-
-
-
-
-
-			<h4>{{project.problemHeading2}}</h4>
-
-			<figure class="">
-				<div id ="shuffleGrid4" #shuffleGrid class="my-shuffle" > 
-					<figure    class=" {{project.pImage4Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage4}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-
-					<figure    class=" {{project.pImage5Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage5}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-
-					</figure>
-
-					<figure    class=" {{project.pImage6Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.pImage6}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-					<!-- <figcaption class"{{project.figCaption3Class}}">Figure Caption</figcaption> -->
-				</div>
-			</figure>
-			<p>{{project.p3}}</p>
 			<div>
 
+				<div class=" project-image {{project.class}}-image-2"></div>
+		
+				
+		
+					<div class="project-block">	
+						<h3>Challenge</h3>
+						<h4>{{project.challengeHeading}}</h4>
+						<p>{{project.c1}}</p>
+						<p>{{project.c2}}</p>
+						<p>{{project.c3}}</p>
+					</div>
+				
+
+				</div>
+				<div class=" project-image {{project.class}}-image-3"></div>
+				<div class=" project-image {{project.class}}-image-4"></div>
+
+		
+	<!-- </div> -->
+
+	
+
+		
+	<div class="project-block">
+
+		<h3>Process</h3>
+		<h4>{{project.problemHeading1}}</h4>
+		<p>{{project.p1}}</p>
+		<p>{{project.p2}}</p>
+
+<p>{{project.p3}}</p>
 
 
 
+
+		<h4>{{project.problemHeading2}}</h4>
+
+		<p>{{project.p4}}</p>
+		<div>
+
+
+
+
+		</div>
+		<h4>{{project.problemHeading3}}</h4>
+		
+
+	</div>
+
+
+<div class=" project-image {{project.class}}-image-5"></div>
+<div class=" project-image {{project.class}}-image-6"></div>
+<!-- <div class="challenge-text "> -->
+	<div class="project-block">
+		<h3>Results and Next Steps</h3>
+		<h4>{{project.resultHeading1}}</h4>
+		
+
+
+
+		<figure class="">
+			<div id ="shuffleGrid5" #shuffleGrid class="my-shuffle" > 
+				<figure    class=" {{project.rImage1Class}} picture-item js-item column row-span no-gutters ">
+
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
+
+							<img src="{{project.rImage1}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
+						</div>
+					</div>
+				</figure>
+
+				<figure    class=" {{project.rImage2Class}} picture-item js-item column row-span no-gutters ">
+
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
+
+							<img src="{{project.rImage2}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
+						</div>
+					</div>
+
+				</figure>
+
+				<figure    class=" {{project.rImage3Class}} picture-item js-item column row-span no-gutters ">
+
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
+
+							<img src="{{project.rImage3}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
+						</div>
+					</div>
+				</figure>
+				<!-- <figcaption class"{{project.figCaption2Class}}">Figure Caption</figcaption> -->
 			</div>
-			<h4>{{project.problemHeading3}}</h4>
-			<p>{{project.p4}}</p>
-
-		</div>
-	</div>
-	<div class="challenge-text ">
-		<div class="project-block">
-			<h3>Result</h3>
-			<h4>{{project.resultHeading1}}</h4>
-			<!-- <img src="img/stanford.jpg"> -->
+		</figure>
+		<p>{{project.r1}} </p>
 
 
 
 
+		<h4>{{project.resultHeading2}}</h4>
+		<p>{{project.r2}} </p>
+		<h4>{{project.resultHeading3}}</h4>
+		<p>{{project.r3}} </p>
 
-			<figure class="">
-				<div id ="shuffleGrid5" #shuffleGrid class="my-shuffle" > 
-					<figure    class=" {{project.rImage1Class}} picture-item js-item column row-span no-gutters ">
 
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
+		<figure class="">
+			<div id ="shuffleGrid6" #shuffleGrid class="my-shuffle" > 
+				<figure    class=" {{project.rImage4Class}} picture-item js-item column row-span no-gutters ">
 
-								<img src="{{project.rImage1}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
+
+							<img src="{{project.rImage4}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
 						</div>
-					</figure>
+					</div>
+				</figure>
 
-					<figure    class=" {{project.rImage2Class}} picture-item js-item column row-span no-gutters ">
+				<figure  class=" {{project.rImage5Class}} picture-item js-item column row-span no-gutters ">
 
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
 
-								<img src="{{project.rImage2}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
+							<img src="{{project.rImage5}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
 						</div>
+					</div>
 
-					</figure>
+				</figure>
 
-					<figure    class=" {{project.rImage3Class}} picture-item js-item column row-span no-gutters ">
+				<figure    class=" {{project.rImage6Class}} picture-item js-item column row-span no-gutters ">
 
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
+					<div class="aspect aspect--16x9">
+						<div class="aspect__inner">
 
-								<img src="{{project.rImage3}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
+							<img src="{{project.rImage6}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
 						</div>
-					</figure>
-					<!-- <figcaption class"{{project.figCaption2Class}}">Figure Caption</figcaption> -->
-				</div>
-			</figure>
-			<p>{{project.r1}} </p>
+					</div>
+				</figure>
+				<!-- <figcaption class"{{project.figCaption3Class}}">Figure Caption</figcaption> -->
+			</div>
+		</figure>
+		<!-- </div> -->
+	<!-- <div class=" project-image {{project.class}}-image-7"></div>
+		<div class=" project-image {{project.class}}-image-8"></div>		
+ -->
+		<button (click)="goBack()">go back</button>
+
+	<!-- </div> -->
+</div>
+
+</div>
 
 
 
-			
-			<h4>{{project.resultHeading2}}</h4>
-			<p>{{project.r2}} </p>
-			<h4>{{project.resultHeading3}}</h4>
-
-
-
-
-			<figure class="">
-				<div id ="shuffleGrid6" #shuffleGrid class="my-shuffle" > 
-					<figure    class=" {{project.rImage4Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.rImage4}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-
-					<figure  class=" {{project.rImage5Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.rImage5}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-
-					</figure>
-
-					<figure    class=" {{project.rImage6Class}} picture-item js-item column row-span no-gutters ">
-
-						<div class="aspect aspect--16x9">
-							<div class="aspect__inner">
-
-								<img src="{{project.rImage6}}"  obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
-							</div>
-						</div>
-					</figure>
-					<!-- <figcaption class"{{project.figCaption3Class}}">Figure Caption</figcaption> -->
-				</div>
-			</figure>
-			<p>{{project.r3}} </p>
-			
-			<button (click)="goBack()">go back</button>
-
-		</div>
-	</div>
-
-
-
-
-
-
+</div>
 
 
 

@@ -1,241 +1,580 @@
 @import"../../SCSS/mixin";
 
+.page-wrapper{
+	-webkit-animation: fadein .5s ease; /* Safari and Chrome */
+	-moz-animation: fadein .5s ease; /* Firefox */
+	-ms-animation: fadein .5s ease; /* Internet Explorer */
+	-o-animation: fadein .5s ease; /* Opera */
+	animation: fadein .5s ease;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+
+
+
 .work-project{
 
 	h2{
 		font-size:3rem;
-	}
-	// margin: 0 .75rem;
-	p{
-		margin: .5rem 0 1rem 0;
-		text-align:justify;
+		// 	@media screen and (min-width: $break-medium) {
+			// 		font-size:3rem;
+			// }
+
+		}
+
+		p{
+			margin: .5rem 0 1rem 0;
+			text-align:justify;
+
+		}
+		h3{
+			margin:1.1em auto 0 auto;
+
+
+		}
+		h4{
+			font-size:1.3rem;
+			font-family:Open sans;
+			font-style: italic;
+			color: $font-accent;
+			padding-top:1rem;
+
+		}
+		a, a:visited{
+			color:white;
+			transition:color .5s ease;
+		}
+		a:hover{
+			color:$font-accent;
+			transition:color .5s ease;
+			cursor:pointer;
+
+		}
+
+		.top-image-container{
+			div{
+				margin:0 1rem;
+			}
+		}
+
+		.down-arrow{
+			position:absolute;
+			top:80vh;
+			left: 0; 
+			right: 0; 
+			text-align:center;
+
+		}
+
+
+
+		.project-block{
+			margin: 0 1rem;
+
+			@media screen and (min-width: $break-medium) {
+				max-width: 60%;
+				margin:6rem auto;
+			}
+
+		}
+
+
+
+
+		.aspect__inner{
+			top:auto;
+			bottom:auto;
+		}
+		.project-intro{
+			margin: 0 1rem;
+			text-align:justify;
+			display:flex;
+			align-items:center;
+			@media screen and (min-width: $break-medium) {
+				height:90vh;
+				margin:0 auto;
+
+
+			}
+		}
+
+		.project-text2{
+			width: 60%;
+			margin:0 auto;
+			text-align:justify;
+		}
+
+		.challenge-text{
+			background-color: #F4F6F7;
+		}
+
+		.intro-project{
+			max-width:600px;
+			color:white;
+			margin:0 1rem;
+			text-align:center;
+			font-size:1.1rem;
+			font-weight:normal;
+		}
+
 
 	}
-	h3{
-		margin:1.1em auto 0 auto;
-		// font-size:2rem;
+
+
+
+	.project-header{
+		height: 100vh;
+			@media screen and (min-width: $break-medium) {
+				height:100vh;
+
+			}
+	
+		flex-direction:column;
+		display:flex;
+	
+		align-items:center;
+		justify-content:center;
+
+		background-size:cover;
+
+		h2{
+			color:white;
+			text-align:center;
+			display:flex;
+			flex-direction:row;
+			justify-content:center;
+			font-size:2.5rem;
+			margin:.75rem .75rem;
+			@media screen and (min-width: $break-medium) {
+				font-size:5rem;
+			}
+		}
+		h3{
+			color:white;
+		}
+	}
+
+
+
+	.grid{
+		display:flex;
+	}
+
+
+	.triangle-container{
+		margin: 4rem auto 0rem;
+	}
+
+
+
+
+	.block-talks{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
+		background-size:cover;
+		filter: grayscale(50%);
+		background-attachment:fixed;
+		background-position:center;
+	}
+
+	.asking-for-a-friend{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+		background-size:cover;
+		filter: grayscale(50%);
+		background-attachment:fixed;
+			background-position:center;
+	}
+	.earthgazing{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+		background-size:cover;
+		filter: grayscale(50%);
+		background-attachment:fixed;
+			background-position:center;
+	}
+	.tangibles{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
+		background-size:cover;
+		filter: grayscale(50%);
+		background-attachment:fixed;
+			background-position:center;
+	}
+	.audio-matic{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+		background-size:cover;
+		filter: grayscale(50%);
+		background-attachment:fixed;
+			background-position:center;
+	}
+	.mind-full{
+		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
+		background-size:cover;
+		background-attachment:fixed;
+		filter: grayscale(50%);
+			background-position:center;
+	}
+
+
+
+
+
+
+
+	.mind-full-image-1{
+		background:  url('/assets/img/mindfull/mind-full-tablet-view-min.jpg');
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		height:90vh;
+		background-attachment:fixed;
+	}
+
+	.mind-full-image-2{
+		background:  url('/assets/img/mindfull/mind-full-squirrel-min.png');
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
 
 	}
-	h4{
-		font-size:1.3rem;
-		font-family:Open sans;
-		font-style: italic;
-		color: $font-accent;
-		padding-top:1rem;
+	.mind-full-image-3{
+		background:  url('/assets/img/mindfull/mind-full-brainstorm-min.jpg');
+		background-size:cover;
+		background-position:center;
+height:90vh;
+		background-attachment:fixed;
+
+	}
+	.mind-full-image-4{
+		background:  url('/assets/img/mindfull/mind-full-unity.png');
+		background-size:contain;
+		background-position:center;
+		background-repeat:no-repeat;
+
+	}
+
+
+	.mind-full-image-5{
+		background:  url('/assets/img/mindfull/mind-full-study-photo-min.jpg');
+		background-size:cover;
+		background-position:center;
+		background-attachment:fixed;
+		height:90vh;
+		background-repeat: no-repeat;
+
+	}
+	.mind-full-image-6{
+		background:  url('/assets/img/mindfull/mind-full-sfn-poster-min.jpg');
+		background-size:cover;
+		background-position:left !important;
+		background-repeat: no-repeat;
+
+	}
+	.mind-full-image-7{
+		background:  url('/assets/img/mindfull/brainhack-close-min.png');
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		height: 90vh;
+	}
+
+	.mind-full-image-8{
+		background:  url('/assets/img/mindfull/brainhack-min.jpg');
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.audio-matic-image-1{
+		background:  url('/assets/img/audiomatic/audio-matic-logo.png');
+		background-size:cover;
+
+		background-position:center;
+		background-repeat: no-repeat;
+
+		background-attachment:fixed;
+
+
+	}
+	.audio-matic-image-2{
+		background:  url('/assets/img/audiomatic/single-gif.gif');
+		background-size:contain;
+		// filter: grayscale(50%);
+		background-position:center;
+		background-repeat: no-repeat;
+		// background-size: auto;
+		background-attachment:fixed;
+
+	}
+
+	.audio-matic-image-3{
+		background:  url('/assets/img/audiomatic/magenta-screen.jpg');
+		background-size:cover;
+
+		background-position:center;
+		background-repeat: no-repeat;
+		// background-size: auto;
+		background-attachment:fixed;
+
+	}
+
+	.audio-matic-image-4{
+		background:  url('/assets/img/audiomatic.png');
+		background-size:contain;
+		// filter: grayscale(50%);
+		background-position:center;
+		background-repeat: no-repeat;
+		// background-size: auto;
+		background-attachment:fixed;
+
+		display:none;
+	}
+
+	.audio-matic-image-5{
+		background:  url('/assets/img/audiomatic/audiomaticgif.gif');
+		background-size:contain;
+		// filter: grayscale(50%);
+		background-position:center;
+		background-repeat: no-repeat;
+		// background-size: auto;
+		background-attachment:fixed;
+
+	}
+
+
+
+	.audio-matic-image-6{
+		background:  url('/assets/img/audiomatic.png');
+		background-size:contain;
+		// filter: grayscale(50%);
+		background-position:center;
+		background-repeat: no-repeat;
+		// background-size: auto;
+		background-attachment:fixed;
+
+		display:none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.block-talks-image-1{
+		background:  url('/assets/img/blocktalks/block-talks-logo-min.jpg');
+		background-size:cover;
+
+		background-repeat:no-repeat;	
+
+	}
+	.block-talks-image-2{
+		background:  url('/assets/img/blocktalks/block-talks-scan-min.jpg');
+		background-size:cover;
 	
 	}
-	a, a:visited{
-		color:white;
-		transition:color .5s ease;
-	}
-	a:hover{
-		color:$font-accent;
-		transition:color .5s ease;
-		cursor:pointer;
+
+	.block-talks-image-3{
+		background:  url('/assets/img/blocktalks/block-talks-blocks-min.jpg');
+		background-size:cover;
 
 	}
-	img{
-		// height:400px;
-		// background-size:cover;
+
+	.block-talks-image-4{
+		background:  url('/assets/img/blocktalks/cat.gif');
+		background-size:contain;
+		background-position:center;
+	
 	}
-	.top-image{
+	.block-talks-image-5{
+		background:  url('/assets/img/blocktalks/block-talks-presentation.jpg');
+		background-size:cover;
+		
+	}
+	.block-talks-image-6{
+		background:  url('/assets/img/blocktalks/blocktalks3.jpg');
+		background-size:cover;
+		
+
+	}
+
+
+
+
+
+
+
+
+
+
+	.tangibles-image-1{
+		background:  url('/assets/img/tangibles/girlsrock4.jpg');
+		background-size:cover;
+	}
+	.tangibles-image-2{
+		background:  url('/assets/img/tangibles/girlsrock3-min.jpg');
+
+
+
+		.tangibles-image-3{
+			background:  url('/assets/img/tangibles/johnny-five-min.jpg');
+			background-size:cover;
+		}
+		.tangibles-image-4{
+			background:  url('/assets/img/tangibles/sensor.gif');
+			background-size:cover;
+		}
+		background-size:cover;
+	}
+	.tangibles-image-5{
+		background:  url('/assets/img/tangibles/sensor-data.gif');
+		background-size:cover;
+	}
+	.tangibles-image-6{
+		background:  url('/assets/img/tangibles/girlsrock7-min.jpg');
+		background-size:contain;
+		background-position:center;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.earthgazing-image-1{
+		background:  url('/assets/img/earthgazement/earth-sky.jpg');
+		background-size:cover;
+	}
+
+	.earthgazing-image-2{
+		display:none;
+	}
+
+	.earthgazing-image-3{
+		background:  url('/assets/img/earthgazement/htc-vive.jpeg');
+		background-size:cover;
+		background-repeat:no-repeat;
+
+	}
+
+	.earthgazing-image-4{
+
+		display:none;
+	}
+	.earthgazing-image-5{
+		background:  url('/assets/img/earthgazement/earthgazement3-min.png');
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	.earthgazing-image-6{
+
+		display:none;
+	}
+
+
+
+
+
+
+	.asking-for-a-friend-image-1{
+		background:  url('/assets/img/asking/asking-notepad.jpg');
+		background-size:cover;
+		// display:none;;
+	}
+
+
+
+	.asking-for-a-friend-image-2{
+		background:  url('/assets/img/asking/asking-landing3.png');
+		background-size:cover;
+		// display:none;
+	}
+
+	.asking-for-a-friend-image-3{
+		background:  url('/assets/img/asking/asking-ideation-min.jpg');
+		background-size:cover;
+		// display:none;
+	}
+
+
+
+
+	.asking-for-a-friend-image-4{
+		background:  url('/assets/img/tangibles/arduino-node.jpg');
+		background-size:cover;
+		display:none;
+	}
+
+	.asking-for-a-friend-image-5{
+		background:  url('/assets/img/asking/lumohacks-min.jpg');
+		background-size:cover;
+		// display:none;
+	}
+	.asking-for-a-friend-image-6{
+		background:  url('/assets/img/tangibles/arduino-node.jpg');
+		background-size:cover;
+		display:none;
+	}
+
+
+
+
+	.project-image{
+// background-position: left 47px top 0px, right 104px top 0px;
+		background-position:center;
 		object-fit: cover;
 		width:100%;
-		// height:50vh;
+		margin:0 auto;
+		background-attachment: fixed;
+		height: 90vh;
+		@media screen and (min-width: $break-medium) {
+			height: 90vh;
+		}
 	}
 
-	// figure{
-	// 	margin-bottom:1.5rem;
-	// }
-	.top-image-container{
-		// margin:0 1rem;
-	}
-.down-arrow{
-    position:absolute;
-    top:80vh;
-    left: 0; 
-    right: 0; 
-    text-align:center;
 
-  }
-	.project-block{
-		margin: 0 1rem;
-		
-		padding:2rem 0;margin: 0 1rem;
-		  @media screen and (min-width: $break-medium) {
-   max-width: 60%;
-   margin:0 auto;
-  }
-
+	.none{
+		display:none;
 	}
-	.my-shuffle{
-		// max-width:80%;
-		// margin:0 auto;
+
+
+
+
+
+	.aspect--9x80 {
+		padding-bottom: calc(112.5% + 8px);
+		height:300px;
 	}
 	.aspect__inner{
-		top:auto;
-		bottom:auto;
+		height:300px;
 	}
-	.project-intro{
-margin: 0 1rem;
-		text-align:justify;
-		  @media screen and (min-width: $break-medium) {
-   max-width: 60%;
-   margin:3rem auto;
-  }
-	}
-	img{
-		// height:80vh;
-	}
-	.project-text2{
-width: 60%;
-		margin:0 auto;
-		text-align:justify;
-	}
-	.project-image{
-		max-width:80%; 
-		margin:3rem auto; 
-		max-height: 40vh
-	}
-	.challenge-text{
-		background-color: #F4F6F7;
-	}
-
-	.intro-project{
-		max-width:600px;
-		color:white;
-		margin:0 auto;
-		text-align:center;
-		font-size:1.1rem;
-		font-weight:normal;
-	}
-		// @media screen and (min-width: $break-small) {
-		// 	.project-text{
-		// 		width:60%;
-		// 	}
-		// 	.project-test2{
-		// 		width:80%;
-		// 	}
-		// }
-		// @media screen and (min-width: $break-large) {
-		// 	.project-text{
-		// 		// width:50%;
-		// 	}
-		// 	.project-test2{
-		// 		width:60%;
-		// 	}
-		// }
-
-}
-// figure{
-// 	margin:0 auto;
-// }
-// iframe{
-// 	margin:0 auto;
-// }
-
-
-
-.project-header{
-	height:100vh;
-	flex-direction:column;
-	display:flex;
-	// position:fixed;
-	align-items:center;
-	justify-content:center;
- 
-background-size:cover;
-
-h2{
-	color:white;
-	text-align:center;
-	display:flex;
-	flex-direction:row;
-	justify-content:center;
-	font-size:5rem;
-	margin:.75rem .75rem;
-}
-h3{
-	color:white;
-}
-}
-
-
-.youtube{
-	width: 100% !important;
-	height: 315px;
-}
-
-
-
-.grid{
-	display:flex;
-}
-.block-talks{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
-	background-size:cover;
-	  filter: grayscale(50%);
-}
-
-.asking-for-a-friend{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
-	background-size:cover;
-	  filter: grayscale(50%);
-}
-.earthgazing{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
-	background-size:cover;
-	  filter: grayscale(50%);
-}
-.tangibles{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
-	background-size:cover;
-	  filter: grayscale(50%);
-}
-.audio-matic{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
-background-size:cover;
-  filter: grayscale(50%);
-}
-.mind-full{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
-background-size:cover;
-  filter: grayscale(50%);
-}
-
-
-.none{
-	display:none;
-}
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-			  @media screen and (min-width: $break-medium) {
-	width: 50%;
-	height: 50%;
-  }
-}
-
-.aspect--9x80 {
-padding-bottom: calc(112.5% + 8px);
-}
-
-.test{
-	width:100%;
-	margin:0 auto;
-	img{width:50%;
-		margin:0 0rem;
-		}
-}
-
 
