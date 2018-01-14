@@ -179,7 +179,8 @@ i{
 
     }
     .project-title{
-
+    transition: background-color .5s ease;
+      background:rgba(255, 52, 89, .9);
      height: 100%;
      @media screen and (min-width: $break-medium) {
       transition: background-color .5s ease;
@@ -349,8 +350,9 @@ i{
     font-size:1.3rem;
     transition: color .5s ease;
     &:hover{
-      transition: color 0.5s ease;
       color: $font-accent;
+      transition: color 0.5s ease;
+    
     }
   }
 
@@ -375,7 +377,6 @@ i{
 
 
 
-
 .page-wrapper{
  -webkit-animation: fadein .5s ease; /* Safari and Chrome */
  -moz-animation: fadein .5s ease; /* Firefox */
@@ -390,20 +391,20 @@ i{
 
 }
 
-// .preload{
+.preload{
 
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
+      background:  url('/assets/img/blocktalks/block-talks-header-min.jpg');
 
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+      background: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
 
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+      background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
 
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
+      background: url('/assets/img/tangibles/tangibles-header-min.jpg');
   
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+      background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
 
-  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
+      background:  url('/assets/img/mindfull/mind-full-header-min.jpg');
 
-  //   display:none;
+    
 
-  // }
+  }

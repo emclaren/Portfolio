@@ -27,7 +27,12 @@
 		}
 
 		p{
-			margin: .5rem 0 1rem 0;
+
+			margin: .5rem 0 1.5rem 0;
+			@media screen and (min-width: $break-medium) {
+				margin: .5rem 0 1rem 0;
+			}
+			
 			text-align:justify;
 
 		}
@@ -41,6 +46,7 @@
 			font-family:Open sans;
 			font-style: italic;
 			color: $font-accent;
+			margin: 1rem 0 .75rem 0;
 			// padding-top:1rem;
 
 		}
@@ -73,9 +79,21 @@
 
 
 		.project-block{
-			margin: 0 1rem;
+			margin: 3rem 1rem;
 			background-color: rgba(255,255,255, .5);
+			div{
+				margin: 0 0 4rem 0;
+			}
 
+			h3{
+				margin: 1rem auto .5rem auto;
+
+			}
+			@media screen and (min-width: $break-small) {
+				max-width: 70%;
+				margin: 3rem auto;
+				// margin:6rem auto;
+			}
 			@media screen and (min-width: $break-medium) {
 				max-width: 60%;
 				margin:6rem auto;
@@ -90,18 +108,41 @@
 			top:auto;
 			bottom:auto;
 		}
+
+
+
+
+
+
 		.project-intro{
-			margin: 0 1rem;
+			margin: 2rem 1rem 0 1rem;
+			background-color: rgba(255,255,255, .5);
 			text-align:justify;
 			display:flex;
 			align-items:center;
+			@media screen and (min-width: $break-small) {
+				max-width: 70%;
+				margin: 2rem auto;
+				// margin:6rem auto;
+			}
 			@media screen and (min-width: $break-medium) {
+				max-width: 60%;
 				height:90vh;
-				margin:0 auto;
+				margin:2rem auto 0;
 
 
 			}
 		}
+
+
+
+
+
+
+
+
+
+
 
 		.project-text2{
 			width: 60%;
@@ -182,9 +223,10 @@
 
 		// margin:1rem 1rem;
 		height:50vh;
+
 		
 		@media screen and (min-width: $break-medium) {
-			height: 90vh;
+			height: 95vh;
 			
 			width:100%;			
 			background-attachment: fixed;
@@ -199,6 +241,7 @@
 		filter: grayscale(50%);
 		background-attachment:fixed;
 		background-position:center;
+		background-position: 0px 0px !important; 
 	}
 
 	.asking-for-a-friend{
@@ -270,18 +313,34 @@
 		background-size:contain;
 		// background-position:center;
 
-		height:40vh !important;
-		background-repeat:no-repeat;
-		background-position: 0px 0px !important; 
-		@media screen and (min-width: $break-xsmall) {
-			height: 50vh !important;
+
+		height: 217px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
 		}
-		@media screen and (min-width: $break-small) {
-			height: 60vh !important;
+			@media screen and (min-width: $break-small) {
+			height: 450px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 70vh !important;
+			height: 600px ;
 		}
+
+		@media screen and (min-width: $break-large) {
+			height: 95vh ;
+
+		}	
+		// height:40vh !important;
+		// background-repeat:no-repeat;
+		// background-position: 0px 0px !important; 
+		// @media screen and (min-width: $break-xsmall) {
+		// 	height: 50vh !important;
+		// }
+		// @media screen and (min-width: $break-small) {
+		// 	height: 60vh !important;
+		// }
+		// @media screen and (min-width: $break-medium) {
+		// 	height: 70vh !important;
+		// }
 
 	}
 
@@ -327,16 +386,15 @@
 
 		background-position:center;
 		background-repeat: no-repeat;
-		height:35vh;
+		height:50vh;
 		@media screen and (min-width: $break-small) {
-			height: 46vh !important;
+			height: 60vh ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 70vh !important;
+			height: 95vh;
 		}
-
 		@media screen and (min-width: $break-large) {
-			height: 90vh ;
+			height: 95vh ;
 
 		}
 
@@ -358,19 +416,24 @@
 		background:  url('/assets/img/audiomatic/magenta-screen-min.jpg');
 		background-size:cover;
 
-		background-position:center;
+		// background-position:center;
 		background-repeat: no-repeat;
 		// background-size: auto;
-		height:35vh;
-		@media screen and (min-width: $break-small) {
-			height: 46vh !important;
+		height: 217px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 450px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 70vh !important;
+			height: 700px ;
 		}
+
 		@media screen and (min-width: $break-large) {
-			height: 90vh !important;
-		}
+			height: 95vh ;
+
+		}	
 
 	}
 
@@ -388,32 +451,32 @@
 
 	.audio-matic-image-5{
 		background:  url('/assets/img/audiomatic/audiomaticgif.gif');
-		background-size:contain;
+		background-size:cover;
 		// filter: grayscale(50%);
 		background-position:center;
 		background-repeat: no-repeat;
-		height:34vh;
-		@media screen and (min-width: $break-small) {
-			height: 46vh ;
+		height: 250px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 400px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 520px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 77vh ;
+			height: 650px ;
 		}
 
 		@media screen and (min-width: $break-large) {
-			height: 90vh ;
+			height: 900px;
 
-		}
+		}	
+
 	}
 
 
 
 	.audio-matic-image-6{
-		background:  url('/assets/img/audiomatic.png');
-		background-size:contain;
-		// filter: grayscale(50%);
-		background-position:center;
-		background-repeat: no-repeat;
+
 		
 		display:none;
 	}
@@ -436,7 +499,22 @@
 		background:  url('/assets/img/blocktalks/block-talks-logo-min.jpg');
 		background-size:cover;
 
-		background-repeat:no-repeat;	
+		// background-repeat:no-repeat;
+		height: 217px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 450px ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 600px ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 95vh ;
+
+		}	
 
 	}
 	.block-talks-image-2{
@@ -470,13 +548,26 @@
 	}
 	.block-talks-image-7{
 		background:  url('/assets/img/blocktalks/block-talks-feedback.gif');
-		background-size:contain;
+		background-size:cover;
 		
 		background-repeat: no-repeat;
 
-		@media screen and (max-width: $break-small) {
-			height: 41vh !important;
+
+				height: 250px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
 		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 614px ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 750px ;
+
+		}	
 		
 	}
 
@@ -503,6 +594,7 @@
 	.tangibles-image-4{
 		background:  url('/assets/img/tangibles/sensor.gif');
 		background-size:cover;
+
 	}
 
 	.tangibles-image-5{
@@ -510,14 +602,52 @@
 		background-size:cover;
 		height: 42vh;
 		background-position: 0px 0px !important; 
-		@media screen and (min-width: $break-medium) {
-			height: 90vh !important;
+		
+				height: 250px ;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
 		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 614px ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 750px ;
+
+		}	
+
+
+
+
+
+
+
+
 	}
 	.tangibles-image-6{
 		background:  url('/assets/img/tangibles/girlsrock7-min.jpg');
 		background-size:contain;
 		background-position:center;
+
+
+				height: 50vh;
+			@media screen and (min-width: $break-xsmall) {
+			height: 350px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 614px ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 750px ;
+
+		}	
 
 	}
 	.tangibles-image-7{
@@ -551,18 +681,24 @@
 		background:  url('/assets/img/earthgazement/htc-vive.jpeg');
 		background-size:cover;
 		background-repeat:no-repeat;
-		height:28vh;
-		@media screen and (min-width: $break-small) {
-			height: 46vh ;
+		height: 260px;
+background-position:center;
+// background-position: 0px -15px !important;
+					@media screen and (min-width: $break-xsmall) {
+			height: 400px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 77vh ;
+				// background-position: 0px -15px !important;
+			height: 650px ;
 		}
 
 		@media screen and (min-width: $break-large) {
-			height: 90vh ;
+			height: 900px;
 
-		}
+		}	
 
 	}
 
@@ -572,20 +708,25 @@
 	}
 	.earthgazing-image-5{
 		background:  url('/assets/img/earthgazement/earthgazement3-min.png');
-		background-size:contain;
+		background-size:cover;
 		background-repeat:no-repeat;
-		height:28vh;
-		@media screen and (min-width: $break-small) {
-			height: 35vh ;
+	height: 260px;
+background-position:center;
+					@media screen and (min-width: $break-xsmall) {
+			height: 400px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 77vh ;
+				// background-position: 0px -15px !important;
+			height: 650px ;
 		}
 
 		@media screen and (min-width: $break-large) {
-			height: 90vh ;
+			height:900px;
 
-		}
+		}	
 	}
 	.earthgazing-image-6{
 
@@ -606,11 +747,29 @@
 		background-size:cover;
 		// background-position: bottom right; 
 
-		height:42vh;
-		@media screen and (min-width: $break-medium) {
-			height: 90vh !important;
-			background-position: 0px -15px !important;
+		// height:42vh;
+		// @media screen and (min-width: $break-medium) {
+		// 	height: 90vh !important;
+		// 	background-position: 0px -15px !important;
+		// }
+		height: 260px;
+background-position:center;
+background-position: 0px -15px !important;
+					@media screen and (min-width: $break-xsmall) {
+			height: 400px;
 		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
+		}
+		@media screen and (min-width: $break-medium) {
+				background-position: 0px -15px !important;
+			height: 650px ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 900px;
+
+		}	
 	}
 
 
@@ -619,15 +778,31 @@
 		background:  url('/assets/img/asking/asking-landing3.png');
 		background-size:cover;
 		// display:none;
-		height:30vh;
-		@media screen and (min-width: $break-small) {
-			height: 46vh ;
+		// height:30vh;
+		// @media screen and (min-width: $break-small) {
+		// 	height: 46vh ;
 
+		// }
+		// @media screen and (min-width: $break-medium) {
+		// 	height: 70vh ;
+
+		// }
+height: 225px;
+background-position:center;
+					@media screen and (min-width: $break-xsmall) {
+			height: 400px;
+		}
+			@media screen and (min-width: $break-small) {
+			height: 470px ;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 70vh ;
-
+			height: 650px ;
 		}
+
+		@media screen and (min-width: $break-large) {
+			height: 900px;
+
+		}	
 		//     @media screen and (min-width: $break-small) {
 			// 	height: 90vh ;
 
@@ -644,23 +819,23 @@
 
 
 		.asking-for-a-friend-image-2{
-			background:  url('/assets/img/tangibles/arduino-node.jpg');
-			background-size:cover;
+			
 			display:none;
 		}
 
 		.asking-for-a-friend-image-5{
 			background:  url('/assets/img/asking/lumohacks-min.jpg');
 			background-size:cover;
+				background-position:center;
 			// display:none;
 		}
 		.asking-for-a-friend-image-6{
-			background:  url('/assets/img/tangibles/arduino-node.jpg');
-			background-size:cover;
+			
 			display:none;
 		}
 		.asking-for-a-friend-image-7{
 			display:none;
+
 		}
 
 
@@ -688,6 +863,7 @@
 
 			// background-color:green;
 			h3{
+				text-align: right;
 				position:absolute;
 				bottom: 30px;
 				// top:30px;
@@ -699,6 +875,15 @@
 				// text-align:right;
 
 				background-color:rgba(255,255,255, .7);
+					@media screen and (max-width: $break-small) {
+					max-width:75%;
+				}
+				@media screen and (max-width: $break-xsmall) {
+					width:100%;
+					max-width:100%;
+				}
+					
+			
 
 			}
 		}
@@ -706,28 +891,40 @@
 
 
 
+		.triangle-container{
 
+			margin: 2rem auto .5rem;
 
-
-	.project-image{
-// background-position: left 47px top 0px, right 104px top 0px;
-		
-		// background-position:center;
-		// object-fit: cover;
-		width:100%;
-
-		// margin:1rem 1rem;
-		// height:50vh;
-		
-		@media screen and (min-width: $break-medium) {
-			// height: 90vh;
-			
-			width:100%;			
-			background-attachment: fixed;
+			@media screen and (min-width: $break-medium) {
+				margin:  4rem auto 0;
+			}
 		}
-	}
+
+
+
+		.project-image{
+			// background-position: left 47px top 0px, right 104px top 0px;
+
+			// background-position:center;
+			// object-fit: cover;
+			width:100%;
+
+			// margin:1rem 1rem;
+			// height:50vh;
+
+			@media screen and (min-width: $break-large) {
+				// height: 90vh;
+
+				width:100%;			
+				background-attachment: fixed;
+			}
+		}
 
 
 		.intro-container{
 			width:100%;
+		}
+
+		button{
+			margin-top:0;
 		}
