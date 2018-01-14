@@ -41,7 +41,7 @@
 			font-family:Open sans;
 			font-style: italic;
 			color: $font-accent;
-			padding-top:1rem;
+			// padding-top:1rem;
 
 		}
 		a, a:visited{
@@ -74,6 +74,7 @@
 
 		.project-block{
 			margin: 0 1rem;
+			background-color: rgba(255,255,255, .5);
 
 			@media screen and (min-width: $break-medium) {
 				max-width: 60%;
@@ -128,14 +129,14 @@
 
 	.project-header{
 		height: 100vh;
-			@media screen and (min-width: $break-medium) {
-				height:100vh;
+		@media screen and (min-width: $break-medium) {
+			height:100vh;
 
-			}
-	
+		}
+
 		flex-direction:column;
 		display:flex;
-	
+
 		align-items:center;
 		justify-content:center;
 
@@ -172,6 +173,26 @@
 
 
 
+	.project-image{
+		// background-position: left 47px top 0px, right 104px top 0px;
+		
+		background-position:center;
+		object-fit: cover;
+		width:100%;
+
+		// margin:1rem 1rem;
+		height:50vh;
+		
+		@media screen and (min-width: $break-medium) {
+			height: 90vh;
+			
+			width:100%;			
+			background-attachment: fixed;
+		}
+	}
+
+
+
 	.block-talks{
 		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
 		background-size:cover;
@@ -185,35 +206,35 @@
 		background-size:cover;
 		filter: grayscale(50%);
 		background-attachment:fixed;
-			background-position:center;
+		background-position:center;
 	}
 	.earthgazing{
 		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
 		background-size:cover;
 		filter: grayscale(50%);
 		background-attachment:fixed;
-			background-position:center;
+		background-position:center;
 	}
 	.tangibles{
 		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
 		background-size:cover;
 		filter: grayscale(50%);
 		background-attachment:fixed;
-			background-position:center;
+		background-position:center;
 	}
 	.audio-matic{
 		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
 		background-size:cover;
 		filter: grayscale(50%);
 		background-attachment:fixed;
-			background-position:center;
+		background-position:center;
 	}
 	.mind-full{
 		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
 		background-size:cover;
 		background-attachment:fixed;
 		filter: grayscale(50%);
-			background-position:center;
+		background-position:center;
 	}
 
 
@@ -227,8 +248,7 @@
 		background-size:cover;
 		background-position:center;
 		background-repeat: no-repeat;
-		height:90vh;
-		background-attachment:fixed;
+
 	}
 
 	.mind-full-image-2{
@@ -242,15 +262,26 @@
 		background:  url('/assets/img/mindfull/mind-full-brainstorm-min.jpg');
 		background-size:cover;
 		background-position:center;
-height:90vh;
-		background-attachment:fixed;
+
 
 	}
 	.mind-full-image-4{
 		background:  url('/assets/img/mindfull/mind-full-unity.png');
 		background-size:contain;
-		background-position:center;
+		// background-position:center;
+
+		height:40vh !important;
 		background-repeat:no-repeat;
+		background-position: 0px 0px !important; 
+		@media screen and (min-width: $break-xsmall) {
+			height: 50vh !important;
+		}
+		@media screen and (min-width: $break-small) {
+			height: 60vh !important;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 70vh !important;
+		}
 
 	}
 
@@ -259,9 +290,8 @@ height:90vh;
 		background:  url('/assets/img/mindfull/mind-full-study-photo-min.jpg');
 		background-size:cover;
 		background-position:center;
-		background-attachment:fixed;
-		height:90vh;
-		background-repeat: no-repeat;
+
+
 
 	}
 	.mind-full-image-6{
@@ -276,7 +306,7 @@ height:90vh;
 		background-size:cover;
 		background-position:center;
 		background-repeat: no-repeat;
-		height: 90vh;
+
 	}
 
 	.mind-full-image-8{
@@ -291,43 +321,56 @@ height:90vh;
 
 
 
-
-
-
-
-
-
-
 	.audio-matic-image-1{
 		background:  url('/assets/img/audiomatic/audio-matic-logo.png');
 		background-size:cover;
 
 		background-position:center;
 		background-repeat: no-repeat;
+		height:35vh;
+		@media screen and (min-width: $break-small) {
+			height: 46vh !important;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 70vh !important;
+		}
 
-		background-attachment:fixed;
+		@media screen and (min-width: $break-large) {
+			height: 90vh ;
+
+		}
 
 
 	}
 	.audio-matic-image-2{
-		background:  url('/assets/img/audiomatic/single-gif.gif');
+		// background:  url('/assets/img/audiomatic/single-gif.gif');
 		background-size:contain;
 		// filter: grayscale(50%);
 		background-position:center;
 		background-repeat: no-repeat;
-		// background-size: auto;
-		background-attachment:fixed;
+
+		display:none;
+
 
 	}
 
 	.audio-matic-image-3{
-		background:  url('/assets/img/audiomatic/magenta-screen.jpg');
+		background:  url('/assets/img/audiomatic/magenta-screen-min.jpg');
 		background-size:cover;
 
 		background-position:center;
 		background-repeat: no-repeat;
 		// background-size: auto;
-		background-attachment:fixed;
+		height:35vh;
+		@media screen and (min-width: $break-small) {
+			height: 46vh !important;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 70vh !important;
+		}
+		@media screen and (min-width: $break-large) {
+			height: 90vh !important;
+		}
 
 	}
 
@@ -338,7 +381,7 @@ height:90vh;
 		background-position:center;
 		background-repeat: no-repeat;
 		// background-size: auto;
-		background-attachment:fixed;
+
 
 		display:none;
 	}
@@ -349,9 +392,18 @@ height:90vh;
 		// filter: grayscale(50%);
 		background-position:center;
 		background-repeat: no-repeat;
-		// background-size: auto;
-		background-attachment:fixed;
+		height:34vh;
+		@media screen and (min-width: $break-small) {
+			height: 46vh ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 77vh ;
+		}
 
+		@media screen and (min-width: $break-large) {
+			height: 90vh ;
+
+		}
 	}
 
 
@@ -362,17 +414,16 @@ height:90vh;
 		// filter: grayscale(50%);
 		background-position:center;
 		background-repeat: no-repeat;
-		// background-size: auto;
-		background-attachment:fixed;
-
+		
 		display:none;
 	}
 
 
 
 
-
-
+	.audio-matic-image-7{
+		display:none;
+	}
 
 
 
@@ -391,7 +442,7 @@ height:90vh;
 	.block-talks-image-2{
 		background:  url('/assets/img/blocktalks/block-talks-scan-min.jpg');
 		background-size:cover;
-	
+
 	}
 
 	.block-talks-image-3{
@@ -404,7 +455,7 @@ height:90vh;
 		background:  url('/assets/img/blocktalks/cat.gif');
 		background-size:contain;
 		background-position:center;
-	
+
 	}
 	.block-talks-image-5{
 		background:  url('/assets/img/blocktalks/block-talks-presentation.jpg');
@@ -417,10 +468,17 @@ height:90vh;
 		
 
 	}
+	.block-talks-image-7{
+		background:  url('/assets/img/blocktalks/block-talks-feedback.gif');
+		background-size:contain;
+		
+		background-repeat: no-repeat;
 
-
-
-
+		@media screen and (max-width: $break-small) {
+			height: 41vh !important;
+		}
+		
+	}
 
 
 
@@ -433,27 +491,37 @@ height:90vh;
 	}
 	.tangibles-image-2{
 		background:  url('/assets/img/tangibles/girlsrock3-min.jpg');
+		background-size:cover;
 
 
+	}
 
-		.tangibles-image-3{
-			background:  url('/assets/img/tangibles/johnny-five-min.jpg');
-			background-size:cover;
-		}
-		.tangibles-image-4{
-			background:  url('/assets/img/tangibles/sensor.gif');
-			background-size:cover;
-		}
+	.tangibles-image-3{
+		background:  url('/assets/img/tangibles/johnny-five-min.jpg');
 		background-size:cover;
 	}
+	.tangibles-image-4{
+		background:  url('/assets/img/tangibles/sensor.gif');
+		background-size:cover;
+	}
+
 	.tangibles-image-5{
 		background:  url('/assets/img/tangibles/sensor-data.gif');
 		background-size:cover;
+		height: 42vh;
+		background-position: 0px 0px !important; 
+		@media screen and (min-width: $break-medium) {
+			height: 90vh !important;
+		}
 	}
 	.tangibles-image-6{
 		background:  url('/assets/img/tangibles/girlsrock7-min.jpg');
 		background-size:contain;
 		background-position:center;
+
+	}
+	.tangibles-image-7{
+		display:none;
 
 	}
 
@@ -483,6 +551,18 @@ height:90vh;
 		background:  url('/assets/img/earthgazement/htc-vive.jpeg');
 		background-size:cover;
 		background-repeat:no-repeat;
+		height:28vh;
+		@media screen and (min-width: $break-small) {
+			height: 46vh ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 77vh ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 90vh ;
+
+		}
 
 	}
 
@@ -494,87 +574,160 @@ height:90vh;
 		background:  url('/assets/img/earthgazement/earthgazement3-min.png');
 		background-size:contain;
 		background-repeat:no-repeat;
+		height:28vh;
+		@media screen and (min-width: $break-small) {
+			height: 35vh ;
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 77vh ;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 90vh ;
+
+		}
 	}
 	.earthgazing-image-6{
 
 		display:none;
 	}
 
+	.earthgazing-image-7{
+
+		display:none;
+	}
 
 
 
 
 
 	.asking-for-a-friend-image-1{
-		background:  url('/assets/img/asking/asking-notepad.jpg');
+		background:  url('/assets/img/asking/asking-notepad-min.jpg');
 		background-size:cover;
-		// display:none;;
+		// background-position: bottom right; 
+
+		height:42vh;
+		@media screen and (min-width: $break-medium) {
+			height: 90vh !important;
+			background-position: 0px -15px !important;
+		}
 	}
-
-
-
-	.asking-for-a-friend-image-2{
-		background:  url('/assets/img/asking/asking-landing3.png');
-		background-size:cover;
-		// display:none;
-	}
-
-	.asking-for-a-friend-image-3{
-		background:  url('/assets/img/asking/asking-ideation-min.jpg');
-		background-size:cover;
-		// display:none;
-	}
-
 
 
 
 	.asking-for-a-friend-image-4{
-		background:  url('/assets/img/tangibles/arduino-node.jpg');
-		background-size:cover;
-		display:none;
-	}
-
-	.asking-for-a-friend-image-5{
-		background:  url('/assets/img/asking/lumohacks-min.jpg');
+		background:  url('/assets/img/asking/asking-landing3.png');
 		background-size:cover;
 		// display:none;
-	}
-	.asking-for-a-friend-image-6{
-		background:  url('/assets/img/tangibles/arduino-node.jpg');
-		background-size:cover;
-		display:none;
-	}
+		height:30vh;
+		@media screen and (min-width: $break-small) {
+			height: 46vh ;
+
+		}
+		@media screen and (min-width: $break-medium) {
+			height: 70vh ;
+
+		}
+		//     @media screen and (min-width: $break-small) {
+			// 	height: 90vh ;
+
+			// }
+		}
+
+		.asking-for-a-friend-image-3{
+			background:  url('/assets/img/asking/asking-ideation-min.jpg');
+			background-size:cover;
+			// display:none;
+		}
+
+
+
+
+		.asking-for-a-friend-image-2{
+			background:  url('/assets/img/tangibles/arduino-node.jpg');
+			background-size:cover;
+			display:none;
+		}
+
+		.asking-for-a-friend-image-5{
+			background:  url('/assets/img/asking/lumohacks-min.jpg');
+			background-size:cover;
+			// display:none;
+		}
+		.asking-for-a-friend-image-6{
+			background:  url('/assets/img/tangibles/arduino-node.jpg');
+			background-size:cover;
+			display:none;
+		}
+		.asking-for-a-friend-image-7{
+			display:none;
+		}
+
+
+
+		.none{
+			display:none;
+		}
+
+
+
+
+		.aspect--9x80 {
+			padding-bottom: calc(112.5% + 8px);
+			height:300px;
+		}
+		.aspect__inner{
+			height:300px;
+		}
+
+		.image-description{
+			position:relative;
+			height:100%;
+			width:100%;
+			display:flex;
+
+			// background-color:green;
+			h3{
+				position:absolute;
+				bottom: 30px;
+				// top:30px;
+				font-size:1rem;
+				padding:.5rem 1rem ;
+				right: 0;
+				// right:0; 
+				justify-content:center;
+				// text-align:right;
+
+				background-color:rgba(255,255,255, .7);
+
+			}
+		}
+
+
+
 
 
 
 
 	.project-image{
 // background-position: left 47px top 0px, right 104px top 0px;
-		background-position:center;
-		object-fit: cover;
+		
+		// background-position:center;
+		// object-fit: cover;
 		width:100%;
-		margin:0 auto;
-		background-attachment: fixed;
-		height: 90vh;
+
+		// margin:1rem 1rem;
+		// height:50vh;
+		
 		@media screen and (min-width: $break-medium) {
-			height: 90vh;
+			// height: 90vh;
+			
+			width:100%;			
+			background-attachment: fixed;
 		}
 	}
 
 
-	.none{
-		display:none;
-	}
-
-
-
-
-
-	.aspect--9x80 {
-		padding-bottom: calc(112.5% + 8px);
-		height:300px;
-	}
-	.aspect__inner{
-		height:300px;
-	}
-
+		.intro-container{
+			width:100%;
+		}

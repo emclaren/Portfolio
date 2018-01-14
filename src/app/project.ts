@@ -21,6 +21,7 @@ export class Project {
   p2:string;
   p3:string;
   p4:string;
+  p5: string;
   resultHeading1:string;
   resultHeading2: string;
   
@@ -39,5 +40,12 @@ r3: string;
   rImage4Class:string;
   rImage5Class:string;
   rImage6Class:string;
+  caption1:string;
+  caption2:string;
+  caption3:string;
+  caption4:string;
+  caption5:string;
+  caption6:string;
+    caption7:string;
  
 }

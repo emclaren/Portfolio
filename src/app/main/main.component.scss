@@ -9,6 +9,7 @@ i{
 .page-wrapper{
   max-width:1250px;
   margin: 0 1rem;
+
   @media screen and (min-width: $break-medium) {
     margin: 0 auto;
   }
@@ -38,15 +39,15 @@ i{
   }
   p{
     align-self: center; 
-    background-color:white;
     margin:1rem 0;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding:0;
 
   }
   .text-wrapper{
     width:80%;
     margin:0 auto;
+    background-color:rgba(255,255,255, .5);
 
   }
   .down-arrow{
@@ -88,9 +89,9 @@ i{
     }
   }
   h3{
-    font-size:1.5rem;
-    font-weight:normal;
-    font-family: Roboto, Open Sans, sans-serif;
+    font-size:1rem;
+    // font-weight:normal;
+    // font-family: Roboto, Open Sans, sans-serif;
     padding: .25rem 0;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
@@ -98,7 +99,8 @@ i{
     display:flex;
     align-items:center;
     justify-content:center;
-    text-transform:none;
+    color:font-color;
+    // text-transform:none;
   }
   .project-title{
     position: absolute;
@@ -113,116 +115,137 @@ i{
     justify-content: center;
     z-index:20;
     color:white;
-    background-color:rgba(0,0,0, .6);
-    width:100%;
+    // background-color: $font-accent;
 
+    background-color:rgba(0,0,0, .6);
+    // background-color: $font-color;
+    // background-color:white;
+    width:100%;
+    // transition: height .5s ease;
     text-align:center;
     border-top:none;
-  }
+    @media screen and (min-width: $break-medium) {
+     background-color:rgba(0,0,0, .6);
+     transition: background-color .5s ease;
+   }
+ }
 
-  /*Shuffle Tile Formatting*/
+ /*Shuffle Tile Formatting*/
 
-  .aspect--size {
+ .aspect--size {
 
-    padding-bottom:  calc(80% + 8px)
-  }
+  padding-bottom:  calc(80% + 8px)
+}
 
-  .aspect__inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: background-color .5s ease;
-    transition: width .5s ease;
-    transition: height .5s ease;
-    img{
-      transition: transform .5s ease;
-      display: block;
-      width: 100%;
-      max-width: none;
-      object-fit: cover;
-      height:100%;
-      -webkit-animation: filter 3s infinite;
-      filter: grayscale(50%);
-    }
-
-
-    &:hover,  a:focus {
-      cursor:pointer;
-      background-color: $font-accent;
-
-      img{
-
-        transition: transform .5s ease;
-        -moz-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-        border: 1px $font-color solid;
-      }
-      .project-title{
-        background:rgba(255, 52, 89, .9);
-        transition: background-color .5s ease;
-      }
-
-    }
-  }
-  /* default styles so shuffle doesn't have to set them (it will if they're missing) */
-  .my-shuffle {
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Ensure images take up the same space when they load */
-  .aspect {
-    position: relative;
+.aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color .5s ease;
+  transition: width .5s ease;
+  transition: height .5s ease;
+  img{
+    transition: transform .5s ease;
+    display: block;
     width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    overflow: hidden;
-  }
-
-
-  .aspect__inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .col-span {
-    width: 50%;
-  }
-
-  .my-sizer-element {
-    width: 8.33333%;
-  }
-
-  /* Bootstrap-style columns */
-  .column {
-    position: relative;
-    float: left;
-    min-height: 1px;
-
-    padding-left: 4px;
-    padding-right: 4px;
-
-    /* Space between tiles */
-    margin-top: 8px;
-  }
-  @media screen and (min-width: $break-medium) {
-    padding:0;
-    h2{
-      width:80%;
-      margin: 2rem auto;
-    }
-    #shuffleGrid{
-      width:90%;
-      margin:0 auto;
-      margin-bottom:none;
+    max-width: none;
+    object-fit: cover;
+    height:100%;
+    -webkit-animation: filter 3s infinite;
+    filter: grayscale(60%);
+    @media screen and (min-width: $break-medium) {
+      filter: grayscale(60%);
+      transition: filter .5s ease;
+      transition: background-color .5s ease;
     }
   }
+
+
+  &:hover,  a:focus {
+    cursor:pointer;
+    background-color: $font-accent;
+
+    img{
+
+      transition: transform .5s ease;
+      // -moz-transform: scale(1.05);
+      // -webkit-transform: scale(1.05);
+      // transform: scale(1.05);
+      // border: 1px $font-color solid;
+      filter: grayscale(20%);
+      transition: filter .5s ease;
+
+    }
+    .project-title{
+
+     height: 100%;
+     @media screen and (min-width: $break-medium) {
+      transition: background-color .5s ease;
+      background:rgba(255, 52, 89, .9);
+
+    }
+  }
+
+}
+}
+/* default styles so shuffle doesn't have to set them (it will if they're missing) */
+.my-shuffle {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure images take up the same space when they load */
+.aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+
+.aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.col-span {
+  width: 50%;
+}
+
+.my-sizer-element {
+  width: 8.33333%;
+}
+
+/* Bootstrap-style columns */
+.column {
+  position: relative;
+  float: left;
+  min-height: 1px;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
+  /* Space between tiles */
+  margin-top: 8px;
+}
+@media screen and (min-width: $break-medium) {
+  padding:0;
+  h2{
+    width:80%;
+    margin: 2rem auto;
+  }
+  #shuffleGrid{
+    width:90%;
+    margin:0 auto;
+    margin-bottom:none;
+  }
+}
 }
 
 
@@ -241,6 +264,7 @@ i{
   li{
     margin: .5rem 0;
     line-height:1.3rem;
+    font-family: Roboto, Open Sans, sans-serif;
   }
   .about-intro{
     text-align:justify;
@@ -300,7 +324,7 @@ i{
  z-index:500;
  margin:0 auto;
  // padding:1rem 0;
- height: 90vh;
+ height: 85vh;
  color: $font-color;
 
 
@@ -319,8 +343,9 @@ i{
   }
   a{
     color: $font-color;
-    border-bottom:1px solid white;
-    text-decoration:none;
+    // border-bottom:1px solid white;
+    // text-decoration-color: rgba(255,52,89, .7);
+    // text-decoration:none;
     font-size:1.3rem;
     transition: color .5s ease;
     &:hover{
@@ -330,8 +355,11 @@ i{
   }
 
 }
+@media screen and (min-width: $break-small) {
+  height:90vh;
+}
 @media screen and (min-width: $break-medium) {
-  height:85vh;
+  height:90vh;
   width:80%;
   h2{
    margin:3rem 1rem;
@@ -359,4 +387,23 @@ i{
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+
 }
+
+// .preload{
+
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
+
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
+  
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+
+  //     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
+
+  //   display:none;
+
+  // }
