@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^5.1.2",
     "@angular/router": "^5.1.2",
     "core-js": "^2.5.3",
+    "fitie": "^1.0.0",
     "ng2-page-scroll": "^4.0.0-beta.12",
     "p5": "^0.5.16",
     "rxjs": "^5.5.6",

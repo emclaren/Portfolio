@@ -24,32 +24,26 @@ import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewC
 
 export class ProjectDetailComponent implements OnInit {
   @Input() project: Project;
-  // @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
-  // @ViewChild('shuffleGrid2') shuffleGrid: ElementRef;
-  // @ViewChild('shuffleGrid3') shuffleGrid: ElementRef;
+
 
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
     private location: Location,
     private router: Router
-  ) {}
+    ) {}
 
   ngOnInit(): void {
     this.getProject();
 
 
- }
-    ngAfterViewInit() {
- // const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
- // const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
- //   const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
   }
+
 
   getProject(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.projectService.getProject(id)
-      .subscribe(project => this.project = project);
+    .subscribe(project => this.project = project);
   }
 
   goBack(): void {
@@ -62,5 +56,5 @@ export class ProjectDetailComponent implements OnInit {
 
 
 
-   
-   
+
+

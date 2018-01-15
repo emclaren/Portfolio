@@ -13,918 +13,859 @@
 	to   { opacity: 1; }
 }
 
-
-
-
 .work-project{
 
 	h2{
 		font-size:3rem;
-		// 	@media screen and (min-width: $break-medium) {
-			// 		font-size:3rem;
-			// }
+	}
 
+	p{
+
+		margin: .5rem 0 1.5rem 0;
+		@media screen and (min-width: $break-medium) {
+			margin: .5rem 0 1rem 0;
 		}
 
-		p{
+		text-align:justify;
 
-			margin: .5rem 0 1.5rem 0;
-			@media screen and (min-width: $break-medium) {
-				margin: .5rem 0 1rem 0;
-			}
-			
-			text-align:justify;
-
-		}
-		h3{
-			margin:1.1em auto 0 auto;
+	}
+	h3{
+		margin:1.1em auto 0 auto;
 
 
-		}
-		h4{
-			font-size:1.3rem;
-			font-family:Open sans;
-			font-style: italic;
-			color: $font-accent;
-			margin: 1rem 0 .75rem 0;
-			// padding-top:1rem;
+	}
+	h4{
+		font-size:1.3rem;
+		font-family:Open sans;
+		font-style: italic;
+		color: $font-accent;
+		margin: 1rem 0 .75rem 0;
+	}
+	a, a:visited{
+		color:white;
+		transition:color .5s ease;
+	}
+	a:hover{
+		color:$font-accent;
+		transition:color .5s ease;
+		cursor:pointer;
 
-		}
-		a, a:visited{
-			color:white;
-			transition:color .5s ease;
-		}
-		a:hover{
-			color:$font-accent;
-			transition:color .5s ease;
-			cursor:pointer;
+	}
 
-		}
-
-		.top-image-container{
-			div{
-				margin:0 1rem;
-			}
-		}
-
-		.down-arrow{
-			position:absolute;
-			top:80vh;
-			left: 0; 
-			right: 0; 
-			text-align:center;
-
-		}
-
-
-
-		.project-block{
-			margin: 3rem 1rem;
-			background-color: rgba(255,255,255, .5);
-			div{
-				margin: 0 0 4rem 0;
-			}
-
-			h3{
-				margin: 1rem auto .5rem auto;
-
-			}
-			@media screen and (min-width: $break-small) {
-				max-width: 70%;
-				margin: 3rem auto;
-				// margin:6rem auto;
-			}
-			@media screen and (min-width: $break-medium) {
-				max-width: 60%;
-				margin:6rem auto;
-			}
-
-		}
-
-
-
-
-		.aspect__inner{
-			top:auto;
-			bottom:auto;
-		}
-
-
-
-
-
-
-		.project-intro{
-			margin: 2rem 1rem 0 1rem;
-			background-color: rgba(255,255,255, .5);
-			text-align:justify;
-			display:flex;
-			align-items:center;
-			@media screen and (min-width: $break-small) {
-				max-width: 70%;
-				margin: 2rem auto;
-				// margin:6rem auto;
-			}
-			@media screen and (min-width: $break-medium) {
-				max-width: 60%;
-				height:90vh;
-				margin:2rem auto 0;
-
-
-			}
-		}
-
-
-
-
-
-
-
-
-
-
-
-		.project-text2{
-			width: 60%;
-			margin:0 auto;
-			text-align:justify;
-		}
-
-		.challenge-text{
-			background-color: #F4F6F7;
-		}
-
-		.intro-project{
-			max-width:600px;
-			color:white;
+	.top-image-container{
+		div{
 			margin:0 1rem;
-			text-align:center;
-			font-size:1.1rem;
-			font-weight:normal;
 		}
+	}
 
+	.down-arrow{
+		position:absolute;
+		top:80vh;
+		left: 0; 
+		right: 0; 
+		text-align:center;
 
 	}
 
-
-
-	.project-header{
-		height: 100vh;
-		@media screen and (min-width: $break-medium) {
-			height:100vh;
-
+	.project-block{
+		margin: 3rem 1rem;
+		background-color: rgba(255,255,255, .5);
+		div{
+			margin: 0 0 4rem 0;
 		}
 
-		flex-direction:column;
-		display:flex;
-
-		align-items:center;
-		justify-content:center;
-
-		background-size:cover;
-
-		h2{
-			color:white;
-			text-align:center;
-			display:flex;
-			flex-direction:row;
-			justify-content:center;
-			font-size:2.5rem;
-			margin:.75rem .75rem;
-			@media screen and (min-width: $break-medium) {
-				font-size:5rem;
-			}
-		}
 		h3{
-			color:white;
+			margin: 1rem auto .5rem auto;
+
 		}
-	}
-
-
-
-	.grid{
-		display:flex;
-	}
-
-
-	.triangle-container{
-		margin: 4rem auto 0rem;
-	}
-
-
-
-
-	.project-image{
-		// background-position: left 47px top 0px, right 104px top 0px;
-		
-		background-position:center;
-		object-fit: cover;
-		width:100%;
-
-		// margin:1rem 1rem;
-		height:50vh;
-
-		
-		@media screen and (min-width: $break-medium) {
-			height: 95vh;
-			
-			width:100%;			
-			background-attachment: fixed;
-		}
-	}
-
-
-
-	.block-talks{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/blocktalks/block-talks-header-min.jpg');
-		background-size:cover;
-		filter: grayscale(50%);
-		background-attachment:fixed;
-		background-position:center;
-		background-position: 0px 0px !important; 
-	}
-
-	.asking-for-a-friend{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
-		background-size:cover;
-		filter: grayscale(50%);
-		background-attachment:fixed;
-		background-position:center;
-	}
-	.earthgazing{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/earthgazement/earthgazing-header-min.jpg');
-		background-size:cover;
-		filter: grayscale(50%);
-		background-attachment:fixed;
-		background-position:center;
-	}
-	.tangibles{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
-		background-size:cover;
-		filter: grayscale(50%);
-		background-attachment:fixed;
-		background-position:center;
-	}
-	.audio-matic{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
-		background-size:cover;
-		filter: grayscale(50%);
-		background-attachment:fixed;
-		background-position:center;
-	}
-	.mind-full{
-		background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/mindfull/mind-full-header-min.jpg');
-		background-size:cover;
-		background-attachment:fixed;
-		filter: grayscale(50%);
-		background-position:center;
-	}
-
-
-
-
-
-
-
-	.mind-full-image-1{
-		background:  url('/assets/img/mindfull/mind-full-tablet-view-min.jpg');
-		background-size:cover;
-		background-position:center;
-		background-repeat: no-repeat;
-
-	}
-
-	.mind-full-image-2{
-		background:  url('/assets/img/mindfull/mind-full-squirrel-min.png');
-		background-size:cover;
-		background-position:center;
-		background-repeat: no-repeat;
-
-	}
-	.mind-full-image-3{
-		background:  url('/assets/img/mindfull/mind-full-brainstorm-min.jpg');
-		background-size:cover;
-		background-position:center;
-
-
-	}
-	.mind-full-image-4{
-		background:  url('/assets/img/mindfull/mind-full-unity.png');
-		background-size:contain;
-		// background-position:center;
-
-
-		height: 217px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 450px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 600px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 95vh ;
-
-		}	
-		// height:40vh !important;
-		// background-repeat:no-repeat;
-		// background-position: 0px 0px !important; 
-		// @media screen and (min-width: $break-xsmall) {
-		// 	height: 50vh !important;
-		// }
-		// @media screen and (min-width: $break-small) {
-		// 	height: 60vh !important;
-		// }
-		// @media screen and (min-width: $break-medium) {
-		// 	height: 70vh !important;
-		// }
-
-	}
-
-
-	.mind-full-image-5{
-		background:  url('/assets/img/mindfull/mind-full-study-photo-min.jpg');
-		background-size:cover;
-		background-position:center;
-
-
-
-	}
-	.mind-full-image-6{
-		background:  url('/assets/img/mindfull/mind-full-sfn-poster-min.jpg');
-		background-size:cover;
-		background-position:left !important;
-		background-repeat: no-repeat;
-
-	}
-	.mind-full-image-7{
-		background:  url('/assets/img/mindfull/brainhack-close-min.png');
-		background-size:cover;
-		background-position:center;
-		background-repeat: no-repeat;
-
-	}
-
-	.mind-full-image-8{
-		background:  url('/assets/img/mindfull/brainhack-min.jpg');
-		background-size:cover;
-		background-position:center;
-		background-repeat: no-repeat;
-	}
-
-
-
-
-
-
-	.audio-matic-image-1{
-		background:  url('/assets/img/audiomatic/audio-matic-logo.png');
-		background-size:cover;
-
-		background-position:center;
-		background-repeat: no-repeat;
-		height:50vh;
 		@media screen and (min-width: $break-small) {
-			height: 60vh ;
+			max-width: 70%;
+			margin: 3rem auto;
+			// margin:6rem auto;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 95vh;
+			max-width: 60%;
+			margin:6rem auto;
 		}
-		@media screen and (min-width: $break-large) {
-			height: 95vh ;
-
-		}
-
-
-	}
-	.audio-matic-image-2{
-		// background:  url('/assets/img/audiomatic/single-gif.gif');
-		background-size:contain;
-		// filter: grayscale(50%);
-		background-position:center;
-		background-repeat: no-repeat;
-
-		display:none;
-
 
 	}
 
-	.audio-matic-image-3{
-		background:  url('/assets/img/audiomatic/magenta-screen-min.jpg');
-		background-size:cover;
 
-		// background-position:center;
-		background-repeat: no-repeat;
-		// background-size: auto;
-		height: 217px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 450px ;
+
+
+	.aspect__inner{
+		top:auto;
+		bottom:auto;
+	}
+
+
+
+
+
+
+	.project-intro{
+		margin: 2rem 1rem 0 1rem;
+		background-color: rgba(255,255,255, .5);
+		text-align:justify;
+		display:flex;
+		align-items:center;
+		@media screen and (min-width: $break-small) {
+			max-width: 70%;
+			margin: 2rem auto;
+			// margin:6rem auto;
 		}
 		@media screen and (min-width: $break-medium) {
-			height: 700px ;
+			max-width: 60%;
+			height:90vh;
+			margin:2rem auto 0;
+
+
 		}
+	}
 
-		@media screen and (min-width: $break-large) {
-			height: 95vh ;
 
-		}	
+
+
+
+
+
+
+
+
+
+	.project-text2{
+		width: 60%;
+		margin:0 auto;
+		text-align:justify;
+	}
+
+	.challenge-text{
+		background-color: #F4F6F7;
+	}
+
+	.intro-project{
+		max-width:600px;
+		color:white;
+		margin:0 1rem;
+		text-align:center;
+		font-size:1.1rem;
+		font-weight:normal;
+	}
+
+
+}
+
+
+
+.project-header{
+	height: 100vh;
+	@media screen and (min-width: $break-medium) {
+		height:100vh;
 
 	}
 
-	.audio-matic-image-4{
-		background:  url('/assets/img/audiomatic.png');
-		background-size:contain;
-		// filter: grayscale(50%);
-		background-position:center;
-		background-repeat: no-repeat;
-		// background-size: auto;
+	flex-direction:column;
+	display:flex;
 
+	align-items:center;
+	justify-content:center;
 
-		display:none;
-	}
+	background-size:cover;
 
-	.audio-matic-image-5{
-		background:  url('/assets/img/audiomatic/audiomaticgif.gif');
-		background-size:cover;
-		// filter: grayscale(50%);
-		background-position:center;
-		background-repeat: no-repeat;
-		height: 250px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 400px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 520px ;
-		}
+	h2{
+		color:white;
+		text-align:center;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		font-size:2.5rem;
+		margin:.75rem .75rem;
 		@media screen and (min-width: $break-medium) {
-			height: 650px ;
+			font-size:5rem;
 		}
+	}
+	h3{
+		color:white;
+	}
+}
 
-		@media screen and (min-width: $break-large) {
-			height: 900px;
 
-		}	
 
+.grid{
+	display:flex;
+}
+
+
+.triangle-container{
+	margin: 4rem auto 0rem;
+}
+
+
+
+
+.project-image{
+	// background-position: left 47px top 0px, right 104px top 0px;
+
+	background-position:center;
+	object-fit: cover;
+	width:100%;
+
+	// margin:1rem 1rem;
+	height:50vh;
+
+
+	@media screen and (min-width: $break-medium) {
+		height: 95vh;
+
+		width:100%;			
+		background-attachment: fixed;
+	}
+}
+
+
+
+.block-talks{
+	background-image: url('/assets/img/blocktalks/block-talks-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/blocktalks/block-talks-header-min.jpg');
+	background-size:cover;
+	filter: grayscale(50%);
+
+	background-position:center;
+	background-position: center 0px !important; 
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
+	}
+}
+
+.asking-for-a-friend{
+	background-image: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+	background-size:cover;
+	filter: grayscale(50%);
+	background-position:center;
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
+	}
+}
+.earthgazing{
+	background-image: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),  url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+	background-size:cover;
+	filter: grayscale(50%);
+	background-position:center;
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
 	}
 
 
 
-	.audio-matic-image-6{
+}
+.tangibles{
+	background-image: url('/assets/img/tangibles/tangibles-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
+	background-size:cover;
+	filter: grayscale(50%);
 
-		
-		display:none;
+	background-position:center;
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
+	}
+}
+.audio-matic{
+	background-image: url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+	background-size:cover;
+	filter: grayscale(50%);
+	background-position:center;
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
+	}
+}
+.mind-full{
+	background-image: url('/assets/img/mindfull/mind-full-header-min.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),  url('/assets/img/mindfull/mind-full-header-min.jpg');
+	background-size:cover;
+	// background-attachment:fixed;
+	filter: grayscale(50%);
+	background-position:center;
+	@media screen and (min-width: $break-xlarge) {
+		background-attachment:fixed;
+	}
+}
+
+
+
+
+
+
+
+.mind-full-image-1{
+	background:  url('/assets/img/mindfull/mind-full-tablet-view-min.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+
+}
+
+.mind-full-image-2{
+	background:  url('/assets/img/mindfull/mind-full-squirrel-min.png');
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+
+}
+.mind-full-image-3{
+	background:  url('/assets/img/mindfull/mind-full-brainstorm-min.jpg');
+	background-size:cover;
+	background-position:center;
+
+
+}
+.mind-full-image-4{
+	background:  url('/assets/img/mindfull/mind-full-unity.png');
+	background-size:contain;
+	// background-position:center;
+
+
+	height: 217px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 450px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 600px ;
 	}
 
+	@media screen and (min-width: $break-large) {
+		height: 95vh ;
+
+	}	
+
+}
+
+
+.mind-full-image-5{
+	background:  url('/assets/img/mindfull/mind-full-study-photo-min.jpg');
+	background-size:cover;
+	background-position:center;
 
 
 
-	.audio-matic-image-7{
-		display:none;
+}
+.mind-full-image-6{
+	background:  url('/assets/img/mindfull/mind-full-sfn-poster-min.jpg');
+	background-size:cover;
+	background-position:left !important;
+	background-repeat: no-repeat;
+
+}
+.mind-full-image-7{
+	background:  url('/assets/img/mindfull/brainhack-close-min.png');
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+
+}
+
+.mind-full-image-8{
+	background:  url('/assets/img/mindfull/brainhack-min.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.audio-matic-image-1{
+	background:  url('/assets/img/audiomatic/audio-matic-logo.png');
+	background-size:cover;
+
+	background-position:center;
+	background-repeat: no-repeat;
+	height:50vh;
+	@media screen and (min-width: $break-small) {
+		height: 60vh ;
 	}
-
-
-
-
-
-
-
-
-	.block-talks-image-1{
-		background:  url('/assets/img/blocktalks/block-talks-logo-min.jpg');
-		background-size:cover;
-
-		// background-repeat:no-repeat;
-		height: 217px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 450px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 600px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 95vh ;
-
-		}	
-
+	@media screen and (min-width: $break-medium) {
+		height: 95vh;
 	}
-	.block-talks-image-2{
-		background:  url('/assets/img/blocktalks/block-talks-scan-min.jpg');
-		background-size:cover;
-
-	}
-
-	.block-talks-image-3{
-		background:  url('/assets/img/blocktalks/block-talks-blocks-min.jpg');
-		background-size:cover;
-
-	}
-
-	.block-talks-image-4{
-		background:  url('/assets/img/blocktalks/cat.gif');
-		background-size:contain;
-		background-position:center;
-
-	}
-	.block-talks-image-5{
-		background:  url('/assets/img/blocktalks/block-talks-presentation.jpg');
-		background-size:cover;
-		
-	}
-	.block-talks-image-6{
-		background:  url('/assets/img/blocktalks/blocktalks3.jpg');
-		background-size:cover;
-		
-
-	}
-	.block-talks-image-7{
-		background:  url('/assets/img/blocktalks/block-talks-feedback.gif');
-		background-size:cover;
-		
-		background-repeat: no-repeat;
-
-
-				height: 250px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 614px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 750px ;
-
-		}	
-		
-	}
-
-
-
-
-
-
-	.tangibles-image-1{
-		background:  url('/assets/img/tangibles/girlsrock4.jpg');
-		background-size:cover;
-	}
-	.tangibles-image-2{
-		background:  url('/assets/img/tangibles/girlsrock3-min.jpg');
-		background-size:cover;
-
-
-	}
-
-	.tangibles-image-3{
-		background:  url('/assets/img/tangibles/johnny-five-min.jpg');
-		background-size:cover;
-	}
-	.tangibles-image-4{
-		background:  url('/assets/img/tangibles/sensor.gif');
-		background-size:cover;
-
-	}
-
-	.tangibles-image-5{
-		background:  url('/assets/img/tangibles/sensor-data.gif');
-		background-size:cover;
-		height: 42vh;
-		background-position: 0px 0px !important; 
-		
-				height: 250px ;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 614px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 750px ;
-
-		}	
-
-
-
-
-
-
-
-
-	}
-	.tangibles-image-6{
-		background:  url('/assets/img/tangibles/girlsrock7-min.jpg');
-		background-size:contain;
-		background-position:center;
-
-
-				height: 50vh;
-			@media screen and (min-width: $break-xsmall) {
-			height: 350px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 614px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 750px ;
-
-		}	
-
-	}
-	.tangibles-image-7{
-		display:none;
+	@media screen and (min-width: $break-large) {
+		height: 95vh ;
 
 	}
 
 
+}
+.audio-matic-image-2{
+	// background:  url('/assets/img/audiomatic/single-gif.gif');
+	background-size:contain;
+	// filter: grayscale(50%);
+	background-position:center;
+	background-repeat: no-repeat;
+
+	display:none;
 
 
+}
 
+.audio-matic-image-3{
+	background:  url('/assets/img/audiomatic/magenta-screen-min.jpg');
+	background-size:cover;
 
-
-
-
-
-
-
-
-
-	.earthgazing-image-1{
-		background:  url('/assets/img/earthgazement/earth-sky.jpg');
-		background-size:cover;
+	// background-position:center;
+	background-repeat: no-repeat;
+	// background-size: auto;
+	height: 217px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 450px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 700px ;
 	}
 
-	.earthgazing-image-2{
-		display:none;
+	@media screen and (min-width: $break-large) {
+		height: 95vh ;
+
+	}	
+
+}
+
+.audio-matic-image-4{
+	background:  url('/assets/img/audiomatic.png');
+	background-size:contain;
+	// filter: grayscale(50%);
+	background-position:center;
+	background-repeat: no-repeat;
+	// background-size: auto;
+
+
+	display:none;
+}
+
+.audio-matic-image-5{
+	background:  url('/assets/img/audiomatic/audiomaticgif.gif');
+	background-size:cover;
+	// filter: grayscale(50%);
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 250px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 400px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 520px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 650px ;
 	}
 
-	.earthgazing-image-3{
-		background:  url('/assets/img/earthgazement/htc-vive.jpeg');
-		background-size:cover;
-		background-repeat:no-repeat;
-		height: 260px;
-background-position:center;
-// background-position: 0px -15px !important;
-					@media screen and (min-width: $break-xsmall) {
-			height: 400px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-				// background-position: 0px -15px !important;
-			height: 650px ;
-		}
+	@media screen and (min-width: $break-large) {
+		height: 900px;
 
-		@media screen and (min-width: $break-large) {
-			height: 900px;
+	}	
 
-		}	
+}
 
+
+
+.audio-matic-image-6{
+
+
+	display:none;
+}
+
+
+
+
+.audio-matic-image-7{
+	display:none;
+}
+
+
+
+
+
+
+
+
+.block-talks-image-1{
+	background:  url('/assets/img/blocktalks/block-talks-logo-min.jpg');
+	background-size:cover;
+
+	// background-repeat:no-repeat;
+	height: 217px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 450px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 600px ;
 	}
 
-	.earthgazing-image-4{
+	@media screen and (min-width: $break-large) {
+		height: 95vh ;
 
-		display:none;
+	}	
+
+}
+.block-talks-image-2{
+	background:  url('/assets/img/blocktalks/block-talks-scan-min.jpg');
+	background-size:cover;
+
+}
+
+.block-talks-image-3{
+	background:  url('/assets/img/blocktalks/block-talks-blocks-min.jpg');
+	background-size:cover;
+
+}
+
+.block-talks-image-4{
+	background:  url('/assets/img/blocktalks/cat.gif');
+	background-size:contain;
+	background-position:center;
+
+}
+.block-talks-image-5{
+	background:  url('/assets/img/blocktalks/block-talks-presentation.jpg');
+	background-size:cover;
+
+}
+.block-talks-image-6{
+	background:  url('/assets/img/blocktalks/blocktalks3.jpg');
+	background-size:cover;
+
+
+}
+.block-talks-image-7{
+	background:  url('/assets/img/blocktalks/block-talks-feedback.gif');
+	background-size:cover;
+
+	background-repeat: no-repeat;
+
+
+	height: 250px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
 	}
-	.earthgazing-image-5{
-		background:  url('/assets/img/earthgazement/earthgazement3-min.png');
-		background-size:cover;
-		background-repeat:no-repeat;
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 614px ;
+	}
+
+	@media screen and (min-width: $break-large) {
+		height: 750px ;
+
+	}	
+
+}
+
+.tangibles-image-1{
+	background:  url('/assets/img/tangibles/girlsrock4.jpg');
+	background-size:cover;
+}
+.tangibles-image-2{
+	background:  url('/assets/img/tangibles/girlsrock3-min.jpg');
+	background-size:cover;
+
+
+}
+
+.tangibles-image-3{
+	background:  url('/assets/img/tangibles/johnny-five-min.jpg');
+	background-size:cover;
+}
+.tangibles-image-4{
+	background:  url('/assets/img/tangibles/sensor.gif');
+	background-size:cover;
+
+}
+
+.tangibles-image-5{
+	background:  url('/assets/img/tangibles/sensor-data.gif');
+	background-size:cover;
+	height: 42vh;
+	background-position: 0px 0px !important; 
+
+	height: 250px ;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 614px ;
+	}
+
+	@media screen and (min-width: $break-large) {
+		height: 750px ;
+
+	}	
+
+
+}
+.tangibles-image-6{
+	background:  url('/assets/img/tangibles/girlsrock7-min.jpg');
+	background-size:contain;
+	background-position:center;
+
+
+	height: 50vh;
+	@media screen and (min-width: $break-xsmall) {
+		height: 350px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 614px ;
+	}
+
+	@media screen and (min-width: $break-large) {
+		height: 750px ;
+
+	}	
+
+}
+.tangibles-image-7{
+	display:none;
+
+}
+
+
+
+.earthgazing-image-1{
+	background:  url('/assets/img/earthgazement/earth-sky.jpg');
+	background-size:cover;
+}
+
+.earthgazing-image-2{
+	display:none;
+}
+
+.earthgazing-image-3{
+	background:  url('/assets/img/earthgazement/htc-vive.jpeg');
+	background-size:cover;
+	background-repeat:no-repeat;
 	height: 260px;
-background-position:center;
-					@media screen and (min-width: $break-xsmall) {
-			height: 400px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-				// background-position: 0px -15px !important;
-			height: 650px ;
-		}
+	background-position:center;
 
-		@media screen and (min-width: $break-large) {
-			height:900px;
-
-		}	
+	@media screen and (min-width: $break-xsmall) {
+		height: 400px;
 	}
-	.earthgazing-image-6{
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
 
-		display:none;
+		height: 650px ;
 	}
 
-	.earthgazing-image-7{
+	@media screen and (min-width: $break-large) {
+		height: 900px;
 
-		display:none;
+	}	
+
+}
+
+.earthgazing-image-4{
+
+	display:none;
+}
+.earthgazing-image-5{
+	background:  url('/assets/img/earthgazement/earthgazement3-min.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	height: 260px;
+	background-position:center;
+	@media screen and (min-width: $break-xsmall) {
+		height: 400px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+
+		height: 650px ;
 	}
 
+	@media screen and (min-width: $break-large) {
+		height:900px;
+
+	}	
+}
+.earthgazing-image-6{
+
+	display:none;
+}
+
+.earthgazing-image-7{
+
+	display:none;
+}
 
 
 
 
-	.asking-for-a-friend-image-1{
-		background:  url('/assets/img/asking/asking-notepad-min.jpg');
-		background-size:cover;
-		// background-position: bottom right; 
 
-		// height:42vh;
-		// @media screen and (min-width: $break-medium) {
-		// 	height: 90vh !important;
-		// 	background-position: 0px -15px !important;
-		// }
-		height: 260px;
-background-position:center;
-background-position: 0px -15px !important;
-					@media screen and (min-width: $break-xsmall) {
-			height: 400px;
-		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-				background-position: 0px -15px !important;
-			height: 650px ;
-		}
+.asking-for-a-friend-image-1{
+	background:  url('/assets/img/asking/asking-notepad-min.jpg');
+	background-size:cover;
 
-		@media screen and (min-width: $break-large) {
-			height: 900px;
-
-		}	
+	height: 260px;
+	background-position:center;
+	background-position: 0px -15px !important;
+	@media screen and (min-width: $break-xsmall) {
+		height: 400px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		background-position: 0px -15px !important;
+		height: 650px ;
 	}
 
+	@media screen and (min-width: $break-large) {
+		height: 900px;
+
+	}	
+}
 
 
-	.asking-for-a-friend-image-4{
-		background:  url('/assets/img/asking/asking-landing3.png');
-		background-size:cover;
-		// display:none;
-		// height:30vh;
-		// @media screen and (min-width: $break-small) {
-		// 	height: 46vh ;
 
-		// }
-		// @media screen and (min-width: $break-medium) {
-		// 	height: 70vh ;
+.asking-for-a-friend-image-4{
+	background:  url('/assets/img/asking/asking-landing3.png');
+	background-size:cover;
+	height: 225px;
+	background-position:center;
+	@media screen and (min-width: $break-xsmall) {
+		height: 400px;
+	}
+	@media screen and (min-width: $break-small) {
+		height: 470px ;
+	}
+	@media screen and (min-width: $break-medium) {
+		height: 650px ;
+	}
 
-		// }
-height: 225px;
-background-position:center;
-					@media screen and (min-width: $break-xsmall) {
-			height: 400px;
+	@media screen and (min-width: $break-large) {
+		height: 900px;
+
+	}	
+
+}
+
+.asking-for-a-friend-image-3{
+	background:  url('/assets/img/asking/asking-ideation-min.jpg');
+	background-size:cover;
+
+}
+
+
+.asking-for-a-friend-image-2{
+
+	display:none;
+}
+
+.asking-for-a-friend-image-5{
+	background:  url('/assets/img/asking/lumohacks-min.jpg');
+	background-size:cover;
+	background-position:center;
+}
+.asking-for-a-friend-image-6{
+
+	display:none;
+}
+.asking-for-a-friend-image-7{
+	display:none;
+
+}
+
+.none{
+	display:none;
+}
+
+
+.aspect--9x80 {
+	padding-bottom: calc(112.5% + 8px);
+	height:300px;
+}
+.aspect__inner{
+	height:300px;
+}
+
+.image-description{
+	position:relative;
+	height:100%;
+	width:100%;
+	display:flex;
+
+	h3{
+		text-align: right;
+		position:absolute;
+		bottom: 30px;
+		font-size:1rem;
+		padding:.5rem 1rem ;
+		right: 0;
+		justify-content:center;
+		background-color:rgba(255,255,255, .7);
+		@media screen and (max-width: $break-small) {
+			max-width:75%;
 		}
-			@media screen and (min-width: $break-small) {
-			height: 470px ;
-		}
-		@media screen and (min-width: $break-medium) {
-			height: 650px ;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 900px;
-
-		}	
-		//     @media screen and (min-width: $break-small) {
-			// 	height: 90vh ;
-
-			// }
-		}
-
-		.asking-for-a-friend-image-3{
-			background:  url('/assets/img/asking/asking-ideation-min.jpg');
-			background-size:cover;
-			// display:none;
-		}
-
-
-
-
-		.asking-for-a-friend-image-2{
-			
-			display:none;
-		}
-
-		.asking-for-a-friend-image-5{
-			background:  url('/assets/img/asking/lumohacks-min.jpg');
-			background-size:cover;
-				background-position:center;
-			// display:none;
-		}
-		.asking-for-a-friend-image-6{
-			
-			display:none;
-		}
-		.asking-for-a-friend-image-7{
-			display:none;
-
-		}
-
-
-
-		.none{
-			display:none;
-		}
-
-
-
-
-		.aspect--9x80 {
-			padding-bottom: calc(112.5% + 8px);
-			height:300px;
-		}
-		.aspect__inner{
-			height:300px;
-		}
-
-		.image-description{
-			position:relative;
-			height:100%;
+		@media screen and (max-width: $break-xsmall) {
 			width:100%;
-			display:flex;
-
-			// background-color:green;
-			h3{
-				text-align: right;
-				position:absolute;
-				bottom: 30px;
-				// top:30px;
-				font-size:1rem;
-				padding:.5rem 1rem ;
-				right: 0;
-				// right:0; 
-				justify-content:center;
-				// text-align:right;
-
-				background-color:rgba(255,255,255, .7);
-					@media screen and (max-width: $break-small) {
-					max-width:75%;
-				}
-				@media screen and (max-width: $break-xsmall) {
-					width:100%;
-					max-width:100%;
-				}
-					
-			
-
-			}
+			max-width:100%;
 		}
+	}
+}
+
+
+
+/*specific triangle formatting for project pages*/
+
+.triangle-container{
+	margin: 2rem auto .5rem;
+	@media screen and (min-width: $break-medium) {
+		margin:  4rem auto 0;
+	}
+}
 
 
 
 
-		.triangle-container{
+.project-image{
+	width:100%;
+	@media screen and (min-width: $break-large) {
+		width:100%;			
+		background-attachment: fixed;
+	}
+}
 
-			margin: 2rem auto .5rem;
+.inline-url{
+	color: #242424 !important ;
+&:hover{
+	color: $font-accent !important;
+}
+}
 
-			@media screen and (min-width: $break-medium) {
-				margin:  4rem auto 0;
-			}
-		}
+.intro-container{
+	width:100% ;
+}
 
-
-
-		.project-image{
-			// background-position: left 47px top 0px, right 104px top 0px;
-
-			// background-position:center;
-			// object-fit: cover;
-			width:100%;
-
-			// margin:1rem 1rem;
-			// height:50vh;
-
-			@media screen and (min-width: $break-large) {
-				// height: 90vh;
-
-				width:100%;			
-				background-attachment: fixed;
-			}
-		}
-
-
-		.intro-container{
-			width:100%;
-		}
-
-		button{
-			margin-top:0;
-		}
+button{
+	margin-top:0;
+}

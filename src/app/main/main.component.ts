@@ -10,8 +10,8 @@ declare var System: any;
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: [ './main.component.scss' ],
- 
- 
+
+
 })
 
 
@@ -23,31 +23,29 @@ declare var System: any;
 export class MainComponent implements OnInit {
   projects: Project[] = [];
   @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
- 
+
 
 
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() { 
-    
- 
+
     this.getProjects();
-       
-
-
 
   }
 
+  // Add the shuffle grid to the main page
   ngAfterViewInit() {
- const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
+    const shuffleInstance = new Shuffle(this.shuffleGrid.nativeElement, {  });
 
- 
+
   }
 
-  getProjects(): void {
-    this.projectService.getProjects()
-    .subscribe(projects => this.projects = projects.slice(0, 6));
-  }
+// Get the first 6 projects from the JSON file
+getProjects(): void {
+  this.projectService.getProjects()
+  .subscribe(projects => this.projects = projects.slice(0, 6));
+}
 
 
 }

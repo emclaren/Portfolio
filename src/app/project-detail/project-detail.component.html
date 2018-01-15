@@ -28,7 +28,7 @@
 						<p>{{project.team}}</p>
 
 
-						<h3>Key Words</h3>
+						<h3>Keywords</h3>
 						<p>{{project.tags}}</p>
 
 						<br>
@@ -151,48 +151,28 @@
 
 					</div>
 				</div>
-				
 				<div class="project-block">
 					<h3>Results and Next Steps</h3>
 					<h4>{{project.resultHeading1}}</h4>
-
-
 					<div>
-
-
-
-						<p>{{project.r1}} </p>
-
-
+						<p>{{project.r1}} <a href="{{project.url}}" target="_blank"class="inline-url">{{project.urltext}}</a></p>
 					</div>
-
 					<h4>{{project.resultHeading2}}</h4>
-					
-					<p>{{project.r2}} </p>
+					<p>{{project.r2}}</p>
 					<p>{{project.r3}} </p>
-
-
 				</div>
 				<div class=" project-image {{project.class}}-image-7">
-
 					<div class="image-description">
 						<h3 class="">{{project.caption7}}</h3>
-
 					</div>
 				</div>
-				
-
 				<div class="project-block">
 					<button (click)="goBack()">go back</button>
-
 				</div>
-
-
 			</div>
-
-
-
 		</div>
+	</div>
+</div>
 
 
 

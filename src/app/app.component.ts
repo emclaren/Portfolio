@@ -39,9 +39,11 @@ export class AppComponent {
 
 
       ngOnInit(): void {
-
+     
         this.router.events.subscribe((evt) => {
-          window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+          window.scrollY || window.pageYOffset || document.documentElement.scrollTop ||  document.body.scrollTop || 0;
+        console.log("For testing end");
+
         });
 
         console.log("Hi, thanks for checking out my code. 😜😜😜");
@@ -55,15 +57,3 @@ export class AppComponent {
 
 
   
-
-
-
-
-
-//Might work for preloading images
-
-  //  if (document.getElementById) {
-  //   document.getElementById("preload-01").style.background = "url(http://domain.tld/image-01.png) no-repeat -9999px -9999px";
-  //   document.getElementById("preload-02").style.background = "url(http://domain.tld/image-02.png) no-repeat -9999px -9999px";
-  //   document.getElementById("preload-03").style.background = "url(http://domain.tld/image-03.png) no-repeat -9999px -9999px";
-  // }

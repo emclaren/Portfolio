@@ -45,6 +45,8 @@ i{
 
   }
   .text-wrapper{
+    padding: 0 0 5rem 0;
+
     width:80%;
     margin:0 auto;
     background-color:rgba(255,255,255, .5);
@@ -61,6 +63,8 @@ i{
    
    .text-wrapper{
     width:100%;
+    padding:0;
+    position:center;
   }
   p{
    font-size: 1.1rem;
@@ -149,12 +153,16 @@ i{
   img{
     transition: transform .5s ease;
     display: block;
-    width: 100%;
+    // width: 100%;
     max-width: none;
     object-fit: cover;
     height:100%;
     -webkit-animation: filter 3s infinite;
     filter: grayscale(60%);
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      height:100%;
+      width:auto;
+    }
     @media screen and (min-width: $break-medium) {
       filter: grayscale(60%);
       transition: filter .5s ease;
@@ -179,17 +187,17 @@ i{
 
     }
     .project-title{
-    transition: background-color .5s ease;
-      background:rgba(255, 52, 89, .9);
-     height: 100%;
-     @media screen and (min-width: $break-medium) {
       transition: background-color .5s ease;
       background:rgba(255, 52, 89, .9);
+      height: 100%;
+      @media screen and (min-width: $break-medium) {
+        transition: background-color .5s ease;
+        background:rgba(255, 52, 89, .9);
 
+      }
     }
-  }
 
-}
+  }
 }
 /* default styles so shuffle doesn't have to set them (it will if they're missing) */
 .my-shuffle {
@@ -352,7 +360,7 @@ i{
     &:hover{
       color: $font-accent;
       transition: color 0.5s ease;
-    
+      
     }
   }
 
@@ -391,20 +399,27 @@ i{
 
 }
 
-.preload{
+.preload1{
+ background:  url('/assets/img/blocktalks/block-talks-header-min.jpg');
+}
+.preload2{
+ background: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+}
+.preload3{
+  background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+}
 
-      background:  url('/assets/img/blocktalks/block-talks-header-min.jpg');
+.preload4{
+ background: url('/assets/img/tangibles/tangibles-header-min.jpg');
+} 
+.preload5{
 
-      background: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+  background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+}
+.preload6{
 
-      background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+  background:  url('/assets/img/mindfull/mind-full-header-min.jpg');
 
-      background: url('/assets/img/tangibles/tangibles-header-min.jpg');
   
-      background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
 
-      background:  url('/assets/img/mindfull/mind-full-header-min.jpg');
-
-    
-
-  }
+}

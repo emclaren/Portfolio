@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>Elgin-Skye McLaren</title>
   <base href="/">
-<!-- <base href="{{ baseURL }}"> -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="theme-color" content="rgb(251, 91, 78)">	
@@ -14,22 +12,21 @@
 
 </head>
 <body>
+  <!-- Link to body content -->
   <app-root></app-root>
 
-<script async src="assets/p5.min.js"></script>
+  <!-- P5 file controls the triangles -->
+  <script async src="assets/p5.min.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111356348-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-111356348-1');
-</script>
-
-
-
-
+  <!-- Fitie makes object fit property work in IE, commented out as it is not functioning at the moment -->
+  <script async src="assets/fitie.js"></script>  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111356348-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-111356348-1');
+  </script>
 </body>
 </html>
