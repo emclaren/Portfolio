@@ -91,17 +91,10 @@
 	}
 
 
-
-
 	.aspect__inner{
 		top:auto;
 		bottom:auto;
 	}
-
-
-
-
-
 
 	.project-intro{
 		margin: 2rem 1rem 0 1rem;
@@ -125,14 +118,6 @@
 
 
 
-
-
-
-
-
-
-
-
 	.project-text2{
 		width: 60%;
 		margin:0 auto;
@@ -151,17 +136,12 @@
 		font-size:1.1rem;
 		font-weight:normal;
 	}
-
-
 }
-
-
 
 .project-header{
 	height: 100vh;
 	@media screen and (min-width: $break-medium) {
 		height:100vh;
-
 	}
 
 	flex-direction:column;
@@ -190,7 +170,6 @@
 }
 
 
-
 .grid{
 	display:flex;
 }
@@ -201,11 +180,8 @@
 }
 
 
-
-
 .project-image{
 	// background-position: left 47px top 0px, right 104px top 0px;
-
 	background-position:center;
 	object-fit: cover;
 	width:100%;
@@ -221,8 +197,6 @@
 		background-attachment: fixed;
 	}
 }
-
-
 
 .block-talks{
 	background-image: url('/assets/img/blocktalks/block-talks-header-min.jpg');

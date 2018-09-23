@@ -9,9 +9,7 @@ import { MessageService } from './message.service';
 
 @Injectable()
 export class ProjectService {
-
   constructor(private messageService: MessageService) { }
-
 
 getProjects(): Observable<Project[]> {
  this.messageService.add('ProjectService: fetched projects');

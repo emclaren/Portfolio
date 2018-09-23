@@ -6,7 +6,7 @@
 		<div class="flex" >
 			<div class="text-wrapper"  >
 				<p class="intro-first-line">MSc student, Interactive Arts + Technology </p>
-				<p>Research interests: interaction design for children, virtual reality, and sound</p>
+				<p>Research interests: interaction design for children, tangible computing, and sound</p>
 			</div>
 			<div class="down-arrow">
 				<a href="#work" pageScroll [routerLink]="['']" >
@@ -17,17 +17,17 @@
 	</section>
 
 
-	<!-- Work Grid -->
+	<!-- Work Grid, to edit number displayed use main.component.ts -->
 
 	<section id="work">
 		<h2 >Work</h2>
 		<div id ="shuffleGrid" #shuffleGrid class="my-shuffle" > 
 			<figure  *ngFor="let project of projects"   class=" col-xs-12 col-sm-6 col-lg-4 picture-item js-item column row-span no-gutters ">
-				<a  routerLink="/detail/{{project.id}}">
+				<a routerLink="/detail/{{project.id}}">
 					<div class="aspect aspect--size">
 						<div class="aspect__inner">
 							<div class="project-title">
-								<h3>{{project.thumbname}} </h3>
+								<h3>{{project.thumbname}}</h3>
 							</div>
 							<img src="{{project.thumbnail}}" obj.alt="obj.alt" alt="Picture of the {{project.name}} project"/>
 						</div>
@@ -85,7 +85,9 @@
 
 			<h3>Experience</h3>
 			<ul>
-				<li>Teaching Assistant - Simon Fraser University</li>
+				<li>Google Summer of Code Developer - Processing Foundation</li>
+				<li>Information Design TA - Simon Fraser University</li>
+				<li>Web Design & Development TA - Simon Fraser University</li>
 				<li>Research Assistant - Simon Fraser University </li>
 				<li>Web Developer - Telus Digital</li>
 				<li>IT Assistant - Concordia University</li>
@@ -94,13 +96,17 @@
 			<h3>Volunteer</h3>
 			<ul>
 				<li>Node School - Robotics Mentor</li>
-				<li>Women Who Code Vancouver - Founder</li>
+				<li>Women Who Code Vancouver - Co-founder</li>
 				<li>Canada Learning Code - Mentor</li>
 				<li>Rock Camp for Girls - Band Coach</li>
+				<li>Processing Foundation - Contributor</li>
 			</ul>
 
 			<h3>Presentations</h3> 
 			<ul>
+				<li>"Creative Coding in the Browser " - CascadiaJS</li>
+				<li>"Processing Primer For Artists" - SIGGRAPH</li>
+				<li>"Nodebots: programming hardware with JS " - Conf + Coffee</li>
 				<li>"Open Source Neurofeedback" - DataViz DC presentation</li>
 				<li>"Badass Coders Owning The Field" - Red Academy panel </li>
 				<li>"SIAT Graduate Research" - TechTeam SFU presentation</li>
@@ -124,6 +130,9 @@
 			</ul>
 			<h3>Awards</h3>
 			<ul>
+				<li>Grace Hopper Student Scholarship 2018</li>
+				<li>SFU Graduate Fellowship 2019</li> 
+				<li>NSERC Doctoral Fellowship 2019</li>
 				<li>SFU Travel Award 2018</li>
 				<li>SFU Grad Fellowship 2018</li>
 				<li>Womanium Neuroscience Scholar 2017</li>
@@ -136,7 +145,7 @@
 			</ul>
 			<h3>Publications</h3>
 			<ul>
-				<li> <em>Exploring and evaluating sound for helping children self-regulate with a brain-computer application.</em> <br>Proceedings of the International Conference on Interaction Design and Children. With  Antle, A.N. (2017) </li>
+				<li><em>Exploring and evaluating sound for helping children self-regulate with a brain-computer application.</em> <br>Proceedings of the International Conference on Interaction Design and Children. With  Antle, A.N. (2017) </li>
 				<li><em>Time to relax: No effects to the stress response after short-term use of a brain-computer interface. </em><br>Proceedings of the Graz Brain-Computer Interface Conference. With Cole, A.W., Riecke, B., Antle, A.N. (2017)</li>
 				<li><em>Opening up the design space of neurofeedback brain-computer interfaces for children: Five strong concepts. </em><br>ACM Transactions on Computer-Human Interaction. With Antle, A.N., Chesick, L. (in press) </li>
 				<li> <em>The efficacy of neurogames for teaching self-regulation to young children with anxiety and attention challenges. </em> <br>Proceedings of the Society for Neuroscience Annual Meeting. With Antle, A.N., Chesick, L., (in press)</li>

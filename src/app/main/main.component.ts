@@ -24,14 +24,10 @@ export class MainComponent implements OnInit {
   projects: Project[] = [];
   @ViewChild('shuffleGrid') shuffleGrid: ElementRef;
 
-
-
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() { 
-
     this.getProjects();
-
   }
 
   // Add the shuffle grid to the main page
@@ -41,10 +37,10 @@ export class MainComponent implements OnInit {
 
   }
 
-// Get the first 6 projects from the JSON file
+// Get the  projects from the JSON file THIS IS HOW YOU CAN LIMIT THE NUMBER OF PROJECTS
 getProjects(): void {
   this.projectService.getProjects()
-  .subscribe(projects => this.projects = projects.slice(0, 6));
+  .subscribe(projects => this.projects = projects.slice(0, 9));
 }
 
 

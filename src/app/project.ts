@@ -33,7 +33,6 @@ export class Project {
   caption5:string;
   caption6:string;
   caption7:string;
-   url:string;
+  url:string;
   urltext:string;
-
 }

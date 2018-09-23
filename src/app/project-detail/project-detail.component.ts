@@ -13,19 +13,11 @@ import {AfterContentInit, ContentChildren, Directive, QueryList, Renderer, ViewC
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
   styleUrls: [ './project-detail.component.scss' ],
-
-
 })
-
-
-
-
 
 
 export class ProjectDetailComponent implements OnInit {
   @Input() project: Project;
-
-
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
@@ -35,8 +27,6 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProject();
-
-
   }
 
 

@@ -39,11 +39,8 @@ export class AppComponent {
 
 
       ngOnInit(): void {
-     
         this.router.events.subscribe((evt) => {
           window.scrollY || window.pageYOffset || document.documentElement.scrollTop ||  document.body.scrollTop || 0;
-        console.log("For testing end");
-
         });
 
         console.log("Hi, thanks for checking out my code. 😜😜😜");

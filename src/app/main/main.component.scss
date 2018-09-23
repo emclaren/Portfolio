@@ -3,7 +3,7 @@
 
 i{
   font-family:  "Ionicons";
-  src: url("/assets/fonts/ionicons.woff") format("woff");
+  // src: url("/assets/fonts/ionicons.woff") format("woff");
 }
 
 .page-wrapper{
@@ -418,8 +418,23 @@ i{
 }
 .preload6{
 
-  background:  url('/assets/img/mindfull/mind-full-header-min.jpg');
+  background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
 
-  
+}
+
+.preload7{
+  background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+}
+
+.preload8{
+ background: url('/assets/img/tangibles/tangibles-header-min.jpg');
+} 
+.preload9{
+
+  background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+}
+.preload10{
+
+  background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
 
 }
