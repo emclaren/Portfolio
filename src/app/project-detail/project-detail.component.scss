@@ -199,12 +199,10 @@
 }
 
 .papercraft{
-	background-image: url('/assets/img/blocktalks/papercraft-header.jpg');
+	background-image: url('/assets/img/papercraft/papercraft-header-lazy.jpg');
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/papercraft/papercraft-header.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
-
-	
 	background-position: center 0px !important; 
 	@media screen and (min-width: $break-xlarge) {
 		background-attachment:fixed;
@@ -245,7 +243,7 @@
 
 
 .plantagotchi{
-	background-image: url('/assets/img/blocktalks/pantagotchi-header.jpg');
+	background-image: url('/assets/img/plantagotchi/plantagotchi-header-lazy.jpg');
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/plantagotchi/plantagotchi-header.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -611,39 +609,36 @@ display:none;
 
 }
 .plantagotchi-image-2{
-	background:  url('/assets/img/plantagotchi/plantagotchi.gif');
+	background:  url('/assets/img/plantagotchi/plantagotchi-gif.gif');
 	background-size:contain;
 	background-position:center;
-
-
-
 }
 
 
 .plantagotchi-image-3{
-	background:  url('/assets/img/plantagotchi/tamagotchi.jpeg');
+	background:  url('/assets/img/plantagotchi/tamagotchi-min.jpg');
 	background-size:cover;
 	background-position:center;
 }
 
 
 .plantagotchi-image-4{
-	background:  url('/assets/img/plantagotchi/plantagotchi-supplies.jpg');
+	background:  url('/assets/img/plantagotchi/plantagotchi-supplies-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
 
 }
-.plantagotchi-image-5{
-	background:  url('/assets/img/plantagotchi/plantagotchi-wiring.jpg');
+.plantagotchi-image-6{
+	background:  url('/assets/img/plantagotchi/plantagotchi-3dprint-min.jpg');
 	background-size:contain;
-	background-position:bottom;
-	background-repeat: no-repeat;
+	background-position:center;
+	// background-repeat: no-repeat;
 
 
 }
-.plantagotchi-image-6{
-	background:  url('/assets/img/plantagotchi/plantagotchi-back.jpg');
+.plantagotchi-image-5{
+	background:  url('/assets/img/plantagotchi/plantagotchi-program-min.jpg');
 	background-size:cover;
 	background-position:center;
 

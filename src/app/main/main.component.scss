@@ -90,6 +90,8 @@ i{
       color:$font-color;
     }
   }
+
+
   h3{
     font-size:1rem;
     // font-weight:normal;
@@ -133,6 +135,62 @@ i{
  }
 
  /*Shuffle Tile Formatting*/
+
+
+ 
+.papercraft-thumbnail-lazy{
+	background-image: url('/assets/img/papercraft/papercraft-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+
+
+.hellop5-thumbnail-lazy{
+	background-image: url('/assets/img/hellop5/hellop5-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+
+
+.podcoaster-thumbnail-lazy{
+  background-image: url('/assets/img/podcoaster/podcoaster-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+
+
+.plantagotchi-thumbnail-lazy{
+  background-image: url('/assets/img/plantagotchi/plantagotchi-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+
+
+
+.block-talks-thumbnail-lazy{
+  background-image: url('/assets/img/blocktalks/block-talks-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+.asking-for-a-friend-thumbnail-lazy{
+  background-image: url('/assets/img/asking/asking-for-a-friend-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
+.earthgazing-thumbnail-lazy{
+  background-image: url('/assets/img/earthgazing/earthgazing-thumbnail-lazy.jpg');
+  background-size:cover;
+	
+}
+.audio-matic-thumbnail-lazy{
+  background-image: url('/assets/img/audiomatic/audio-matic-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+.mind-full-thumbnail-lazy{
+  background-image: url('/assets/img/mindfull/mind-full-thumbnail-lazy.jpg');
+  background-size:cover;
+}
+
 
  .aspect--size {
 
@@ -361,7 +419,6 @@ i{
       
     }
   }
-
 }
 @media screen and (min-width: $break-small) {
   height:90vh;
@@ -397,42 +454,44 @@ i{
 
 }
 
-.preload1{
- background:  url('/assets/img/blocktalks/block-talks-header-min.jpg');
-}
-.preload2{
- background: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
-}
-.preload3{
-  background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
-}
 
-.preload4{
- background: url('/assets/img/tangibles/tangibles-header-min.jpg');
-} 
-.preload5{
 
-  background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
-}
-.preload6{
+// .preload1{
+//  background:  url('/assets/img/blocktalks/block-talks-header-min.jpg');
+// }
+// .preload2{
+//  background: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+// }
+// .preload3{
+//   background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+// }
 
-  background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
+// .preload4{
+//  background: url('/assets/img/tangibles/tangibles-header-min.jpg');
+// } 
+// .preload5{
 
-}
+//   background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+// }
+// .preload6{
 
-.preload7{
-  background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
-}
+//   background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
 
-.preload8{
- background: url('/assets/img/tangibles/tangibles-header-min.jpg');
-} 
-.preload9{
+// }
 
-  background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
-}
-.preload10{
+// .preload7{
+//   background: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+// }
 
-  background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
+// .preload8{
+//  background: url('/assets/img/tangibles/tangibles-header-min.jpg');
+// } 
+// .preload9{
 
-}
+//   background:  url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+// }
+// .preload10{
+
+//   background:  url('/assets/img/mindfull/mind-full-header-min.jpg'); 
+
+// }

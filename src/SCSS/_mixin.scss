@@ -1,4 +1,4 @@
-// $font-stack:    "Lato", sans-serif;
+
 $font-color: #242424;
 $font-accent: rgb(255,52,89);
 
@@ -10,3 +10,9 @@ $break-xlarge: 1690px;
 $break-large: 1200px;
 
 
+
+@font-face {
+    font-family: "Ionicons";
+    src: url("/assets/fonts/ionicons.woff") format("woff")
+  }
+  

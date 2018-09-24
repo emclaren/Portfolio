@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build. `ng build --prod --base-href "https://emclaren.github.io/portfolio/"` uses the correct base URL. `angular-cli-ghpages` to deploy
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build. `ng build --prod --base-href "https://emclaren.github.io/portfolio/"` uses the correct base URL. `angular-cli-ghpages` (depricated, now `npx ngh`) to deploy
 
 ## Running unit tests
 
