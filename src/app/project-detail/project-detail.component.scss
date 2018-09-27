@@ -199,8 +199,7 @@
 }
 
 .papercraft{
-	background-image: url('/assets/img/papercraft/papercraft-header-lazy.jpg');
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/papercraft/papercraft-header.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/papercraft/papercraft-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
 	background-position: center 0px !important; 
@@ -212,8 +211,8 @@
 
 
 .hellop5{
-	background-image: url('/assets/img/blocktalks/hellop5-header.jpg');
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/hellop5/hellop5-header.png');
+
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/hellop5/hellop5-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
 
@@ -227,8 +226,8 @@
 
 
 .podcoaster{
-	background-image: url('/assets/img/blocktalks/podcoaster-header.jpg');
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/podcoaster/podcoaster-header.jpg');
+	
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/podcoaster/podcoaster-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
  
@@ -243,7 +242,7 @@
 
 
 .plantagotchi{
-	background-image: url('/assets/img/plantagotchi/plantagotchi-header-lazy.jpg');
+
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/plantagotchi/plantagotchi-header.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -258,7 +257,7 @@
 
 
 .block-talks{
-	background-image: url('/assets/img/blocktalks/block-talks-header-min.jpg');
+	
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)) , url('/assets/img/blocktalks/block-talks-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -271,7 +270,7 @@
 }
 
 .asking-for-a-friend{
-	background-image: url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
+	
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/asking/asking-for-a-friend-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -281,8 +280,8 @@
 	}
 }
 .earthgazing{
-	background-image: url('/assets/img/earthgazement/earthgazing-header-min.jpg');
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),  url('/assets/img/earthgazement/earthgazing-header-min.jpg');
+	
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),  url('/assets/img/earthgazing/earthgazing-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
 	background-position:center;
@@ -294,7 +293,7 @@
 
 }
 .tangibles{
-	background-image: url('/assets/img/tangibles/tangibles-header-min.jpg');
+	
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/tangibles/tangibles-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -305,7 +304,7 @@
 	}
 }
 .audio-matic{
-	background-image: url('/assets/img/audiomatic/audio-matic-header-min.jpg');
+
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('/assets/img/audiomatic/audio-matic-header-min.jpg');
 	background-size:cover;
 	filter: grayscale(50%);
@@ -315,7 +314,7 @@
 	}
 }
 .mind-full{
-	background-image: url('/assets/img/mindfull/mind-full-header-min.jpg');
+
 	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),  url('/assets/img/mindfull/mind-full-header-min.jpg');
 	background-size:cover;
 	// background-attachment:fixed;
@@ -331,6 +330,7 @@
 
 
 .mind-full-image-1{
+	background-color:rgba(255,52,89, 0.9);
 	background:  url('/assets/img/mindfull/mind-full-tablet-view-min.jpg');
 	background-size:cover;
 	background-position:center;
@@ -339,13 +339,15 @@
 }
 
 .mind-full-image-2{
-	background:  url('/assets/img/mindfull/mind-full-squirrel-min.png');
+	background-color:rgba(255,52,89, 0.9);
+	background:  url('/assets/img/mindfull/mind-full-squirrel-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
 
 }
 .mind-full-image-3{
+	background-color:rgba(255,52,89, 0.9);
 	background:  url('/assets/img/mindfull/mind-full-brainstorm-min.jpg');
 	background-size:cover;
 	background-position:center;
@@ -353,7 +355,8 @@
 
 }
 .mind-full-image-4{
-	background:  url('/assets/img/mindfull/mind-full-unity.png');
+	background-color:rgba(255,52,89, 0.9);
+	background:  url('/assets/img/mindfull/mind-full-unity.jpg');
 	background-size:contain;
 	// background-position:center;
 
@@ -378,6 +381,7 @@
 
 
 .mind-full-image-5{
+	background-color:rgba(255,52,89, 0.9);
 	background:  url('/assets/img/mindfull/mind-full-study-photo-min.jpg');
 	background-size:cover;
 	background-position:center;
@@ -386,6 +390,7 @@
 
 }
 .mind-full-image-6{
+	background-color:rgba(255,52,89, 0.9);
 	background:  url('/assets/img/mindfull/mind-full-sfn-poster-min.jpg');
 	background-size:cover;
 	background-position:left !important;
@@ -393,7 +398,8 @@
 
 }
 .mind-full-image-7{
-	background:  url('/assets/img/mindfull/brainhack-close-min.png');
+	background-color:rgba(255,52,89, 0.9);
+	background:  url('/assets/img/mindfull/brainhack-close-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -401,6 +407,7 @@
 }
 
 .mind-full-image-8{
+	background-color:rgba(255,52,89, 0.9);
 	background:  url('/assets/img/mindfull/brainhack-min.jpg');
 	background-size:cover;
 	background-position:center;
@@ -411,7 +418,7 @@
 
 
 .hellop5-image-1{
-	background:  url('/assets/img/hellop5/hellop5-header.png');
+	background:  url('/assets/img/hellop5/hellop5-header-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -419,21 +426,17 @@
 }
 
 .hellop5-image-2{
-	background:  url('/assets/img/hellop5/hellop5-header.png');
-	background-size:cover;
-	background-position:center;
-	background-repeat: no-repeat;
-
+display:none;
 }
 .hellop5-image-3{
-	background:  url('/assets/img/hellop5/hellop5-wordcloud.jpg');
+	background:  url('/assets/img/hellop5/hellop5-wordcloud-min.jpg');
 	background-size:cover;
 	background-position:center;
 
 
 }
 .hellop5-image-4{
-	background:  url('/assets/img/hellop5/hellop5-wireframes.png');
+	background:  url('/assets/img/hellop5/hellop5-wireframes-min.jpg');
 	background-size:contain;
 	// background-position:center;
 
@@ -458,7 +461,7 @@
 
 
 .hellop5-image-5{
-	background:  url('/assets/img/hellop5/hellop5-stars.png');
+	background:  url('/assets/img/hellop5/hellop5-logo.jpg');
 	background-size:cover;
 	background-position:center;
 
@@ -482,7 +485,7 @@ display:none;
 
 
 .papercraft-image-1{
-	background:  url('/assets/img/papercraft/papercraft-petitprinceoutside.jpg');
+	background:  url('/assets/img/papercraft/papercraft-petitprinceoutside-min.jpg');
 	background-size:contain;
 	background-position:center;
 	// background-repeat: no-repeat;
@@ -492,14 +495,14 @@ display:none;
 
 .papercraft-image-2{
 	
-	background:  url('/assets/img/papercraft/papercraft-supplies.jpg');
+	background:  url('/assets/img/papercraft/papercraft-supplies-min.jpg');
 	background-size:contain;
 	background-position:center;
 
 }
 .papercraft-image-3{
 
-	background:  url('/assets/img/papercraft/papercraft-petitprincebook.jpg');
+	background:  url('/assets/img/papercraft/papercraft-petitprincebook-min.jpg');
 	background-size:contain;
 	background-position:center;
 	// background-repeat: no-repeat;
@@ -507,7 +510,7 @@ display:none;
 }
 
 .papercraft-image-4{
-	background:  url('/assets/img/papercraft/papercraft-wiring.jpg');
+	background:  url('/assets/img/papercraft/papercraft-wiring-min.jpg');
 	background-size:cover;
 	// background-position:center;
 
@@ -517,7 +520,7 @@ display:none;
 
 
 .papercraft-image-5{
-	background:  url('/assets/img/papercraft/papercraft-petitprince2.jpg');
+	background:  url('/assets/img/papercraft/papercraft-petitprince-min.jpg');
 	background-size:contain;
 	background-position:center;
 	// background-repeat: no-repeat;
@@ -525,7 +528,7 @@ display:none;
 
 }
 .papercraft-image-6{
-	background:  url('/assets/img/papercraft/papercraft-flower.jpg');
+	background:  url('/assets/img/papercraft/papercraft-flower-min.jpg');
 	background-size:contain;
 	background-position:center;
 	// background-repeat: no-repeat;
@@ -534,7 +537,7 @@ display:none;
 .papercraft-image-7{
 	
 
-	background:  url('/assets/img/papercraft/papercraft-lamp2.jpg');
+	background:  url('/assets/img/papercraft/papercraft-lamp-min.jpg');
 	background-size:contain;
 	background-position:center;
 
@@ -555,7 +558,7 @@ display:none;
 
 
 .podcoaster-image-1{
-	background:  url('/assets/img/podcoaster/podcoaster-supplies.jpg');
+	background:  url('/assets/img/podcoaster/podcoaster-supplies-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -567,13 +570,13 @@ display:none;
 	}
 	
 .podcoaster-image-3{
-	background:  url('/assets/img/podcoaster/podcoaster-paint.jpg');
+	background:  url('/assets/img/podcoaster/podcoaster-paint-min.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
 }
 .podcoaster-image-5{
-	background:  url('/assets/img/podcoaster/podcoaster.gif');
+	background:  url('/assets/img/podcoaster/podcoaster-optimized.gif');
 	background-size:cover;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -602,7 +605,7 @@ display:none;
 
 
 .plantagotchi-image-1{
-	background:  url('/assets/img/plantagotchi/plantagotchi-tall.jpg');
+	background:  url('/assets/img/plantagotchi/plantagotchi-tall-min.jpg');
 	background-size:contain;
 	background-position:center;
 	// background-repeat: no-repeat;
@@ -657,7 +660,7 @@ display:none;
 
 
 .audio-matic-image-1{
-	background:  url('/assets/img/audiomatic/audio-matic-logo.png');
+	background:  url('/assets/img/audiomatic/audio-matic-logo.jpg');
 	background-size:cover;
 
 	background-position:center;
@@ -714,19 +717,12 @@ display:none;
 }
 
 .audio-matic-image-4{
-	background:  url('/assets/img/audiomatic.png');
-	background-size:contain;
-	// filter: grayscale(50%);
-	background-position:center;
-	background-repeat: no-repeat;
-	// background-size: auto;
-
 
 	display:none;
 }
 
 .audio-matic-image-5{
-	background:  url('/assets/img/audiomatic/audiomaticgif.gif');
+	background:  url('/assets/img/audiomatic/audiomatic-optimized.gif');
 	background-size:cover;
 	// filter: grayscale(50%);
 	background-position:center;
@@ -923,7 +919,7 @@ display:none;
 
 
 .earthgazing-image-1{
-	background:  url('/assets/img/earthgazement/earth-sky.jpg');
+	background:  url('/assets/img/earthgazing/earth-sky.jpg');
 	background-size:cover;
 }
 
@@ -932,7 +928,7 @@ display:none;
 }
 
 .earthgazing-image-3{
-	background:  url('/assets/img/earthgazement/htc-vive.jpeg');
+	background:  url('/assets/img/earthgazing/htc-vive.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 	height: 260px;
@@ -961,7 +957,7 @@ display:none;
 	display:none;
 }
 .earthgazing-image-5{
-	background:  url('/assets/img/earthgazement/earthgazement3-min.png');
+	background:  url('/assets/img/earthgazing/earthgazement-space-min.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 	height: 260px;
@@ -1023,7 +1019,7 @@ display:none;
 
 
 .asking-for-a-friend-image-4{
-	background:  url('/assets/img/asking/asking-landing3.png');
+	background:  url('/assets/img/asking/asking-landing-min.jpg');
 	background-size:cover;
 	height: 225px;
 	background-position:center;
